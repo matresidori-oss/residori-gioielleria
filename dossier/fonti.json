@@ -431,6 +431,59 @@
       ],
       "data_accesso": "2026-09-26",
       "modalita_accesso": "snippet"
+    },
+    {
+      "id": "mimit-relazione-266-2025",
+      "ente": "MIMIT, Direzione generale per gli incentivi alle imprese",
+      "titolo": "Relazione sugli interventi di sostegno alle attività economiche e produttive, edizione 2025 (dati 2024)",
+      "data_pubblicazione": "2025-09 (PDF); diffusione 2026-02-02 [DA VERIFICARE]",
+      "url": "https://www.mimit.gov.it/images/stories/documenti/RELAZIONE_266_2025.pdf",
+      "url_pagina": "https://www.mimit.gov.it/it/per-i-media/pubblicazioni/relazione-sugli-interventi-di-sostegno-alle-attivita-economiche-e-produttive-edizione-2025",
+      "capitoli": [
+        6
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "ec-state-aid-scoreboard-2025",
+      "ente": "Commissione europea, DG Concorrenza",
+      "titolo": "State aid Scoreboard 2025 (spesa 2024)",
+      "data_pubblicazione": "2026-01-15",
+      "url": "https://competition-policy.ec.europa.eu/document/download/cc9cdf4e-97e9-4f8e-ac7d-5f094a9fd12d_en?filename=state_aid_scoreboard_note_2025.pdf",
+      "url_pagina": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_67",
+      "capitoli": [
+        6,
+        9
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "mase-catalogo-sad-2026",
+      "ente": "Ministero dell'ambiente e della sicurezza energetica",
+      "titolo": "Catalogo dei sussidi ambientalmente dannosi e dei sussidi ambientalmente favorevoli, edizione 2026 (dati 2025)",
+      "data_pubblicazione": "2026-07-16",
+      "url": "https://www.mase.gov.it/portale/catalogo-dei-sussidi-ambientalmente-dannosi-e-dei-sussidi-ambientalmente-favorevoli",
+      "url_nota": "URL del PDF dell'edizione 2026 da individuare (quello indicizzato, catalogo_sussidi_ambientali_-_def-pdf, potrebbe essere un'edizione precedente)",
+      "capitoli": [
+        6,
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "cdc-fondo-garanzia-pmi",
+      "ente": "Corte dei conti, Sezione centrale di controllo sulla gestione delle amministrazioni dello Stato",
+      "titolo": "La gestione del Fondo di garanzia per le PMI, deliberazione n. 66/2025/G",
+      "data_pubblicazione": "2025 [DA VERIFICARE: data]",
+      "url": "https://www.corteconti.it/Download?id=d56fbe85-6c83-4123-af78-5ed45f82b367",
+      "capitoli": [
+        6
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
     }
   ]
 }

@@ -71,3 +71,17 @@ Stato al 26 settembre 2026. La rete dell'ambiente di lavoro blocca tutti i domin
 | Rinuncia a visite o esami: 9,9 % nel 2024 (≈ 5,8 mln), 7,5 % nel 2023, 6,3 % nel 2019; 6,8 % liste d'attesa, 5,3 % motivi economici | Istat, Rapporto annuale 2025, capitolo sulla salute | Il 2024 è l'ultimo anno disponibile; il Rapporto annuale 2026 (maggio 2026) potrebbe avere il 2025: controllare. |
 | OCSE 2025: Italia 6,2 % PIL, media OCSE ed europea 7,1 %; divario 36,1 mld; 15ª su 27 in Europa, ultima nel G7 | GIMBE 2/9/2026 su OECD Health Statistics (17/7/2026) | Il 6,2 % OCSE e il 6,3 % Istat differiscono per definizione. |
 | Sanità COFOG 2024: 146 mld | Eurostat gov_10a_exp | Già nel capitolo 1. |
+
+## Capitolo 6 — Sussidi alle imprese
+| Numero | Dove controllare | Nota |
+|---|---|---|
+| 2.374 interventi attivi nel 2024: 300 centrali, 2.074 regionali; centrali 81 % delle concessioni e 78,5 % delle erogazioni | MIMIT, Relazione 2025, capitolo 2 | Da mimit.gov.it, Invitalia, Ipsoa. Il 19 % delle Regioni nel grafico è 100 − 81. |
+| Concessioni 2024: 9,0 mld Centro-Nord, 7,3 Mezzogiorno; totale 16,3 | Relazione 2025, tavole per macroarea | Il totale 16,3 è la somma delle due macroaree e potrebbe non coincidere con il totale nazionale pubblicato (arrotondamenti, quote non ripartibili). ⚠ |
+| Erogazioni 2024: 11,3 mld (6,1 Centro-Nord, quasi 5 Mezzogiorno); investimenti agevolati 60,9 mld (69,5 nel 2023) | Relazione 2025 | |
+| Compensazioni crediti d'imposta 2024 ≈ 60 mld, di cui 41,9 Superbonus ed Ecobonus | Relazione 2025 su dati Agenzia delle entrate | Perimetro: tutti i crediti compensati in F24 (anche non alle imprese). Il capitolo lo dice come "crediti scalati dalle tasse". Coerenza con i 38,3 mld del 2025 del capitolo 4: anni diversi. |
+| "Meno di due milioni l'anno per misura regionale" | Calcolo: 19 % di 16,3 mld / 2.074 ≈ 1,5 mln | Dato derivato. Da rifare con i totali esatti. |
+| Aiuti di Stato Italia 2024: 18,34 mld, 11 % di 168,23 mld UE, terzo paese; UE 0,94 % PIL | Scoreboard 2025, nota e comunicato 15/1/2026 | Da Agence Europe. La quota Italia sul PIL non è nei frammenti. |
+| SAD 2025: 22.382,3 mln (2024: 23.776,8); SAF 82.499,1 (2024: 70.528,4); incerti 22.088,2; energia 11.606,6; IVA 9.556,1; trasporti 1.086,5; altri 132,7 | MASE, Catalogo 2026, tavole di sintesi | Le quattro voci sommano a 22.381,9: agricoltura e pesca resterebbe a 0,4 mln, improbabile. Verificare la ripartizione per settore. ⚠ |
+| Fondo di garanzia PMI: crescita ≈ 815 % in dieci anni; moltiplicatore ≈ 10 volte le risorse pubbliche 2012–2018 | Corte dei conti, delib. 66/2025/G | Da Italia Oggi. Data della deliberazione da inserire. |
+| Affari economici COFOG 2024: 112 mld | Eurostat gov_10a_exp | Già nel capitolo 1. Le sottofunzioni (trasporti, energia, agricoltura, R&S) non sono state inserite: da aggiungere quando ec.europa.eu sarà raggiungibile. |
+| Contributi alla produzione e agli investimenti alle imprese nel conto PA 2025 | Istat, conto PA, tavola delle uscite | Non trovati nei frammenti (solo i contributi agli investimenti alle famiglie, 10,8 mld). Da aggiungere. |
