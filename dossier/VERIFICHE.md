@@ -115,3 +115,16 @@ Stato al 26 settembre 2026. La rete dell'ambiente di lavoro blocca tutti i domin
 | "Coprirebbero il disavanzo 2025 una volta e mezza" | Calcolo: 100 / 69,7 | Dato derivato. |
 | "Gap minimo per le imposte trattenute alla fonte" | Relazione 2025, propensione IRPEF lavoro dipendente | Affermazione non ancora sostenuta da un numero letto: inserire la propensione IRPEF dipendenti dalla tavola, o togliere la frase. ⚠ |
 | Relazione 2026 attesa per fine ottobre 2026 | mef.gov.it | Se esce prima della chiusura del dossier, aggiornare tutto il capitolo alle stime 2023. |
+
+## Capitolo 9 — Italia contro Europa
+| Numero | Dove controllare | Nota |
+|---|---|---|
+| Disavanzo 2025: Italia 3,1; Francia 5,1; Germania 2,7; Spagna 2,4; area euro 2,9; UE 3,1 | Eurostat 2-22042026-AP, tavola per paese | Germania e Spagna da Destatis/Bundesbank e stampa spagnola che citano Eurostat. Il Ministerio de Hacienda spagnolo aveva comunicato 2,2 % il 31/3/2026: Eurostat 2,4 %. ⚠ |
+| Debito 2025: Italia 137,1; Francia 116,0 (Insee 115,6); Spagna 100,7; Germania 63,5; area euro 87,8; UE 81,7; Grecia 146,1 | Eurostat 2-22042026-BP; Insee IR 78; Bundesbank | Il grafico usa 115,6 per la Francia e lo dichiara. |
+| Spesa 2025 % PIL: Italia 51,1; area euro 49,8; UE 49,5; Francia 57,2; Germania 50,3 (Staatsquote, gennaio 2026) | Eurostat AP; Insee; Destatis | Il dato tedesco è dei conti nazionali di gennaio, non della notifica di aprile: verificare il valore notificato. Spagna non trovata. ⚠ |
+| Entrate 2025 % PIL: Italia 48,0; area euro 46,9; UE 46,4 | Eurostat AP; Istat | Francia e Germania non inserite (sarebbero derivate). |
+| Quote 2024 sul totale della spesa: protezione sociale IT 42,2, FR 41,5, DE 41,3, ES 41,0, UE 40,0; sanità UE 15,0 (IT 13,2 dal cap. 1); affari economici UE 12,4 (IT 10,1); istruzione IT 8,0, FR 8,9, DE 9,1, ES 9,1 | Eurostat Statistics Explained, COFOG 2024 | Le quote italiane 13,2 e 10,1 vengono dal capitolo 1 (Eurostat 2024): coerenti per costruzione. La quota UE dell'istruzione sul totale non è nei frammenti (4,8 % del PIL ≈ 9,8 % della spesa): non usata. |
+| Redditi da capitale pagati 2025: IT 7,6 % della spesa, ES 5,3, UE 3,9, area euro 3,8 | Eurostat 2-22042026-AP | Nel testo "quasi 8" e "4". |
+| "Ultima nell'UE" per l'istruzione | Eurostat, scheda istruzione 2024: "lowest shares: Italy 8,0 %" | Verificare che la classifica sia sul 2024 e non sul 2023. ⚠ |
+| "Quasi il doppio" per gli interessi (7,6 vs 3,9) | Calcolo | Dato derivato. |
+| Quote COFOG in % del PIL per i quattro paesi (protezione sociale IT 21,3, FR 23,7 ecc.) | Eurostat gov_10a_exp | Trovate solo in fonti secondarie: non usate. Da aggiungere per il grafico a punti previsto nel piano, quando ec.europa.eu sarà raggiungibile. |
