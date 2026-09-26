@@ -535,6 +535,71 @@
       ],
       "data_accesso": "2026-09-26",
       "modalita_accesso": "snippet"
+    },
+    {
+      "id": "mef-relazione-evasione-2025",
+      "ente": "MEF, Commissione per la Relazione sull'economia non osservata e sull'evasione fiscale e contributiva",
+      "titolo": "Relazione sull'economia non osservata e sull'evasione fiscale e contributiva, anno 2025 (stime al 2022)",
+      "data_pubblicazione": "2025-10-23",
+      "url": "https://www.mef.gov.it/export/sites/MEF/documenti-pubblicazioni/rapporti-relazioni/documenti/Relazione-evasione-fiscale-e-contributiva-2025_2310_ore1230.pdf",
+      "url_pagina": "https://temi.camera.it/leg19/post/OCD15_15238/pubblicata-relazione-sull-economia-non-osservata-e-sull-evasione-fiscale-e-contributiva-2025",
+      "capitoli": [
+        8,
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "istat-economia-non-osservata-2023",
+      "ente": "Istat",
+      "titolo": "L'economia non osservata nei conti nazionali, anni 2020-2023",
+      "data_pubblicazione": "2025-10-17",
+      "url": "https://www.istat.it/wp-content/uploads/2025/10/Report-ECONOMIA-NON-OSSERVATA-NEI-CONTI-NAZIONALI_ANNO2023.pdf",
+      "capitoli": [
+        8
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "ade-risultati-2025",
+      "ente": "Agenzia delle entrate",
+      "titolo": "Comunicato stampa: risultati 2025 dell'attività di recupero",
+      "data_pubblicazione": "2026-03-25",
+      "url": "https://www.agenziaentrate.gov.it/portale/cs-25-marzo-2026",
+      "capitoli": [
+        8,
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "ec-vat-gap-2025",
+      "ente": "Commissione europea, DG Fiscalità e unione doganale",
+      "titolo": "VAT Gap Report 2025 (dati 2023)",
+      "data_pubblicazione": "2025-12-11",
+      "url": "https://taxation-customs.ec.europa.eu/taxation/vat/fight-against-vat-fraud/vat-gap_en",
+      "url_nota": "URL del PDF del rapporto da individuare",
+      "capitoli": [
+        8,
+        9
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "ocpi-evasione-2025",
+      "ente": "Osservatorio sui conti pubblici italiani, Università Cattolica",
+      "titolo": "Evasione fiscale in calo: le stime aggiornate della Relazione 2025",
+      "data_pubblicazione": "2025-10/11 [DA VERIFICARE]",
+      "url": "https://osservatoriocpi.unicatt.it/ocpi-pubblicazioni-evasione-fiscale-in-calo-le-stime-aggiornate-della-relazione-2025",
+      "capitoli": [
+        8
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
     }
   ]
 }

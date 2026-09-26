@@ -100,3 +100,18 @@ Stato al 26 settembre 2026. La rete dell'ambiente di lavoro blocca tutti i domin
 | Dividendi incassati dal MEF nel 2025 ≈ 3,3 mld | Milano Finanza 19/12/2025 citando il MEF | Non usato perché privo di fonte primaria. Cercare nel Rendiconto generale 2025, capitolo entrate extratributarie. |
 | Consumi intermedi e investimenti fissi lordi 2025 in valore assoluto | Istat, conto PA 22/9/2026 | Non trovati nei frammenti (solo +3,6 % e +9,6 %). Da aggiungere per il raccordo con i 1.158. |
 | Corte dei conti, Sezione autonomie, organismi partecipati: numeri aggregati | Ultima relazione (Download?id=c42e4301-46d5-42fa-acd0-1dce418fc243) | Non trovati nei frammenti: non citata nel capitolo. |
+
+## Capitolo 8 — Evasione
+| Numero | Dove controllare | Nota |
+|---|---|---|
+| Gap complessivo 2022: 98,1–102,5 mld; gap delle imposte 89,7–90,9 (+2,9 sul 2021); propensione 17 % (16,9–17,0); 38,3 % nel 2004 | Relazione 2025, sintesi e tavola del gap | Il gap contributivo è la differenza (≈ 8–12 mld): non scritto esplicitamente. |
+| Propensioni per imposta 2022: IRPEF autonomi e imprese 59,8 %; IMU-TASI 20,9 %; IRES 19,5 %; IVA 18,4 %; IRAP 12 % | Relazione 2025, tavola delle propensioni | Da La legge per tutti e Osservatorio CPI. Un frammento dice "di poco sotto il 60 %", un altro "59,8 %". Mancano accise, canone RAI, contributi e IRPEF dipendenti: aggiungere dalla tavola. ⚠ |
+| Variazioni 2021–2022: IRAP −4,4 punti, accise −4,3, IVA −1,4, IRPEF autonomi −1,1, IRES +1,4 | Relazione 2025 | Non usate nel testo. |
+| IVA evasa: 33 mld nel 2017, 14,6 nel 2021 e nel 2022; gap 2018–2022 a prezzi costanti da 105,8 a 92,6 mld (−14,5 %) | Osservatorio CPI su Relazione 2025 | Fonte secondaria che rilegge la Relazione: verificare nelle tavole. ⚠ |
+| Sommerso 2022: 9,1 % del PIL, 182 mld | Relazione 2025 | Non usato: il capitolo usa Istat 2023. |
+| Istat 2023: 217,5 mld (+7,5 %), 10,2 % PIL (10,1 % nel 2022); sommerso ≈ 198 (+14,9); sottodichiarazione 108,2; lavoro irregolare 77,2; 3.132.000 unità irregolari (+145 mila); illegale 9,2 % dell'economia non osservata | Istat, report 17/10/2025 | "Economia illegale 9,2 %" è una quota, non un valore: non usata. |
+| Agenzia delle entrate 2025: 36,2 mld (+8,4 %); 29 dalla lotta all'evasione (+10 %): 15,9 versamenti dopo atti, 6,9 cartelle, 3,3 compliance; 7,2 per altri enti; AdeR 16,8 (12,3 ordinaria, 4,5 straordinaria); 5,6 mld bloccati; 12.000 partite IVA cessate | Comunicato AdE 25/3/2026 | Il Fatto Quotidiano titola "29 miliardi", Italia Oggi "36,2": due perimetri dello stesso comunicato. |
+| VAT gap 2023: Italia 15 %; UE 9,5 % (128 mld); policy gap Italia 26,2 % | Commissione europea, VAT Gap Report 2025 | Da Tax Foundation e blog specializzati. Il valore in euro per l'Italia non è nei frammenti. |
+| "Coprirebbero il disavanzo 2025 una volta e mezza" | Calcolo: 100 / 69,7 | Dato derivato. |
+| "Gap minimo per le imposte trattenute alla fonte" | Relazione 2025, propensione IRPEF lavoro dipendente | Affermazione non ancora sostenuta da un numero letto: inserire la propensione IRPEF dipendenti dalla tavola, o togliere la frase. ⚠ |
+| Relazione 2026 attesa per fine ottobre 2026 | mef.gov.it | Se esce prima della chiusura del dossier, aggiornare tutto il capitolo alle stime 2023. |
