@@ -654,6 +654,164 @@
       ],
       "data_accesso": "2026-09-26",
       "modalita_accesso": "snippet"
+    },
+    {
+      "id": "oecd-survey-italy-2026",
+      "ente": "OCSE",
+      "titolo": "OECD Economic Surveys: Italy 2026",
+      "data_pubblicazione": "2026-04 [DA VERIFICARE: giorno]",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/04/oecd-economic-surveys-italy-2026_3fd3b6aa/539538b2-en.pdf",
+      "url_pagina": "https://www.oecd.org/en/publications/oecd-economic-surveys-italy-2026_539538b2-en.html",
+      "capitoli": [
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "imf-art4-2026",
+      "ente": "Fondo monetario internazionale",
+      "titolo": "Italy: 2026 Article IV Consultation (staff concluding statement 27/5/2026; press release PR 26/256 del 24/7/2026; staff report)",
+      "data_pubblicazione": "2026-07-24",
+      "url": "https://www.imf.org/en/news/articles/2026/07/24/pr26256-italy-imf-executive-board-concludes-2026-article-iv-consultation",
+      "url_secondari": [
+        "https://www.imf.org/en/news/articles/2026/05/27/mcs-05262026-italy-staff-concluding-statement-of-the-2026-article-iv-mission",
+        "https://www.imf.org/en/publications/cr/issues/2026/07/23/italy-2026-article-iv-consultation-press-release-staff-report-and-statement-by-the-577963"
+      ],
+      "capitoli": [
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "upb-audizione-ddlb-2026",
+      "ente": "Ufficio parlamentare di bilancio",
+      "titolo": "Audizione della Presidente sul disegno di legge di bilancio 2026",
+      "data_pubblicazione": "2025-11-06",
+      "url": "https://www.upbilancio.it/wp-content/uploads/2025/11/Audizione-UPB-DDL-bilancio-2026.pdf",
+      "capitoli": [
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "upb-adeguamento-speranza-vita",
+      "ente": "Ufficio parlamentare di bilancio",
+      "titolo": "Valutazioni sull'adeguamento dei requisiti pensionistici alla speranza di vita 2027-2028 (3,3 e 4,7 mld; +7 punti di debito al 2031)",
+      "data_pubblicazione": "[DA VERIFICARE: documento e data; probabile audizione sul DFP 2026 o Focus 2026]",
+      "url": "https://www.upbilancio.it/it/audizione-dellupb-sul-documento-di-finanza-pubblica-2026/",
+      "capitoli": [
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "mef-relazione-spending-review-2025",
+      "ente": "MEF",
+      "titolo": "Relazione sulla revisione della spesa 2025 (219 misure, 3.190,2 mln)",
+      "data_pubblicazione": "2026-07-02 [DA VERIFICARE]",
+      "url": "https://www.mef.gov.it/export/sites/MEF/attuazione-misure-pnrr/documenti/Relazione-spending-review.pdf",
+      "url_nota": "verificare che il PDF sia l'edizione 2025 e non una precedente",
+      "capitoli": [
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "legambiente-sad-2026",
+      "ente": "Legambiente",
+      "titolo": "Rapporto Stop sussidi ambientalmente dannosi 2026",
+      "data_pubblicazione": "2026-03-17",
+      "url": "https://www.ilfattoquotidiano.it/2026/03/17/sussidi-ambientalmente-dannosi-italia-436miliardi-notizie/8326982/",
+      "url_nota": "fonte secondaria: sostituire con l'URL del rapporto su legambiente.it",
+      "capitoli": [
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "confagricoltura-gasolio",
+      "ente": "Confagricoltura (sede di Rovigo)",
+      "titolo": "Gasolio agricolo: insostenibile il taglio delle agevolazioni",
+      "data_pubblicazione": "[DA VERIFICARE]",
+      "url": "https://www.confagricolturaro.it/confagricoltura-informa/tecnico/macchine-e-attrezzature/gasolio-agricolo-insostenibile-il-taglio-delle-agevolazioni/",
+      "capitoli": [
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "cndcec-stati-generali-2025",
+      "ente": "Consiglio nazionale dei dottori commercialisti",
+      "titolo": "Stati generali 2025, intervento del presidente De Nuccio (resoconto Fiscal Focus)",
+      "data_pubblicazione": "2025 [DA VERIFICARE]",
+      "url": "https://www.fiscal-focus.it/stati-generali-commercialisti-2025-de-nuccio-taglio-tasse-ceto-medio-lotta-evasione,3,173913",
+      "url_nota": "fonte secondaria",
+      "capitoli": [
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "cgil-pensioni-2026",
+      "ente": "FISAC-CGIL / CGIL",
+      "titolo": "Posizioni su manovra 2026 e pensioni",
+      "data_pubblicazione": "2025-11 [DA VERIFICARE]",
+      "url": "https://www.fisac-cgil.it/155432/pensioni-anche-la-previdenza-complementare-nel-mirino-del-governo",
+      "capitoli": [
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "cande-esposto",
+      "ente": "CANDE - Class Action Nazionale dell'Edilizia",
+      "titolo": "Esposto alla Procura generale della Corte dei conti sui crediti incagliati (resoconto LavoriPubblici)",
+      "data_pubblicazione": "[DA VERIFICARE]",
+      "url": "https://www.lavoripubblici.it/news/superbonus-crediti-fiscali-incagliati-cande-chiama-corte-conti-35584",
+      "url_secondari": [
+        "https://www.lavoripubblici.it/news/crediti-incagliati-nuovo-appello-esodati-superbonus-34100"
+      ],
+      "url_nota": "fonte secondaria",
+      "capitoli": [
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "invitalia-razionalizzazione-partecipate",
+      "ente": "Invitalia, con MIMIT e ANCI",
+      "titolo": "Razionalizzazione delle partecipate degli enti pubblici: istruzioni per l'uso",
+      "data_pubblicazione": "[DA VERIFICARE]",
+      "url": "https://www.invitalia.it/news-media/storie/razionalizzazione-delle-partecipate-degli-enti-pubblici-istruzioni-luso",
+      "capitoli": [
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "cdc-autonomie-partecipate-2025",
+      "ente": "Corte dei conti, Sezione delle autonomie",
+      "titolo": "Gli organismi partecipati dagli enti territoriali e sanitari, referto 2025",
+      "data_pubblicazione": "2025 [DA VERIFICARE]",
+      "url": "https://www.corteconti.it/Download?id=c42e4301-46d5-42fa-acd0-1dce418fc243",
+      "url_nota": "verificare che sia l'edizione 2025",
+      "capitoli": [
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
     }
-  ]
+  ],
+  "nota_finale": "Elenco chiuso il 26 settembre 2026 con i dieci capitoli. Le fonti con modalita_accesso 'snippet' vanno riaperte una per una: vedi VERIFICHE.md."
 }

@@ -87,7 +87,7 @@ footer{margin:3rem 0 2.5rem;padding-top:1.2rem;border-top:2px solid var(--ink);f
 .indice li::before{counter-increment:cap;content:counter(cap);font-family:var(--serif);font-size:1.35rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
 .indice a{font-family:var(--serif);font-size:1.2rem;text-decoration:none}
 .indice a:hover{text-decoration:underline}
-.indice small{display:block;color:var(--ink-2);font-size:.88rem;font-family:var(--sans)}
+.indice small{display:block;grid-column:2;color:var(--ink-2);font-size:.88rem;font-family:var(--sans)}
 .indice .presto a{color:var(--ink-2);pointer-events:none}
 .cap{margin-top:4.5rem}
 .cap>header{padding:2.2rem 0 1rem;border-bottom:1px solid var(--rule)}
@@ -108,6 +108,14 @@ footer{margin:3rem 0 2.5rem;padding-top:1.2rem;border-top:2px solid var(--ink);f
 .legenda i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:.4rem}
 .dv{background:var(--oro);color:#fff;font-size:.72em;padding:.05em .4em;border-radius:3px;font-weight:600;white-space:nowrap}
 
+/* --- Schede delle opzioni (capitolo 10) --- */
+.opz{border-top:2px solid var(--ink);margin-top:2rem;padding-top:.6rem}
+.opz h4{font-family:var(--serif);font-weight:500;font-size:1.35rem;margin:.2rem 0 .6rem;line-height:1.2}
+.opz dl{margin:0;display:grid;grid-template-columns:7.5rem 1fr;gap:.45rem .9rem}
+.opz dt{font-weight:600;font-size:.9rem;color:var(--ink-2);padding-top:.1rem}
+.opz dd{margin:0;max-width:62ch;font-size:.97rem}
+@media (max-width:480px){.opz dl{grid-template-columns:1fr;gap:.15rem .9rem}.opz dd{margin-bottom:.5rem}}
+
 @media print{
   :root{--paper:#fff;--ink:#000;--ink-2:#333;--rule:#bbb;--wash:#f2f2f2}
   body{font-size:11.5pt}
@@ -115,7 +123,7 @@ footer{margin:3rem 0 2.5rem;padding-top:1.2rem;border-top:2px solid var(--ink);f
   a{color:#000;text-decoration:none}
   .fonti a::after{content:" (" attr(href) ")";font-size:.8em;color:#555}
   .cap{break-before:page;margin-top:0}
-  .grafico,.conto,.metodo{break-inside:avoid}
+  .grafico,.conto,.metodo,.opz{break-inside:avoid}
   .cento-bar span,.barre .t span{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
 @media (prefers-reduced-motion: no-preference){
@@ -140,7 +148,7 @@ footer{margin:3rem 0 2.5rem;padding-top:1.2rem;border-top:2px solid var(--ink);f
       <li><a href="#cap-7">Appalti e partecipate: 310 miliardi di gare e 963 mila dipendenti</a><small>Cosa compra lo Stato, quante società possiede, quante sono in perdita.</small></li>
       <li><a href="#cap-8">Evasione: i 100 miliardi che non entrano</a><small>Quanto manca, chi evade di più, quanto si recupera.</small></li>
       <li><a href="#cap-9">Italia contro Europa: spendiamo come gli altri, ma per cose diverse</a><small>Debito, disavanzo e priorità di spesa a confronto con Francia, Germania, Spagna e area euro.</small></li>
-      <li class="presto"><a href="#cap-10">Le opzioni sul tavolo</a><small>In lavorazione.</small></li>
+      <li><a href="#cap-10">Le opzioni sul tavolo: sette misure, con il conto</a><small>Quanto vale ogni scelta, chi la propone, chi ci perde, cosa obiettano i critici.</small></li>
     </ol>
   </div>
 </header>
@@ -743,7 +751,140 @@ footer{margin:3rem 0 2.5rem;padding-top:1.2rem;border-top:2px solid var(--ink);f
       <p>I "redditi da capitale pagati" sono per la quasi totalità interessi: è la voce che Eurostat pubblica per tutti i paesi nella notifica di aprile. Per la Francia il debito è 115,6 % secondo Insee e 116,0 % secondo Eurostat: differenze di arrotondamento e di data. Il dato tedesco sulla spesa viene dai conti nazionali di gennaio 2026 e può essere rivisto nella notifica.</p>
     </div>
   </section>
-  <p class="torna"><a href="#cap-8">← Capitolo 8</a> · <a href="#top">Indice</a></p>
+  <p class="torna"><a href="#cap-8">← Capitolo 8</a> · <a href="#cap-10">Capitolo 10: le opzioni sul tavolo →</a> · <a href="#top">Indice</a></p>
+</article>
+
+<!-- ============================================================ CAPITOLO 10 -->
+<article class="cap" id="cap-10" aria-labelledby="t10">
+  <header>
+    <p class="serie"><b>Dove vanno 1.158 miliardi</b> — capitolo 10 di 10</p>
+    <h2 class="titolo" id="t10">Le opzioni sul tavolo: sette misure, con il conto</h2>
+    <p class="lede">Sette misure di cui discutono istituzioni e organismi indipendenti. Per ciascuna: quanto vale, chi la propone, chi ci perde, cosa obiettano i critici. Nessuna è la soluzione. Nessuna è gratis.</p>
+  </header>
+
+  <section class="grafico" aria-labelledby="c10-g">
+    <h3 id="c10-g" style="margin-top:2.2rem">Quanto è in gioco, quanto è già stato preso</h3>
+    <p>Per ogni misura, la barra chiara è il valore massimo teorico che le fonti indicano; quella scura è quanto si è già ottenuto o programmato. La distanza tra le due è lo spazio della discussione. Miliardi di euro l'anno; il disavanzo 2025 vale 69,7.</p>
+    <div class="barre" role="img" aria-label="Cinque coppie di barre in miliardi di euro: agevolazioni fiscali, 122,6 censite, di cui 40,3 in esaurimento entro il 2028; evasione, 100 di gap, 29 recuperati nel 2025; sussidi dannosi per l'ambiente, 22,4, di cui 5,5 da tagliare entro il 2030; revisione della spesa, 22 chiesti dal FMI, 3,2 certificati nel 2025; pensioni, 4,7 di costo evitato nel 2028 con l'adeguamento all'età, 4,7 già in legge">
+      <div class="r"><div class="l"><span><b>Agevolazioni fiscali</b>: censite 122,6, in esaurimento da sole entro il 2028</span><span class="v">122,6 <small>→ 40,3</small></span></div><div class="t"><span style="width:32.9%;background:var(--blu)"></span><span style="width:67.1%;background:#c9d1dc"></span></div></div>
+      <div class="r"><div class="l"><span><b>Evasione</b>: gap stimato, recuperato nel 2025</span><span class="v">≈ 100 <small>→ 29</small></span></div><div class="t"><span style="width:23.7%;background:var(--blu)"></span><span style="width:57.9%;background:#c9d1dc"></span></div></div>
+      <div class="r"><div class="l"><span><b>Sussidi dannosi per l'ambiente</b>: catalogo 2025, taglio previsto dal PNRR entro il 2030</span><span class="v">22,4 <small>→ 5,5</small></span></div><div class="t"><span style="width:4.5%;background:var(--blu)"></span><span style="width:13.8%;background:#c9d1dc"></span></div></div>
+      <div class="r"><div class="l"><span><b>Revisione della spesa</b>: sforzo aggiuntivo chiesto dal FMI, risparmi certificati nel 2025</span><span class="v">≈ 22 <small>→ 3,2</small></span></div><div class="t"><span style="width:2.6%;background:var(--blu)"></span><span style="width:15.4%;background:#c9d1dc"></span></div></div>
+      <div class="r"><div class="l"><span><b>Pensioni</b>: adeguamento dell'età alla speranza di vita, costo evitato nel 2028, già in legge</span><span class="v">4,7 <small>→ 4,7</small></span></div><div class="t"><span style="width:3.8%;background:var(--blu)"></span></div></div>
+    </div>
+    <ul class="legenda" aria-hidden="true">
+      <li><i style="background:var(--blu)"></i>ottenuto o già deciso</li>
+      <li><i style="background:#c9d1dc"></i>valore teorico ancora sul tavolo</li>
+    </ul>
+    <p class="grafico-fonte">Partecipate e crediti edilizi non hanno una barra: le fonti non stimano un risparmio annuo. Il valore del FMI è l'1 % del PIL 2025 (2.265 mld). Fonti: MEF, Rapporto spese fiscali 2025; MEF, Relazione 2025 sull'evasione e Agenzia delle entrate, 25 marzo 2026; MASE, Catalogo 2026 e PNRR; MEF, Relazione sulla revisione della spesa 2025; FMI, Article IV 2026; UPB sull'adeguamento 2027–2028.</p>
+  </section>
+
+  <section aria-labelledby="c10-s">
+    <h3 id="c10-s">Le sette schede</h3>
+    <p>Ogni scheda riporta quattro cose: il valore, chi propone la misura, chi ci perde, la principale obiezione documentata. Le opinioni sono attribuite; i numeri hanno la fonte in fondo al capitolo.</p>
+
+    <div class="opz">
+      <h4>1. Riordinare le agevolazioni fiscali</h4>
+      <dl>
+        <dt>Valore</dt><dd>573 misure per 122,6 mld di minor gettito nel 2026 secondo il MEF; 119 mld (5,3 % del PIL) secondo la Corte dei conti; 134 mld (5,7 %) secondo il FMI. Nessuna fonte stima quanto sarebbe davvero incassabile: le misure sono valutate una per una, e le più grandi, sui bonus edilizi, si esauriscono da sole.</dd>
+        <dt>Chi la propone</dt><dd>La Corte dei conti (relazione sul rendiconto 2025, 24 giugno 2026: "una revisione organica non è ancora avvenuta"); il FMI (Article IV 2026: "razionalizzare le spese fiscali e allargare la base imponibile"); l'OCSE (Economic Survey 2026: sistema fiscale "più favorevole alla crescita").</dd>
+        <dt>Chi ci perde</dt><dd>Chi usa le detrazioni: famiglie con spese sanitarie, mutui, ristrutturazioni; imprese con crediti d'imposta; i regimi agevolati come la flat tax degli autonomi, che il FMI propone di eliminare.</dd>
+        <dt>Obiezioni</dt><dd>L'Ufficio parlamentare di bilancio, sul bilancio 2026 (6 novembre 2025): il tetto alle detrazioni sopra 75.000 euro è "un passo", ma serve "un approccio più organico, anche per evitare di aumentare la complessità del sistema". I commercialisti: l'11,2 % dei contribuenti tra 40.000 e 120.000 euro paga già il 36,4 % dell'IRPEF netta, e i tagli alle detrazioni colpiscono soprattutto loro.</dd>
+      </dl>
+    </div>
+
+    <div class="opz">
+      <h4>2. Far pagare le tasse dovute</h4>
+      <dl>
+        <dt>Valore</dt><dd>Gap di circa 100 mld l'anno (2022); recuperati 29 mld nel 2025 dalla lotta all'evasione, 36,2 con la riscossione per altri enti. La propensione a evadere è scesa dal 38 % al 17 % in vent'anni: la parte facile è già stata fatta.</dd>
+        <dt>Chi la propone</dt><dd>Il FMI (compliance, catasto aggiornato, fine della flat tax per gli autonomi); l'OCSE ("rafforzare la compliance"); la Commissione che scrive la Relazione MEF, con la fatturazione elettronica e i controlli incrociati.</dd>
+        <dt>Chi ci perde</dt><dd>Chi non versa: soprattutto autonomi e piccole imprese, con una propensione al gap del 60 % sull'IRPEF. E, per i controlli e gli adempimenti, anche chi paga già.</dd>
+        <dt>Obiezioni</dt><dd>L'UPB avverte che il gettito da misure una tantum e da concentrazioni settoriali "solleva interrogativi sulla stabilità del gettito negli anni successivi". Il concordato preventivo biennale, pensato per far emergere reddito, ha chiuso la seconda edizione con circa 55.000 adesioni. Parte del recupero è tasse di anni passati, non entrate nuove ogni anno.</dd>
+      </dl>
+    </div>
+
+    <div class="opz">
+      <h4>3. Tagliare i sussidi dannosi per l'ambiente</h4>
+      <dl>
+        <dt>Valore</dt><dd>22,4 mld nel 2025 secondo il Catalogo del Ministero dell'ambiente: 11,6 sull'energia, 9,6 di IVA agevolata, 1,1 sui trasporti. Il PNRR impegna l'Italia a tagliarne almeno 2 mld entro dicembre 2026 e altri 3,5 entro il 2030. Legambiente chiede di eliminare i 23 mld alle fonti fossili entro il 2030.</dd>
+        <dt>Chi la propone</dt><dd>Il PNRR (riforma sui sussidi), il Catalogo MASE che li elenca ogni anno, Legambiente (rapporto "Stop sussidi ambientalmente dannosi" 2026).</dd>
+        <dt>Chi ci perde</dt><dd>Agricoltori (sconti su accise e IVA per 1,7 mld), autotrasportatori (rimborso accise sul gasolio per 1,1 mld), famiglie che pagano l'IVA ridotta su energia e gas.</dd>
+        <dt>Obiezioni</dt><dd>Confagricoltura ha chiesto il ritiro dell'ipotesi di ridurre l'agevolazione sul gasolio agricolo del 10 % l'anno: "un raddoppio del costo del gasolio metterebbe in crisi serre e allevamenti". Il governo nel 2026 ha introdotto un credito d'imposta sul gasolio agricolo, nella direzione opposta.</dd>
+      </dl>
+    </div>
+
+    <div class="opz">
+      <h4>4. Spendere meglio: la revisione della spesa</h4>
+      <dl>
+        <dt>Valore</dt><dd>Il FMI chiede uno sforzo aggiuntivo di circa l'1 % del PIL nel 2026–2027, oltre 22 mld, puntando su efficienza della spesa e base imponibile. La revisione della spesa 2025 del MEF ha certificato 219 misure per 3,19 mld; l'obiettivo dei ministeri per il 2026 è 2,6 mld.</dd>
+        <dt>Chi la propone</dt><dd>Il FMI ("una revisione della spesa completa, anche con la digitalizzazione"); l'OCSE ("aumentare l'efficienza della spesa"); il Piano strutturale di bilancio 2025–2029, che impone valutazioni annuali su almeno l'1 % delle risorse dei ministeri.</dd>
+        <dt>Chi ci perde</dt><dd>I ministeri e gli enti che vedono ridotti gli stanziamenti; gli utenti dei servizi tagliati, se i risparmi sono lineari e non di efficienza.</dd>
+        <dt>Obiezioni</dt><dd>I 3,19 mld certificati nel 2025 sono lo 0,3 % della spesa pubblica: dieci anni di revisioni della spesa hanno prodotto risparmi di quest'ordine, e la Corte dei conti nella relazione sul rendiconto 2025 lega il disavanzo sopra le attese ai crediti edilizi, non alla spesa corrente. L'efficienza si misura in anni, il disavanzo in mesi.</dd>
+      </dl>
+    </div>
+
+    <div class="opz">
+      <h4>5. Pensioni: età, uscite anticipate, indicizzazione</h4>
+      <dl>
+        <dt>Valore</dt><dd>La spesa pensionistica vale il 15,2 % del PIL nel 2025 e salirà al 17,1 % verso il 2040. L'adeguamento dell'età alla speranza di vita, un mese nel 2027 e tre dal 2028, è già in legge: sospenderlo costerebbe 3,3 mld nel 2027 e 4,7 nel 2028 secondo l'UPB, e senza adeguamenti il debito salirebbe di 7 punti di PIL entro il 2031.</dd>
+        <dt>Chi la propone</dt><dd>L'OCSE ("contenere la spesa pensionistica"); il FMI ("alzare l'età effettiva di pensionamento per avvicinarla a quella legale"); l'UPB ("mantenere l'adeguamento automatico"). Quota 103 e Opzione donna sono finite nel 2026.</dd>
+        <dt>Chi ci perde</dt><dd>Chi è vicino alla pensione e vede spostarsi la data; i pensionati, quando l'indicizzazione all'inflazione è parziale; le carriere discontinue, che con il contributivo arrivano a pensioni basse.</dd>
+        <dt>Obiezioni</dt><dd>CGIL e SPI: la manovra 2026 "riduce i canali di flessibilità in uscita senza affrontare le debolezze strutturali", e chiedono il recupero pieno dell'inflazione sugli assegni bassi; stimano in circa 5.000 euro sull'intera pensione la perdita da taglio dei coefficienti per un reddito di 30.000 euro. Itinerari Previdenziali ricorda che il sistema contributivo è già in equilibrio e che il problema è l'assistenza, non le pensioni.</dd>
+      </dl>
+    </div>
+
+    <div class="opz">
+      <h4>6. Riordinare le partecipate</h4>
+      <dl>
+        <dt>Valore</dt><dd>4.867 società soggette al Testo unico, 196 in perdita su 2.833 con bilancio (6,9 %). Nessuna delle fonti lette stima un risparmio annuo dalla loro riduzione: <span class="dv">DA VERIFICARE</span> nel referto della Corte dei conti l'importo delle perdite ripianate dagli enti.</dd>
+        <dt>Chi la propone</dt><dd>Il Testo unico del 2016 obbliga ogni ente a un piano annuale di razionalizzazione: fusioni, cessioni, chiusure. La Corte dei conti, Sezione delle autonomie, nel referto 2025 segnala che solo due terzi degli enti con partecipazioni ha una struttura di controllo e che gli obblighi di razionalizzazione restano in parte inattuati.</dd>
+        <dt>Chi ci perde</dt><dd>I Comuni che usano le società per servizi locali (acqua, rifiuti, trasporti, farmacie), i loro dipendenti, e i cittadini se il servizio passa a un gestore più caro o più lontano.</dd>
+        <dt>Obiezioni</dt><dd>Le linee guida Invitalia-ANCI sulla razionalizzazione indicano come criterio l'aggregazione delle società che gestiscono servizi pubblici locali, non la chiusura: i Comuni sostengono che molte partecipate erogano servizi che nessun privato farebbe alle stesse condizioni. Il MEF conta più di 900 mila addetti nelle partecipate: ogni riordino è anche una questione di lavoro.</dd>
+      </dl>
+    </div>
+
+    <div class="opz">
+      <h4>7. Chiudere i conti dei crediti edilizi</h4>
+      <dl>
+        <dt>Valore</dt><dd>Costo finale stimato del Superbonus 165,5 mld secondo la Corte dei conti; 38,3 mld di compensazioni nel 2025; 4,1 mld di crediti a rischio di illecito nel solo 2025; 9,3 mld di falsi crediti sequestrati dalla Guardia di finanza. Non c'è un risparmio da fare, ma un'uscita da limitare: i crediti già maturati si pagano comunque.</dd>
+        <dt>Chi la propone</dt><dd>La Corte dei conti (controlli sui crediti irregolari, nella relazione sul rendiconto 2025); la Corte dei conti europea (relazione 20/2026: 9,72 euro per chilowattora risparmiato, "la misura più costosa e meno efficiente"); dal 2026 i controlli dell'Agenzia delle entrate si concentrano sui condomini che hanno ceduto il credito.</dd>
+        <dt>Chi ci perde</dt><dd>Imprese e famiglie con crediti "incagliati", cioè non ancora ceduti o compensati: le associazioni degli interessati stimano oltre 15 mld di crediti fermi, con sconti fino al 58 % per chi li vende agli intermediari. Chi ha fatto lavori regolari e finisce nei controlli.</dd>
+        <dt>Obiezioni</dt><dd>CANDE, associazione di oltre 250 imprese e professionisti, ha presentato un esposto alla Procura della Corte dei conti: contesta la classificazione contabile dei crediti 2023 come "pagabili" e chiede un meccanismo di rimborso per i crediti incagliati. Gli "esodati del Superbonus" avvertono che i fallimenti a catena costerebbero allo Stato ammortizzatori e gettito perduto.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section aria-labelledby="c10-f">
+    <h3 id="c10-f">Cosa vuol dire, in tre frasi</h3>
+    <ul class="frasi">
+      <li><b>Le cifre grandi non sono incassabili per intero.</b> 122 miliardi di agevolazioni e 100 di evasione sono stock stimati: ogni euro in più recuperato costa più del precedente, e le fonti indipendenti non danno un numero per il gettito realistico.</li>
+      <li><b>Le misure già decise pesano più di quelle discusse.</b> L'adeguamento dell'età pensionabile vale 4,7 miliardi nel 2028; il taglio ai sussidi previsto dal PNRR 5,5 entro il 2030; la revisione della spesa 3,2 l'anno. Insieme non arrivano a un quarto del disavanzo 2025.</li>
+      <li><b>Ogni misura ha un perdente con nome e cognome.</b> Agricoltori, autotrasportatori, chi detrae, chi va in pensione, i Comuni, la filiera edilizia: per questo le opzioni restano sul tavolo. Il dossier finisce qui; la decisione è politica e spetta a chi vota.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="c10-fo">
+    <h3 id="c10-fo">Fonti</h3>
+    <ul class="fonti">
+      <li><b>OCSE</b>, Economic Surveys: Italy 2026, aprile 2026: contenere la spesa pensionistica, aumentare l'efficienza della spesa, rafforzare la compliance, sistema fiscale più favorevole alla crescita; spesa pubblica settima più alta dell'OCSE. <a href="https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/04/oecd-economic-surveys-italy-2026_3fd3b6aa/539538b2-en.pdf">Economic Survey Italy 2026 (PDF)</a></li>
+      <li><b>Fondo monetario internazionale</b>, Italy: 2026 Article IV Consultation, dichiarazione conclusiva del 27 maggio 2026 e comunicato del 24 luglio 2026: sforzo aggiuntivo di circa l'1 % del PIL nel 2026–2027, spese fiscali al 5,7 % del PIL (134 mld) nel 2026, eliminare la flat tax degli autonomi, aggiornare il catasto, alzare l'età effettiva di pensionamento. <a href="https://www.imf.org/en/news/articles/2026/05/27/mcs-05262026-italy-staff-concluding-statement-of-the-2026-article-iv-mission">concluding statement</a>; <a href="https://www.imf.org/en/news/articles/2026/07/24/pr26256-italy-imf-executive-board-concludes-2026-article-iv-consultation">comunicato PR 26/256</a></li>
+      <li><b>Ufficio parlamentare di bilancio</b>, audizione sul disegno di legge di bilancio 2026, 6 novembre 2025: sulle spese fiscali "un approccio più organico"; sulla stabilità del gettito da misure concentrate; sull'adeguamento dei requisiti alla speranza di vita: 3,3 mld nel 2027 e 4,7 nel 2028 di maggiore spesa se sospeso, +7 punti di debito entro il 2031 senza adeguamenti. <a href="https://www.upbilancio.it/wp-content/uploads/2025/11/Audizione-UPB-DDL-bilancio-2026.pdf">Audizione-UPB-DDL-bilancio-2026.pdf</a>; <a href="https://www.upbilancio.it/it/audizione-dellupb-sul-documento-di-finanza-pubblica-2026/">audizione sul DFP 2026</a></li>
+      <li><b>Corte dei conti</b>, Relazione sul rendiconto generale dello Stato 2025, 24 giugno 2026: spese fiscali 119 mld, "revisione organica non ancora avvenuta", crediti edilizi a rischio 4,1 mld; <b>Sezione delle autonomie</b>, referto 2025 sugli organismi partecipati. <a href="https://www.corteconti.it/Home/Organizzazione/UfficiCentraliRegionali/UffSezRiuniteSedeControllo/RelRendiconto">parificazione 2025</a>; <a href="https://www.corteconti.it/Download?id=c42e4301-46d5-42fa-acd0-1dce418fc243">referto partecipate (PDF)</a></li>
+      <li><b>MEF</b>, Relazione sulla revisione della spesa 2025 (219 misure, 3.190,2 mln), trasmessa con il rendiconto il 2 luglio 2026; Piano strutturale di bilancio 2025–2029. <a href="https://www.mef.gov.it/export/sites/MEF/attuazione-misure-pnrr/documenti/Relazione-spending-review.pdf">Relazione-spending-review.pdf</a></li>
+      <li><b>MASE</b>, Catalogo dei sussidi ambientalmente dannosi e favorevoli 2026, 16 luglio 2026; PNRR, riforma sui sussidi: −2 mld entro dicembre 2026, −3,5 mld entro il 2030. <a href="https://www.mase.gov.it/portale/catalogo-dei-sussidi-ambientalmente-dannosi-e-dei-sussidi-ambientalmente-favorevoli">pagina del Catalogo</a></li>
+      <li><b>Legambiente</b>, rapporto "Stop sussidi ambientalmente dannosi" 2026: 20,6 mld alle fonti fossili nel 2025, 23 mld da eliminare entro il 2030. <a href="https://www.ilfattoquotidiano.it/2026/03/17/sussidi-ambientalmente-dannosi-italia-436miliardi-notizie/8326982/">resoconto (Il Fatto Quotidiano, 17 marzo 2026)</a></li>
+      <li><b>Confagricoltura</b>, "Gasolio agricolo: insostenibile il taglio delle agevolazioni". <a href="https://www.confagricolturaro.it/confagricoltura-informa/tecnico/macchine-e-attrezzature/gasolio-agricolo-insostenibile-il-taglio-delle-agevolazioni/">confagricolturaro.it</a></li>
+      <li><b>Consiglio nazionale dei commercialisti</b>, Stati generali 2025: contribuenti tra 40.000 e 120.000 euro, 11,2 % del totale, versano il 36,4 % dell'IRPEF netta. <a href="https://www.fiscal-focus.it/stati-generali-commercialisti-2025-de-nuccio-taglio-tasse-ceto-medio-lotta-evasione,3,173913">resoconto (Fiscal Focus)</a></li>
+      <li><b>CGIL e SPI-CGIL</b>, posizioni sulla manovra 2026 e sulle pensioni. <a href="https://www.fisac-cgil.it/155432/pensioni-anche-la-previdenza-complementare-nel-mirino-del-governo">fisac-cgil.it</a>; <b>Itinerari Previdenziali</b>, XIII Rapporto (capitolo 2).</li>
+      <li><b>CANDE</b>, esposto alla Procura generale della Corte dei conti sui crediti incagliati; <b>Esodati del Superbonus</b>, stime sui crediti fermi. <a href="https://www.lavoripubblici.it/news/superbonus-crediti-fiscali-incagliati-cande-chiama-corte-conti-35584">resoconto (LavoriPubblici)</a>; <a href="https://www.lavoripubblici.it/news/crediti-incagliati-nuovo-appello-esodati-superbonus-34100">appello degli Esodati</a></li>
+      <li><b>Invitalia, MIMIT e ANCI</b>, linee guida per la razionalizzazione delle partecipate. <a href="https://www.invitalia.it/news-media/storie/razionalizzazione-delle-partecipate-degli-enti-pubblici-istruzioni-luso">invitalia.it</a></li>
+    </ul>
+    <div class="metodo">
+      <p><b>Come leggere queste schede.</b> Le misure sono quelle che ricorrono nei documenti di OCSE, FMI, UPB e Corte dei conti del 2025 e 2026: non sono le uniche possibili, e l'ordine non è una classifica. I valori sono di natura diversa: uno stock stimato (agevolazioni, evasione), un flusso annuo (sussidi, revisione della spesa), un costo evitato (pensioni). Sommarli non ha senso. Le posizioni dei critici sono riportate come le hanno espresse, con la fonte: dove la fonte è un resoconto di stampa, è indicato.</p>
+      <p>Questo capitolo non dice cosa fare. Dice quanto vale ogni scelta e chi la paga, perché la discussione pubblica parta dai numeri e non dai titoli.</p>
+    </div>
+  </section>
+  <p class="torna"><a href="#cap-9">← Capitolo 9</a> · <a href="#top">Indice</a></p>
 </article>
 
 </main>

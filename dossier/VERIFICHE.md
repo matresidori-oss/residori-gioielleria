@@ -1,6 +1,6 @@
 # Verifiche a mano
 
-Stato al 26 settembre 2026. La rete dell'ambiente di lavoro blocca tutti i domini delle fonti primarie (solo GitHub è raggiungibile), quindi i numeri dei capitoli dal 2 in poi sono stati estratti da risultati di ricerca che citano i documenti, **non leggendo i documenti**. Ogni riga qui sotto va ricontrollata aprendo il PDF indicato. Le voci segnate ⚠ sono quelle su cui ho un dubbio specifico.
+Stato al 26 settembre 2026, dossier completo con dieci capitoli. La rete dell'ambiente di lavoro blocca tutti i domini delle fonti primarie (solo GitHub è raggiungibile), quindi i numeri dei capitoli dal 2 in poi sono stati estratti da risultati di ricerca che citano i documenti, **non leggendo i documenti**. Ogni riga qui sotto va ricontrollata aprendo il PDF indicato. Le voci segnate ⚠ sono quelle su cui ho un dubbio specifico.
 
 ## Capitolo 1 — La mappa
 | Numero | Dove controllare | Nota |
@@ -128,3 +128,30 @@ Stato al 26 settembre 2026. La rete dell'ambiente di lavoro blocca tutti i domin
 | "Ultima nell'UE" per l'istruzione | Eurostat, scheda istruzione 2024: "lowest shares: Italy 8,0 %" | Verificare che la classifica sia sul 2024 e non sul 2023. ⚠ |
 | "Quasi il doppio" per gli interessi (7,6 vs 3,9) | Calcolo | Dato derivato. |
 | Quote COFOG in % del PIL per i quattro paesi (protezione sociale IT 21,3, FR 23,7 ecc.) | Eurostat gov_10a_exp | Trovate solo in fonti secondarie: non usate. Da aggiungere per il grafico a punti previsto nel piano, quando ec.europa.eu sarà raggiungibile. |
+
+## Capitolo 10 — Le opzioni sul tavolo
+| Numero | Dove controllare | Nota |
+|---|---|---|
+| FMI: sforzo aggiuntivo ≈ 1 % del PIL nel 2026–2027; spese fiscali 5,7 % del PIL (≈ 134 mld) nel 2026; eliminare la flat tax degli autonomi; aggiornare il catasto; alzare l'età effettiva di pensionamento | FMI, PR 26/256 (24/7/2026) e concluding statement (27/5/2026) | Da imf.org. "≈ 22 mld" nel grafico = 1 % di 2.265: derivato. |
+| OCSE 2026: contenere la spesa pensionistica, efficienza della spesa, compliance; spesa pubblica settima nell'OCSE vicino al 50 % | OCSE, Economic Survey Italy 2026, sintesi | Da oecd.org. Nessuna stima numerica delle raccomandazioni trovata. |
+| UPB: "approccio più organico" alle spese fiscali; stabilità del gettito da misure concentrate | Audizione DDL bilancio 2026, 6/11/2025 | Citazioni riportate da frammenti: verificare il testo esatto. ⚠ |
+| UPB: sospendere l'adeguamento 2027–2028 costa 3,3 mld (2027) e 4,7 (2028), 2,7 e 3,8 sul deficit; senza adeguamenti +7 punti di debito al 2031 e +20 al 2041 | UPB: documento da identificare (informazionefiscale e businessonline citano l'UPB) | Documento e data non individuati. ⚠ |
+| Adeguamento: +1 mese nel 2027, +3 dal 2028 (67 anni e 1 mese; 67 e 3 mesi) | Decreto MEF-Lavoro sull'adeguamento; RGS | Da patronato ENASC e stampa. |
+| Spending review 2025: 219 misure, 3.190,2 mln; obiettivo ministeri 2026: 2,6 mld; PSB: valutazioni su almeno 1 % delle risorse l'anno e 10 % nel periodo | MEF, Relazione spending review; PSB 2025–2029 | Verificare che il PDF collegato sia l'edizione 2025. "0,3 % della spesa" = 3,19/1.158: derivato. |
+| Corte dei conti: spese fiscali 119 mld, "revisione organica non ancora avvenuta"; 357 misure IRPEF per 108 mld | Relazione sul rendiconto 2025 | I 357/108 non usati nel testo. |
+| PNRR: taglio SAD ≥ 2 mld entro dicembre 2026 e ulteriori 3,5 entro il 2030; Legambiente: 20,6 mld alle fossili nel 2025, 23 mld da eliminare entro il 2030; agricoltori 1,7 mld di sconti, autotrasporto 1,1 mld di rimborsi | PNRR M2 riforma; Legambiente rapporto 2026; Vaielettrico su Catalogo | I 1,7 e 1,1 mld vengono da un articolo che riassume il Catalogo: verificare nel Catalogo. Nel grafico "5,5" = 2 + 3,5. ⚠ |
+| Confagricoltura: "raddoppio del costo del gasolio metterebbe in crisi serre e allevamenti", contro la riduzione del 10 % l'anno fino al 2040 | Pagina Confagricoltura Rovigo | Data della presa di posizione da inserire; verificare che l'ipotesi di taglio citata sia ancora attuale. ⚠ |
+| Commercialisti: 11,2 % dei contribuenti (40.000–120.000 €) versa il 36,4 % dell'IRPEF netta | Stati generali 2025, De Nuccio | Fonte secondaria. |
+| Concordato preventivo biennale: seconda edizione con ≈ 55.000 adesioni | Il Fatto Quotidiano 2/10/2025 su dati MEF | Fonte secondaria: verificare con il comunicato MEF. ⚠ |
+| CGIL/SPI: perdita ≈ 5.000 € sull'intera pensione per un reddito di 30.000 € dal taglio dei coefficienti; "riduce i canali di flessibilità in uscita" | FISAC-CGIL, edunews24 | Verificare la stima nel documento CGIL originale. ⚠ |
+| Partecipate: 196 in perdita su 2.833; due terzi degli enti con struttura di controllo | MEF dati 2023; Corte dei conti Sez. autonomie referto 2025 | Manca il valore delle perdite ripianate: segnaposto DA VERIFICARE nel testo. |
+| Crediti incagliati > 15 mld (stima Esodati del Superbonus); 1,8 mld in una stima precedente; sconti fino al 58 % | LavoriPubblici, Qualenergia | Stime di parte, dichiarate come tali. |
+| CANDE: oltre 250 imprese e professionisti; esposto alla Procura generale della Corte dei conti | LavoriPubblici, Build News | Data dell'esposto da inserire. |
+| Barra "agevolazioni 122,6 → 40,3" | Calcolo: 122,6 − 82,3 (RSF 2025, 2028) | Dato derivato: la parte "in esaurimento da sola" è la differenza tra 2026 e 2028. |
+
+## Riepilogo delle cose da fare a rete sbloccata
+1. Aprire ogni PDF di fonti.json con `modalita_accesso: "snippet"` e confermare numero per numero le righe ⚠ di questo file.
+2. Inserire i dettagli COFOG (sottofunzioni GF04 e GF10 per l'Italia; quote in % del PIL per DE, FR, ES) da Eurostat gov_10a_exp nei capitoli 2, 6 e 9, come previsto dal piano.
+3. Sostituire le fonti secondarie (Quotidiano Sanità per il riparto CIPESS, Il Fatto per Legambiente, Fiscal Focus per i commercialisti, LavoriPubblici per CANDE) con i documenti originali.
+4. Aggiornare il capitolo 8 se la Relazione sull'evasione 2026 esce prima della chiusura del dossier.
+5. Inserire le date di pubblicazione mancanti segnate [DA VERIFICARE] in fonti.json.
