@@ -41,3 +41,18 @@ Stato al 26 settembre 2026. La rete dell'ambiente di lavoro blocca tutti i domin
 | Composizione titoli 31/7/2026: BTP 70,43 %, BTP Green 2,39 %, BTP€i 8,54 %, BOT 5,13 %, CCTeu 4,66 %, BTP Valore 4,13 %, BTP Italia 1,74 %, BTP Italia Sì 0,32 %, BTP Futura 0,76 %, altri programmi 1,89 % | MEF DT, pagina composizione titoli | Nel conto "72,8 % di BTP a tasso fisso" = 70,43 + 2,39. |
 | Interessi al 4,5 % del PIL nel 2029 | UPB, Rapporto sulla politica di bilancio 2026, capitolo sulla finanza pubblica | Da upbilancio.it e stampa. |
 | Indebitamento netto 2025 nella notifica di aprile: −69.381 mln | Istat notifica 22/4/2026 | Diverso dai −69,7 mld del capitolo 1 (revisione di settembre). Coerente solo se la revisione di settembre esiste davvero con quel valore. ⚠ |
+
+## Capitolo 4 — Agevolazioni fiscali
+| Numero | Dove controllare | Nota |
+|---|---|---|
+| 573 misure censite, 550 vigenti, 406 quantificate; 122,6 mld nel 2026, 100,6 nel 2027, 82,3 nel 2028; 196 misure IRPEF | RSF 2025, sintesi e tavole iniziali | Da frammenti del PDF MEF. Data di pubblicazione da inserire (allegato al DDL bilancio 2026, presentato a ottobre 2025). |
+| Per missione 2026: Casa 71,7; Lavoro 17,3; Diritti sociali e famiglia 7,6; Salute 6,5; Finanza pubblica 3,2 | RSF 2025, tavola per missioni | Un frammento scrive "−17,3" per il lavoro: probabile refuso, verificare il segno. Le "altre missioni" 16,3 sono calcolate per differenza. ⚠ |
+| "≈ 5 % PIL" per i 122,6 mld | Calcolo: 122,6 / 2.265 (PIL 2025 del capitolo 1) | Dato derivato: il PIL 2026 sarà più alto. Valutare se toglierlo. |
+| Corte dei conti: spese fiscali ≈ 119 mld, 5,3 % PIL; IRPEF 82 % da dipendenti e pensionati | Relazione sul rendiconto 2025, 24/6/2026, volume sulle entrate | Da tgcom24, Il Messaggero. Il 5,3 % di 119 implica un PIL di 2.245: coerente con il 2025. |
+| Compensazioni F24 per Superbonus, ecobonus e sismabonus: 38,3 mld nel 2025; crediti a rischio 4,1 mld; sequestri GdF 9,3 mld | Relazione sul rendiconto 2025 | Da Il Sole 24 Ore e Sardegnagol. Verificare il perimetro dei 38,3 (solo Superbonus o tutti i bonus). ⚠ |
+| Superbonus 165,5 mld; bonus edilizi 174 mld | Memoria del Procuratore generale, 24/6/2026, tabella | Un altro articolo (PPN) riporta "234 mld" per tutti i bonus edilizi sommando facciate 25,73, ristrutturazioni 18,05, ecobonus 14,47, sismabonus 5,21: verificare quale totale usa la Corte e con quale perimetro. ⚠ |
+| ENEA al 31/7/2026: 502.388 edifici; investimenti 126,65 mld; ammessi 124,86; detrazioni maturate 131,55; 98,2 % conclusi; condomini 68,7 % (86,52 mld) | ENEA, pagina risultati Superbonus, report luglio 2026 | Da Geagency, Edilportale, idealista. Un altro frammento ("31 agosto": 127 mld maturate, 121,9 investimenti) sembra riferirsi al 2025: controllare se esiste il report di agosto 2026 e aggiornare. ⚠ |
+| Corte dei conti UE: ≈ 14 mld PNRR sul Superbonus; 9,72 €/kWh Italia, 1,39 Lituania, 0,37–0,51 Cipro; 43 mld UE | Relazione speciale 20/2026, sintesi | Data esatta di pubblicazione (luglio 2026) da inserire. |
+| Picco Superbonus nei conti 2023: ≈ 81 mld; crediti 2024–25 "non pagabili" spalmati su 10 anni | Camera, dossier OFP 04 | Data del dossier da inserire. |
+| Cottarelli e Pench: effetto sul disavanzo 2025 ≈ 5 mld più 2–3 di interessi | Osservatorio CPI (aprile 2026) | Non usato nel testo. |
+| Detrazioni 74,4 mld (58 misure), deduzioni 10,9 (44), crediti 4,8 (51), regimi sostitutivi 12,3 (48); IRPEF 66,5 mld | RSF 2025 o 2024? | Non usati: i frammenti non chiariscono l'edizione. Verificare prima di usarli nel capitolo 10. |

@@ -212,6 +212,85 @@
       ],
       "data_accesso": "2026-09-26",
       "modalita_accesso": "snippet"
+    },
+    {
+      "id": "mef-rsf-2025",
+      "ente": "MEF, Commissione per la redazione del rapporto annuale sulle spese fiscali",
+      "titolo": "Rapporto annuale sulle spese fiscali 2025 (allegato al bilancio 2026)",
+      "data_pubblicazione": "2025-10 [DA VERIFICARE: giorno]",
+      "url": "https://www.mef.gov.it/export/sites/MEF/documenti-allegati/2025/RSF-2025-bis.pdf",
+      "capitoli": [
+        4,
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "cdc-rendiconto-2025",
+      "ente": "Corte dei conti, Sezioni riunite in sede di controllo",
+      "titolo": "Relazione sul rendiconto generale dello Stato 2025 (giudizio di parificazione)",
+      "data_pubblicazione": "2026-06-24",
+      "url": "https://www.corteconti.it/Home/Organizzazione/UfficiCentraliRegionali/UffSezRiuniteSedeControllo/RelRendiconto",
+      "url_nota": "pagina del giudizio; i volumi sono ai link Download?id=... da individuare (candidato: https://www.corteconti.it/Download?id=a885be6b-a35a-442a-bce2-4faaa5e8411d)",
+      "capitoli": [
+        4,
+        5,
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "cdc-pg-memoria-2025",
+      "ente": "Corte dei conti, Procura generale",
+      "titolo": "Memoria per il giudizio di parificazione del rendiconto 2025 (tabella sui bonus edilizi)",
+      "data_pubblicazione": "2026-06-24",
+      "url": "https://www.corteconti.it/Home/Organizzazione/UfficiCentraliRegionali/UffSezRiuniteSedeControllo/RelRendiconto",
+      "url_nota": "URL del PDF della memoria da individuare",
+      "capitoli": [
+        4
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "enea-superbonus-2026-07",
+      "ente": "ENEA",
+      "titolo": "Dati di utilizzo del Superbonus 110%, aggiornamento al 31 luglio 2026",
+      "data_pubblicazione": "2026-09",
+      "url": "https://www.efficienzaenergetica.enea.it/detrazioni-fiscali/superbonus/risultati-superbonus.html",
+      "capitoli": [
+        4
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "eca-sr-2026-20",
+      "ente": "Corte dei conti europea",
+      "titolo": "Relazione speciale 20/2026, Improving the energy efficiency of private homes with the RRF",
+      "data_pubblicazione": "2026-07 [DA VERIFICARE: giorno]",
+      "url": "https://www.eca.europa.eu/ECAPublications/SR-2026-20/SR-2026-20_EN.pdf",
+      "url_pagina": "https://www.eca.europa.eu/en/publications/SR-2026-20",
+      "capitoli": [
+        4,
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "camera-dossier-superbonus",
+      "ente": "Camera dei deputati, Servizio bilancio dello Stato",
+      "titolo": "Effetti del Superbonus e del Bonus facciate sul quadro di finanza pubblica",
+      "data_pubblicazione": "[DA VERIFICARE]",
+      "url": "https://documenti.camera.it/leg19/dossier/testi/Dossier_OFP_04_Superbonus.htm",
+      "capitoli": [
+        4
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
     }
   ]
 }
