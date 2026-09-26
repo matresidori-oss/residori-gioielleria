@@ -1,0 +1,105 @@
+{
+  "dossier": "Dove vanno 1.158 miliardi",
+  "nota": "modalita_accesso: 'documento' = letto alla fonte; 'snippet' = numeri estratti da risultati di ricerca che citano il documento, documento non aperto perché la rete dell'ambiente blocca il dominio; 'modello' = fonte già verificata nel capitolo 1 consegnato dall'autore.",
+  "fonti": [
+    {
+      "id": "istat-conto-pa-2026-09",
+      "ente": "Istat",
+      "titolo": "Conto economico trimestrale delle Amministrazioni pubbliche, II trimestre 2026 (revisione conti 2025)",
+      "data_pubblicazione": "2026-09-22",
+      "url": "https://www.istat.it/en/press-release/quarterly-non-financial-sector-accounts/",
+      "url_nota": "pagina della serie; URL del PDF del 22/9/2026 da confermare",
+      "capitoli": [1],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "modello"
+    },
+    {
+      "id": "istat-notifica-2026-04",
+      "ente": "Istat",
+      "titolo": "Notifica dell'indebitamento netto e del debito delle Amministrazioni pubbliche, anni 2022-2025",
+      "data_pubblicazione": "2026-04-22",
+      "url": "https://www.istat.it/wp-content/uploads/2026/04/Notifica_22_04_2026.pdf",
+      "capitoli": [1, 3],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "modello"
+    },
+    {
+      "id": "eurostat-gov_10a_exp",
+      "ente": "Eurostat",
+      "titolo": "General government expenditure by function (COFOG), dataset gov_10a_exp, Italia 2024",
+      "data_pubblicazione": "2026-07-21",
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table?lang=en",
+      "capitoli": [1, 2, 6, 9],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "modello"
+    },
+    {
+      "id": "dvns-cofog-2024",
+      "ente": "DoveVannoINostriSoldi",
+      "titolo": "Elaborazione dei dati Eurostat COFOG con sottofunzioni per l'Italia, anno 2024",
+      "data_pubblicazione": "2026-09-14",
+      "url": "https://www.dovevannoinostrisoldi.com/?anno=2024",
+      "capitoli": [1],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "modello"
+    },
+    {
+      "id": "itinerari-xiii-2026",
+      "ente": "Itinerari Previdenziali",
+      "titolo": "XIII Rapporto - Il bilancio del sistema previdenziale italiano. Andamenti finanziari e demografici delle pensioni e dell'assistenza per l'anno 2024",
+      "data_pubblicazione": "2026-01-14",
+      "url": "https://www.itinerariprevidenziali.it/wp-content/uploads/2026/01/XIII-Rapporto-Il-Bilancio-del-Sistema-Previdenziale.pdf",
+      "capitoli": [2],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet",
+      "url_secondari": [
+        "https://www.itinerariprevidenziali.it/il-punto/pensioni-sistema-sostenibile-tredicesimo-rapporto/",
+        "https://www.itinerariprevidenziali.it/comunicati-stampa/sistema-pensionistico-sostenibile/",
+        "https://presidente.camera.it/notizie/2026-Rapporto-Itinerari-Previdenziali"
+      ]
+    },
+    {
+      "id": "inps-rendiconto-sociale-2025",
+      "ente": "INPS, Consiglio di indirizzo e vigilanza",
+      "titolo": "Rendiconto sociale 2025",
+      "data_pubblicazione": "2026-06-30",
+      "url": "https://www.inps.it/content/dam/inps-site/pdf/allegatinews/Rendiconto_sociale_2025.pdf",
+      "url_pagina": "https://www.inps.it/it/it/dati-e-bilanci/rendiconti-sociali/rendiconti-sociali-2025/rendiconto-sociale-2025.html",
+      "capitoli": [2],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "inps-relazione-rendiconto-generale-2025",
+      "ente": "INPS, Consiglio di indirizzo e vigilanza",
+      "titolo": "Relazione sul Rendiconto generale 2025",
+      "data_pubblicazione": "2026-06-30",
+      "url": "https://www.inps.it/content/dam/inps-site/pdf/allegatinews/Relazione_rendiconto_generale_2025.pdf",
+      "url_nota": "la ricerca restituisce anche https://www.inps.it/content/dam/inps-site/pdf/allegati/2026/Relazione_rendiconto_generale_2025.pdf: verificare quale dei due è attivo",
+      "capitoli": [2],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "rgs-tendenze-2026",
+      "ente": "MEF, Ragioneria generale dello Stato",
+      "titolo": "Le tendenze di medio-lungo periodo del sistema pensionistico e socio-sanitario, Rapporto n. 27, aggiornamento 2026",
+      "data_pubblicazione": "2026 [DA VERIFICARE: giorno e mese]",
+      "url": "https://www.rgs.mef.gov.it/VERSIONE-I/attivita_istituzionali/monitoraggio/spesa_pensionistica/",
+      "url_nota": "pagina indice del rapporto; URL del PDF integrale da individuare",
+      "capitoli": [2, 10],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "istat-asi-2025-c05",
+      "ente": "Istat",
+      "titolo": "Annuario statistico italiano 2025, capitolo 5 - Protezione sociale",
+      "data_pubblicazione": "2025-12",
+      "url": "https://www.istat.it/storage/ASI/2025/capitoli/C05.pdf",
+      "capitoli": [2],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    }
+  ]
+}

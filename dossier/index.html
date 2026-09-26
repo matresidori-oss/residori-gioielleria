@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dove vanno 1.158 miliardi</title>
+<meta name="description" content="Dossier civico in dieci capitoli sulla spesa pubblica italiana: quanto entra, quanto esce, dove va e quali opzioni sono sul tavolo. Ogni numero ha fonte, anno e link al documento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#ffffff; --ink:#1b2432; --ink-2:#5b6472; --rule:#d9dde3; --wash:#f1f3f6;
+  --blu:#1f4e9c; --rosso:#b8262f; --verde:#1d7f5a; --oro:#b7791f;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --paper:#12161d; --ink:#eef1f5; --ink-2:#a3acb9; --rule:#2c333e; --wash:#1b2029;
+  --blu:#6a9be6; --rosso:#e5646c; --verde:#4fbf8f; --oro:#e0a94a; } }
+:root[data-theme="dark"]{ --paper:#12161d; --ink:#eef1f5; --ink-2:#a3acb9; --rule:#2c333e; --wash:#1b2029;
+  --blu:#6a9be6; --rosso:#e5646c; --verde:#4fbf8f; --oro:#e0a94a; }
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;height:auto}
+a{color:var(--blu);text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--oro);outline-offset:3px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;letter-spacing:-.01em;margin:0}
+h1{font-size:clamp(2.4rem,7vw,3.9rem)}
+h2{font-size:clamp(1.55rem,4.5vw,2.1rem);margin-top:3.2rem;margin-bottom:.9rem}
+p{margin:0 0 1rem;max-width:62ch}
+.lede{font-family:var(--serif);font-size:clamp(1.2rem,3.4vw,1.45rem);line-height:1.4;max-width:34ch;margin:1rem 0 0}
+.serie{font-size:.9rem;color:var(--ink-2);margin:0 0 .5rem}
+.serie b{color:var(--ink);font-weight:600}
+header.hero{padding:2.2rem 0 1rem;border-bottom:1px solid var(--rule)}
+
+/* --- La banconota da 100 € --- */
+.cento{margin:2rem 0 .5rem}
+.cento-bar{display:flex;height:64px;border-radius:6px;overflow:hidden;border:1px solid var(--rule)}
+.cento-bar span{display:block;height:100%}
+.cento-legenda{list-style:none;padding:0;margin:.9rem 0 0;display:grid;grid-template-columns:1fr auto;gap:.3rem 1rem;font-size:.95rem}
+.cento-legenda li{display:contents}
+.cento-legenda .n{display:flex;align-items:center;gap:.55rem}
+.cento-legenda .n i{width:12px;height:12px;border-radius:3px;flex:none}
+.cento-legenda .v{font-variant-numeric:tabular-nums;font-weight:600;text-align:right}
+.cento-legenda .v small{font-weight:400;color:var(--ink-2)}
+.cento-nota{font-size:.85rem;color:var(--ink-2);margin-top:.8rem;max-width:62ch}
+
+/* --- Il conto --- */
+.conto{margin:1.2rem 0 0;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.conto div{display:grid;grid-template-columns:1fr auto auto;gap:0 1rem;align-items:baseline;padding:.7rem 0;border-bottom:1px solid var(--rule)}
+.conto div:last-child{border-bottom:0}
+.conto .k{font-size:1rem}
+.conto .k small{display:block;color:var(--ink-2);font-size:.82rem}
+.conto .mld{font-family:var(--serif);font-size:1.7rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+.conto .pil{font-size:.85rem;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:nowrap;min-width:6.5ch;text-align:right}
+.conto .neg .mld{color:var(--rosso)}
+.conto .pos .mld{color:var(--verde)}
+.conto .tot{background:var(--wash);margin:0 -.6rem;padding-left:.6rem;padding-right:.6rem}
+
+/* --- Tre frasi --- */
+.frasi{padding-left:0;list-style:none;margin:0}
+.frasi li{padding:.9rem 0;border-bottom:1px solid var(--rule);max-width:62ch}
+.frasi li:first-child{border-top:1px solid var(--rule)}
+.frasi b{font-weight:600}
+
+/* --- Fonti --- */
+.fonti{list-style:none;padding:0;margin:0;font-size:.9rem;color:var(--ink-2)}
+.fonti li{padding:.55rem 0;border-bottom:1px solid var(--rule)}
+.fonti b{color:var(--ink);font-weight:600}
+.metodo{background:var(--wash);border-radius:6px;padding:1rem 1.1rem;font-size:.92rem;margin-top:1.4rem}
+.metodo p{margin:0 0 .5rem}
+
+/* --- Piede --- */
+footer{margin:3rem 0 2.5rem;padding-top:1.2rem;border-top:2px solid var(--ink);font-size:.92rem}
+.nav{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.nav a{font-family:var(--serif);font-size:1.15rem}
+.condividi{margin-top:1.4rem;color:var(--ink-2)}
+.condividi button{font:inherit;font-weight:600;color:var(--ink);background:var(--wash);border:1px solid var(--rule);border-radius:6px;padding:.45rem .8rem;cursor:pointer}
+
+/* --- Aggiunte per il dossier in un solo file: indice, capitoli, barre --- */
+.indice{list-style:none;padding:0;margin:1.6rem 0 0;counter-reset:cap}
+.indice li{display:grid;grid-template-columns:2.4rem 1fr;gap:.6rem;align-items:baseline;padding:.65rem 0;border-bottom:1px solid var(--rule)}
+.indice li::before{counter-increment:cap;content:counter(cap);font-family:var(--serif);font-size:1.35rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.indice a{font-family:var(--serif);font-size:1.2rem;text-decoration:none}
+.indice a:hover{text-decoration:underline}
+.indice small{display:block;color:var(--ink-2);font-size:.88rem;font-family:var(--sans)}
+.indice .presto a{color:var(--ink-2);pointer-events:none}
+.cap{margin-top:4.5rem}
+.cap>header{padding:2.2rem 0 1rem;border-bottom:1px solid var(--rule)}
+.cap .titolo{font-size:clamp(2.4rem,7vw,3.9rem);margin:0}
+.cap h3{font-size:clamp(1.55rem,4.5vw,2.1rem);margin-top:3.2rem;margin-bottom:.9rem}
+.torna{font-size:.9rem;margin-top:2.2rem}
+.grafico{margin:2rem 0 .5rem}
+.barre{display:grid;gap:.7rem;margin:1.2rem 0 0}
+.barre .r{display:grid;gap:.25rem}
+.barre .l{display:flex;justify-content:space-between;gap:1rem;font-size:.95rem;align-items:baseline}
+.barre .l b{font-weight:600}
+.barre .l .v{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600}
+.barre .l .v small{font-weight:400;color:var(--ink-2)}
+.barre .t{height:30px;background:var(--wash);border-radius:4px;overflow:hidden;display:flex;border:1px solid var(--rule)}
+.barre .t span{display:block;height:100%}
+.grafico-fonte{font-size:.85rem;color:var(--ink-2);margin-top:.9rem;max-width:62ch}
+.legenda{list-style:none;padding:0;margin:.8rem 0 0;display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;font-size:.88rem;color:var(--ink-2)}
+.legenda i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:.4rem}
+.dv{background:var(--oro);color:#fff;font-size:.72em;padding:.05em .4em;border-radius:3px;font-weight:600;white-space:nowrap}
+
+@media print{
+  :root{--paper:#fff;--ink:#000;--ink-2:#333;--rule:#bbb;--wash:#f2f2f2}
+  body{font-size:11.5pt}
+  .condividi,.nav,.torna{display:none}
+  a{color:#000;text-decoration:none}
+  .fonti a::after{content:" (" attr(href) ")";font-size:.8em;color:#555}
+  .cap{break-before:page;margin-top:0}
+  .grafico,.conto,.metodo{break-inside:avoid}
+  .cento-bar span,.barre .t span{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+@media (prefers-reduced-motion: no-preference){
+  .cento-bar span{transition:flex-basis .9s cubic-bezier(.2,.8,.2,1)}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="serie"><b>Dossier civico</b> — dieci capitoli, ogni numero con la sua fonte</p>
+    <h1>Dove vanno 1.158 miliardi</h1>
+    <p class="lede">Quanto incassa e quanto spende lo Stato italiano, dove finiscono i soldi e quali scelte sono sul tavolo. Scritto per chi non ha mai aperto un bilancio.</p>
+    <ol class="indice" aria-label="Indice dei capitoli">
+      <li><a href="#cap-1">La mappa: cosa entra, cosa esce, cosa manca</a><small>Entrate, uscite, interessi e debito nel 2025. Ogni 100 € spesi.</small></li>
+      <li><a href="#cap-2">Pensioni e assistenza: chi paga i 468 miliardi</a><small>Contributi contro tasse. Quanto cresce e quando arriva il picco.</small></li>
+      <li class="presto"><a href="#cap-3">Interessi e debito</a><small>In lavorazione.</small></li>
+      <li class="presto"><a href="#cap-4">Agevolazioni fiscali</a><small>In lavorazione.</small></li>
+      <li class="presto"><a href="#cap-5">Sanità</a><small>In lavorazione.</small></li>
+      <li class="presto"><a href="#cap-6">Sussidi alle imprese</a><small>In lavorazione.</small></li>
+      <li class="presto"><a href="#cap-7">Appalti e partecipate</a><small>In lavorazione.</small></li>
+      <li class="presto"><a href="#cap-8">Evasione</a><small>In lavorazione.</small></li>
+      <li class="presto"><a href="#cap-9">Italia contro Europa</a><small>In lavorazione.</small></li>
+      <li class="presto"><a href="#cap-10">Le opzioni sul tavolo</a><small>In lavorazione.</small></li>
+    </ol>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ============================================================ CAPITOLO 1 -->
+<article class="cap" id="cap-1" aria-labelledby="t1">
+  <header>
+    <p class="serie"><b>Dove vanno 1.158 miliardi</b> — capitolo 1 di 10</p>
+    <h2 class="titolo" id="t1">La mappa: cosa entra, cosa esce, cosa manca</h2>
+    <p class="lede">Nel 2025 lo Stato italiano ha incassato 1.088 miliardi e ne ha spesi 1.158. La differenza l'ha presa in prestito.</p>
+  </header>
+
+  <section class="cento" aria-labelledby="cento-t">
+    <h3 id="cento-t" style="margin-top:2.2rem">Ogni 100 € spesi dallo Stato</h3>
+    <p>Prendi cento euro di spesa pubblica. Ecco come si dividono, senza contare niente due volte.</p>
+    <div class="cento-bar" role="img" aria-label="Barra che divide 100 euro di spesa pubblica: 42,2 protezione sociale, 13,2 sanità, 10,1 economia e imprese, 8,0 istruzione, 7,9 interessi sul debito, 7,5 macchina dello Stato, 3,5 sicurezza, 2,6 difesa, 5,0 ambiente casa e cultura">
+      <span style="flex:0 0 42.2%;background:#1f4e9c" title="Protezione sociale 42,2 €"></span>
+      <span style="flex:0 0 13.2%;background:#2f7fd6" title="Sanità 13,2 €"></span>
+      <span style="flex:0 0 10.1%;background:#7fb2ea" title="Economia e imprese 10,1 €"></span>
+      <span style="flex:0 0 8%;background:#b7791f" title="Istruzione 8,0 €"></span>
+      <span style="flex:0 0 7.9%;background:#b8262f" title="Interessi sul debito 7,9 €"></span>
+      <span style="flex:0 0 7.5%;background:#8a94a3" title="Macchina dello Stato 7,5 €"></span>
+      <span style="flex:0 0 3.5%;background:#4b5563" title="Ordine pubblico e sicurezza 3,5 €"></span>
+      <span style="flex:0 0 2.6%;background:#2b3442" title="Difesa 2,6 €"></span>
+      <span style="flex:0 0 5%;background:#c9d1dc" title="Ambiente, casa, cultura 5,0 €"></span>
+    </div>
+    <ul class="cento-legenda">
+      <li><span class="n"><i style="background:#1f4e9c"></i>Pensioni e protezione sociale</span><span class="v">42,2 € <small>468 mld</small></span></li>
+      <li><span class="n"><i style="background:#2f7fd6"></i>Sanità</span><span class="v">13,2 € <small>146 mld</small></span></li>
+      <li><span class="n"><i style="background:#7fb2ea"></i>Economia, imprese, trasporti, energia</span><span class="v">10,1 € <small>112 mld</small></span></li>
+      <li><span class="n"><i style="background:#b7791f"></i>Istruzione</span><span class="v">8,0 € <small>89 mld</small></span></li>
+      <li><span class="n"><i style="background:#b8262f"></i>Interessi sul debito</span><span class="v">7,9 € <small>88 mld</small></span></li>
+      <li><span class="n"><i style="background:#8a94a3"></i>Macchina dello Stato (Parlamento, ministeri, fisco, esteri, ricerca di base)</span><span class="v">7,5 € <small>83 mld</small></span></li>
+      <li><span class="n"><i style="background:#4b5563"></i>Ordine pubblico e sicurezza</span><span class="v">3,5 € <small>39 mld</small></span></li>
+      <li><span class="n"><i style="background:#2b3442"></i>Difesa</span><span class="v">2,6 € <small>28 mld</small></span></li>
+      <li><span class="n"><i style="background:#c9d1dc"></i>Ambiente, casa e territorio, cultura e sport</span><span class="v">5,0 € <small>56 mld</small></span></li>
+    </ul>
+    <p class="cento-nota">Ripartizione Eurostat per funzione (COFOG), anno 2024, l'ultimo pubblicato per settore: 1.109 miliardi in tutto. Nel 2025 il totale è salito a 1.158 ma le proporzioni cambiano di decimali.</p>
+  </section>
+
+  <section aria-labelledby="conto-t">
+    <h3 id="conto-t">Il conto del 2025</h3>
+    <p>Tutta la pubblica amministrazione: Stato, Regioni, Comuni, INPS, sanità. Miliardi di euro e quota sul PIL, che vale circa 2.265 miliardi.</p>
+    <div class="conto">
+      <div><span class="k">Entrate<small>tasse, contributi, altri incassi</small></span><span class="mld">1.088</span><span class="pil">48,0 % PIL</span></div>
+      <div><span class="k">Uscite<small>tutta la spesa, interessi compresi</small></span><span class="mld">1.158</span><span class="pil">51,1 % PIL</span></div>
+      <div class="pos"><span class="k">Saldo primario<small>entrate meno spesa, senza gli interessi</small></span><span class="mld">+18</span><span class="pil">+0,8 % PIL</span></div>
+      <div class="neg"><span class="k">Interessi sul debito<small>quello che paghiamo per i prestiti passati</small></span><span class="mld">−87</span><span class="pil">3,9 % PIL</span></div>
+      <div class="neg tot"><span class="k">Disavanzo<small>quanto abbiamo preso in prestito nell'anno</small></span><span class="mld">−69,7</span><span class="pil">3,1 % PIL</span></div>
+      <div><span class="k">Debito accumulato a fine 2025<small>la somma di tutti i disavanzi passati</small></span><span class="mld">3.096</span><span class="pil">137,1 % PIL</span></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="frasi-t">
+    <h3 id="frasi-t">Cosa vuol dire, in tre frasi</h3>
+    <ul class="frasi">
+      <li><b>Sulla gestione ordinaria lo Stato è in attivo.</b> Tolti gli interessi, nel 2025 ha incassato 18 miliardi più di quanto ha speso. Il buco lo fanno gli 87 miliardi di interessi sui prestiti degli anni passati.</li>
+      <li><b>Sei euro su dieci vanno a persone, non a uffici.</b> Pensioni, sanità e istruzione insieme fanno 63 euro ogni 100. La "burocrazia" in senso stretto, cioè organi dello Stato e amministrazione generale, ne vale 7 e mezzo.</li>
+      <li><b>Il debito è la spesa che non compra nulla.</b> 87 miliardi l'anno sono più della sanità di Lombardia, Veneto ed Emilia-Romagna messe insieme, e vanno solo a chi ci ha prestato i soldi.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="fonti-t">
+    <h3 id="fonti-t">Fonti</h3>
+    <ul class="fonti">
+      <li><b>Istat</b>, Conto economico trimestrale delle Amministrazioni pubbliche, 22 settembre 2026: revisione dei conti 2025 (entrate, uscite, interessi, saldo primario, indebitamento netto). <a href="https://www.istat.it/en/press-release/quarterly-non-financial-sector-accounts/">pagina del comunicato Istat</a> (link al PDF del 22/9/2026 da confermare)</li>
+      <li><b>Istat</b>, Notifica dell'indebitamento netto e del debito delle Amministrazioni pubbliche, 22 aprile 2026: debito 2025 al 137,1 % del PIL, pressione fiscale 42,9 %. <a href="https://www.istat.it/wp-content/uploads/2026/04/Notifica_22_04_2026.pdf">Notifica_22_04_2026.pdf</a></li>
+      <li><b>Eurostat</b>, dataset gov_10a_exp, spesa delle Amministrazioni pubbliche per funzione COFOG, Italia 2024, pubblicato il 21 luglio 2026. <a href="https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table?lang=en">databrowser Eurostat</a></li>
+      <li><b>DoveVannoINostriSoldi</b>, elaborazione dei dati Eurostat COFOG con sottofunzioni per l'Italia, controllata il 14 settembre 2026. <a href="https://www.dovevannoinostrisoldi.com/?anno=2024">dovevannoinostrisoldi.com</a></li>
+    </ul>
+    <div class="metodo">
+      <p><b>Come leggere questi numeri.</b> Sono dati di competenza economica (SEC 2010) di tutta la pubblica amministrazione, non solo del bilancio dello Stato, e non sono pagamenti di cassa. Le quote per funzione si riferiscono al 2024 perché Eurostat le pubblica con un anno di ritardo; gli interessi qui sono la voce COFOG "operazioni sul debito" (87,8 mld nel 2024), leggermente diversa dagli interessi contabili (85,5 nel 2024, 87,1 nel 2025).</p>
+      <p>Ogni numero è verificabile alla fonte. Se trovi un errore, scrivici e correggiamo con nota visibile.</p>
+    </div>
+  </section>
+  <p class="torna"><a href="#cap-2">Capitolo 2: pensioni e assistenza →</a> · <a href="#top">Indice</a></p>
+</article>
+
+<!-- ============================================================ CAPITOLO 2 -->
+<article class="cap" id="cap-2" aria-labelledby="t2">
+  <header>
+    <p class="serie"><b>Dove vanno 1.158 miliardi</b> — capitolo 2 di 10</p>
+    <h2 class="titolo" id="t2">Pensioni e assistenza: chi paga i 468 miliardi</h2>
+    <p class="lede">Quattro euro su dieci della spesa pubblica vanno a pensioni e assistenza. I contributi coprono quasi tutte le pensioni. L'assistenza la pagano le tasse.</p>
+  </header>
+
+  <section class="grafico" aria-labelledby="c2-g">
+    <h3 id="c2-g" style="margin-top:2.2rem">Le due casse del welfare, 2024</h3>
+    <p>Il sistema ha due tasche. Nella prima entrano i contributi di chi lavora ed escono le pensioni. Nella seconda entrano le tasse ed escono le prestazioni di assistenza: invalidità civile, pensioni sociali, integrazioni al minimo, assegno unico per i figli, assegno di inclusione.</p>
+    <div class="barre" role="img" aria-label="Tre barre in miliardi di euro, anno 2024: contributi versati 260,6; pensioni pagate 286,1, di cui 25,5 non coperti dai contributi; assistenza pagata dalle tasse 180,0">
+      <div class="r">
+        <div class="l"><span><b>Contributi versati</b> da lavoratori e imprese</span><span class="v">260,6 <small>mld</small></span></div>
+        <div class="t"><span style="width:91.1%;background:var(--blu)"></span></div>
+      </div>
+      <div class="r">
+        <div class="l"><span><b>Pensioni pagate</b>, di cui 25,5 non coperti dai contributi</span><span class="v">286,1 <small>mld</small></span></div>
+        <div class="t"><span style="width:91.1%;background:var(--blu)"></span><span style="width:8.9%;background:var(--rosso)"></span></div>
+      </div>
+      <div class="r">
+        <div class="l"><span><b>Assistenza</b>, pagata dalla fiscalità generale</span><span class="v">180,0 <small>mld</small></span></div>
+        <div class="t"><span style="width:62.9%;background:var(--oro)"></span></div>
+      </div>
+    </div>
+    <ul class="legenda" aria-hidden="true">
+      <li><i style="background:var(--blu)"></i>coperto dai contributi</li>
+      <li><i style="background:var(--rosso)"></i>coperto dallo Stato</li>
+      <li><i style="background:var(--oro)"></i>tutto dalle tasse</li>
+    </ul>
+    <p class="grafico-fonte">Miliardi di euro, anno 2024, tutte le gestioni pensionistiche obbligatorie. Fonte: Itinerari Previdenziali, XIII Rapporto "Il bilancio del sistema previdenziale italiano", presentato il 14 gennaio 2026, riclassificazione delle prestazioni tra previdenza e assistenza (vedi nota di metodo).</p>
+  </section>
+
+  <section aria-labelledby="c2-c">
+    <h3 id="c2-c">Il conto</h3>
+    <p>Numeri di enti diversi e di anni diversi: i conti INPS 2025 sono usciti a giugno 2026, la riclassificazione di Itinerari Previdenziali si ferma al 2024. Miliardi di euro dove non indicato altrimenti.</p>
+    <div class="conto">
+      <div class="tot"><span class="k">Protezione sociale, tutta la pubblica amministrazione<small>Eurostat COFOG, 2024: la fetta del capitolo 1</small></span><span class="mld">468</span><span class="pil">42,2 % spesa</span></div>
+      <div><span class="k">Pensioni pagate dall'INPS<small>2025, comprese le pensioni assistenziali</small></span><span class="mld">325,1</span><span class="pil">+1,4 % su 2024</span></div>
+      <div><span class="k">Tutte le prestazioni INPS<small>2025: pensioni, disoccupazione, famiglie, inclusione</small></span><span class="mld">425</span><span class="pil">+2,0 %</span></div>
+      <div class="pos"><span class="k">Contributi incassati dall'INPS<small>2025</small></span><span class="mld">294</span><span class="pil">+3,6 %</span></div>
+      <div><span class="k">Trasferimenti dallo Stato all'INPS<small>2025: quello che mettono le tasse</small></span><span class="mld">165</span><span class="pil">−8,4 %</span></div>
+      <div><span class="k">Sostegno alle famiglie<small>2025: assegno unico e assegni familiari</small></span><span class="mld">20,2</span><span class="pil"></span></div>
+      <div><span class="k">Sostegno al reddito<small>2025: disoccupazione e cassa integrazione</small></span><span class="mld">19,7</span><span class="pil"></span></div>
+      <div><span class="k">Spesa pensionistica sul PIL<small>2025, Ragioneria dello Stato</small></span><span class="mld">15,2 %</span><span class="pil">17,1 % nel 2040</span></div>
+      <div><span class="k">Pensionati INPS<small>2025, persone, non pensioni</small></span><span class="mld">15,44 mln</span><span class="pil"></span></div>
+      <div><span class="k">Pensione media annua lorda<small>2023, Istat, tutti gli enti</small></span><span class="mld">15.141 €</span><span class="pil"></span></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="c2-f">
+    <h3 id="c2-f">Cosa vuol dire, in tre frasi</h3>
+    <ul class="frasi">
+      <li><b>I contributi coprono quasi tutte le pensioni.</b> Nel 2024 sono entrati 261 miliardi di contributi e sono usciti 286 miliardi di pensioni. Mancano 25 miliardi, che mette lo Stato.</li>
+      <li><b>L'assistenza è la parte che cresce.</b> 180 miliardi nel 2024, tutti dalla fiscalità generale. Nel bilancio INPS le prestazioni diverse dalle pensioni sono passate dall'11 % del totale nel 2015 al 16 % nel 2025.</li>
+      <li><b>Il picco deve ancora arrivare.</b> La spesa per pensioni vale il 15,2 % del PIL nel 2025. Secondo la Ragioneria salirà al 17,1 % intorno al 2040, quando saranno in pensione i nati negli anni Sessanta. Poi scende.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="c2-s">
+    <h3 id="c2-s">Fonti</h3>
+    <ul class="fonti">
+      <li><b>Itinerari Previdenziali</b>, XIII Rapporto "Il bilancio del sistema previdenziale italiano. Andamenti finanziari e demografici delle pensioni e dell'assistenza per l'anno 2024", presentato il 14 gennaio 2026: spesa pensionistica 286,14 mld, contributi 260,59 mld, saldo −25,55 mld, assistenza 180 mld, 16.305.880 pensionati. <a href="https://www.itinerariprevidenziali.it/wp-content/uploads/2026/01/XIII-Rapporto-Il-Bilancio-del-Sistema-Previdenziale.pdf">XIII-Rapporto (PDF)</a></li>
+      <li><b>INPS, Consiglio di indirizzo e vigilanza</b>, Rendiconto sociale 2025, presentato il 30 giugno 2026: spesa per pensioni 325,06 mld (+1,4 %), 15.435.694 pensionati, 1.540.943 nuove pensioni, sostegno al reddito 19,7 mld, famiglie 20,2 mld, quota delle prestazioni non pensionistiche dall'11,2 % al 16,4 % tra 2015 e 2025. <a href="https://www.inps.it/content/dam/inps-site/pdf/allegatinews/Rendiconto_sociale_2025.pdf">Rendiconto_sociale_2025.pdf</a></li>
+      <li><b>INPS, Consiglio di indirizzo e vigilanza</b>, Relazione sul Rendiconto generale 2025, 30 giugno 2026: entrate 571 mld, contributi 294 mld (+3,6 %), trasferimenti dalla fiscalità generale 165 mld (−8,4 %), uscite 554 mld, prestazioni istituzionali 425 mld (+2 %). <a href="https://www.inps.it/content/dam/inps-site/pdf/allegatinews/Relazione_rendiconto_generale_2025.pdf">Relazione_rendiconto_generale_2025.pdf</a></li>
+      <li><b>MEF, Ragioneria generale dello Stato</b>, "Le tendenze di medio-lungo periodo del sistema pensionistico e socio-sanitario", Rapporto n. 27, 2026: spesa pensionistica al 15,2 % del PIL nel 2025, 17,1 % intorno al 2040, 14,0 % nel 2070. <a href="https://www.rgs.mef.gov.it/VERSIONE-I/attivita_istituzionali/monitoraggio/spesa_pensionistica/">pagina del rapporto</a></li>
+      <li><b>Istat</b>, Annuario statistico italiano 2025, capitolo 5 "Protezione sociale", dicembre 2025: 22,9 milioni di trattamenti pensionistici nel 2023, spesa 347.031 milioni, importo medio annuo 15.141 €. <a href="https://www.istat.it/storage/ASI/2025/capitoli/C05.pdf">C05.pdf</a></li>
+      <li><b>Eurostat</b>, dataset gov_10a_exp, funzione GF10 protezione sociale, Italia 2024, pubblicato il 21 luglio 2026. <a href="https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table?lang=en">databrowser Eurostat</a></li>
+    </ul>
+    <div class="metodo">
+      <p><b>Come leggere questi numeri.</b> I 468 miliardi del capitolo 1 sono tutta la protezione sociale della pubblica amministrazione: INPS, ma anche INAIL, casse dei professionisti, Comuni, pensioni di guerra. L'INPS da solo paga 425 miliardi di prestazioni. I 325 miliardi di "pensioni INPS" comprendono anche le pensioni di natura assistenziale, come invalidità civile e pensioni sociali.</p>
+      <p>La divisione tra previdenza e assistenza del grafico è una riclassificazione degli autori del rapporto Itinerari Previdenziali, non una statistica ufficiale: separa le prestazioni coperte da contributi da quelle pagate con le tasse, e sposta nell'assistenza le integrazioni al minimo e le maggiorazioni. Altri, tra cui lo stesso Consiglio di indirizzo dell'INPS, usano confini diversi. I due perimetri, previdenza e assistenza, non coincidono con la voce COFOG e non vanno sommati ai 468.</p>
+      <p>I 165 miliardi trasferiti dallo Stato all'INPS nel 2025 sono in calo perché lo sgravio contributivo dei lavoratori è diventato uno sconto fiscale: la spesa si è spostata di cassetto, non è sparita.</p>
+    </div>
+  </section>
+  <p class="torna"><a href="#cap-1">← Capitolo 1</a> · <a href="#top">Indice</a></p>
+</article>
+
+</main>
+
+<footer class="wrap">
+  <nav class="nav" aria-label="Capitoli">
+    <a href="#top">Torna all'indice</a>
+    <span></span>
+  </nav>
+  <div class="condividi">
+    Condividi questa pagina, non un riassunto: i numeri senza fonte non servono a nessuno.
+    <br><button type="button" id="copia">Copia il link</button> <span id="copiato" aria-live="polite"></span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('copia').addEventListener('click',async()=>{
+  const out=document.getElementById('copiato');
+  try{await navigator.clipboard.writeText(location.href);out.textContent='Link copiato.';}
+  catch(e){out.textContent='Copia l\'indirizzo dalla barra del browser.';}
+});
+</script>
+</body>
+</html>
