@@ -85,3 +85,18 @@ Stato al 26 settembre 2026. La rete dell'ambiente di lavoro blocca tutti i domin
 | Fondo di garanzia PMI: crescita ≈ 815 % in dieci anni; moltiplicatore ≈ 10 volte le risorse pubbliche 2012–2018 | Corte dei conti, delib. 66/2025/G | Da Italia Oggi. Data della deliberazione da inserire. |
 | Affari economici COFOG 2024: 112 mld | Eurostat gov_10a_exp | Già nel capitolo 1. Le sottofunzioni (trasporti, energia, agricoltura, R&S) non sono state inserite: da aggiungere quando ec.europa.eu sarà raggiungibile. |
 | Contributi alla produzione e agli investimenti alle imprese nel conto PA 2025 | Istat, conto PA, tavola delle uscite | Non trovati nei frammenti (solo i contributi agli investimenti alle famiglie, 10,8 mld). Da aggiungere. |
+
+## Capitolo 7 — Appalti e partecipate
+| Numero | Dove controllare | Nota |
+|---|---|---|
+| 2025: 309,7 mld; 287.421 procedure; +13,9 % valore; +7,6 % numero; PNRR 20,8 mld | ANAC, Relazione 2026, capitolo sul mercato | Da anticorruzione.it e stampa. |
+| Forniture "oltre 145" mld (+25,2 %); servizi "oltre 110" mld (+15,9 %); lavori −10,6 % | Relazione 2026, tabella per tipologia | I valori esatti sono nel PDF. I lavori "≈ 55" sono per differenza: 309,7 − 145 − 110. Sostituire con i tre valori precisi. ⚠ |
+| 2024: 271,8 mld, 267.000 procedure, −4,1 % sul 2023, −7,3 % sul 2022; 2023: 283,4 mld | ANAC, Relazione 2025, sintesi mercato | Se 2024 = 271,8 e +13,9 % dà 309,6: coerente. Il 2022 risulterebbe ≈ 293 mld: non usato. |
+| Stazioni appaltanti da oltre 20.000 a circa 4.000 in due anni; 95 % di affidamenti diretti nei servizi e forniture | Relazione 2026 | Il 95 % è sul numero di procedure (in gran parte sotto soglia): verificare la base esatta. ⚠ |
+| "6,7 % del totale" per il PNRR | Calcolo: 20,8 / 309,7 | Dato derivato. |
+| Partecipate 2023: 8.323 unità, 962.748 addetti (+0,9 %); enti territoriali −1,4 %; MEF −5,7 % società, 53,2 % degli addetti a controllo pubblico | Istat, report febbraio 2026 | Verificare la data esatta del comunicato. |
+| MEF dati 2023: 40.722 partecipazioni (67 % dirette) in 4.867 società; 196 in perdita su 2.833 (6,92 %) | MEF, Rapporto dati 2023, sintesi | Il rapporto "una su quindici" = 6,9 %. Le 2.833 sono le società con bilancio disponibile: verificare il perimetro. ⚠ |
+| "Più del Servizio sanitario" (963 mila addetti contro 713.976 dipendenti SSN) | Confronto tra Istat 2023 e RGS 2024 | Anni e definizioni diverse (addetti vs dipendenti a tempo indeterminato). |
+| Dividendi incassati dal MEF nel 2025 ≈ 3,3 mld | Milano Finanza 19/12/2025 citando il MEF | Non usato perché privo di fonte primaria. Cercare nel Rendiconto generale 2025, capitolo entrate extratributarie. |
+| Consumi intermedi e investimenti fissi lordi 2025 in valore assoluto | Istat, conto PA 22/9/2026 | Non trovati nei frammenti (solo +3,6 % e +9,6 %). Da aggiungere per il raccordo con i 1.158. |
+| Corte dei conti, Sezione autonomie, organismi partecipati: numeri aggregati | Ultima relazione (Download?id=c42e4301-46d5-42fa-acd0-1dce418fc243) | Non trovati nei frammenti: non citata nel capitolo. |
