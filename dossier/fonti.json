@@ -1,0 +1,540 @@
+{
+  "dossier": "Dove vanno 1.158 miliardi",
+  "nota": "modalita_accesso: 'documento' = letto alla fonte; 'snippet' = numeri estratti da risultati di ricerca che citano il documento, documento non aperto perché la rete dell'ambiente blocca il dominio; 'modello' = fonte già verificata nel capitolo 1 consegnato dall'autore.",
+  "fonti": [
+    {
+      "id": "istat-conto-pa-2026-09",
+      "ente": "Istat",
+      "titolo": "Conto economico trimestrale delle Amministrazioni pubbliche, II trimestre 2026 (revisione conti 2025)",
+      "data_pubblicazione": "2026-09-22",
+      "url": "https://www.istat.it/en/press-release/quarterly-non-financial-sector-accounts/",
+      "url_nota": "pagina della serie; URL del PDF del 22/9/2026 da confermare",
+      "capitoli": [
+        1
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "modello"
+    },
+    {
+      "id": "istat-notifica-2026-04",
+      "ente": "Istat",
+      "titolo": "Notifica dell'indebitamento netto e del debito delle Amministrazioni pubbliche, anni 2022-2025",
+      "data_pubblicazione": "2026-04-22",
+      "url": "https://www.istat.it/wp-content/uploads/2026/04/Notifica_22_04_2026.pdf",
+      "capitoli": [
+        1,
+        3
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "modello"
+    },
+    {
+      "id": "eurostat-gov_10a_exp",
+      "ente": "Eurostat",
+      "titolo": "General government expenditure by function (COFOG), dataset gov_10a_exp, Italia 2024",
+      "data_pubblicazione": "2026-07-21",
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table?lang=en",
+      "capitoli": [
+        1,
+        2,
+        6,
+        9
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "modello"
+    },
+    {
+      "id": "dvns-cofog-2024",
+      "ente": "DoveVannoINostriSoldi",
+      "titolo": "Elaborazione dei dati Eurostat COFOG con sottofunzioni per l'Italia, anno 2024",
+      "data_pubblicazione": "2026-09-14",
+      "url": "https://www.dovevannoinostrisoldi.com/?anno=2024",
+      "capitoli": [
+        1
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "modello"
+    },
+    {
+      "id": "itinerari-xiii-2026",
+      "ente": "Itinerari Previdenziali",
+      "titolo": "XIII Rapporto - Il bilancio del sistema previdenziale italiano. Andamenti finanziari e demografici delle pensioni e dell'assistenza per l'anno 2024",
+      "data_pubblicazione": "2026-01-14",
+      "url": "https://www.itinerariprevidenziali.it/wp-content/uploads/2026/01/XIII-Rapporto-Il-Bilancio-del-Sistema-Previdenziale.pdf",
+      "capitoli": [
+        2
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet",
+      "url_secondari": [
+        "https://www.itinerariprevidenziali.it/il-punto/pensioni-sistema-sostenibile-tredicesimo-rapporto/",
+        "https://www.itinerariprevidenziali.it/comunicati-stampa/sistema-pensionistico-sostenibile/",
+        "https://presidente.camera.it/notizie/2026-Rapporto-Itinerari-Previdenziali"
+      ]
+    },
+    {
+      "id": "inps-rendiconto-sociale-2025",
+      "ente": "INPS, Consiglio di indirizzo e vigilanza",
+      "titolo": "Rendiconto sociale 2025",
+      "data_pubblicazione": "2026-06-30",
+      "url": "https://www.inps.it/content/dam/inps-site/pdf/allegatinews/Rendiconto_sociale_2025.pdf",
+      "url_pagina": "https://www.inps.it/it/it/dati-e-bilanci/rendiconti-sociali/rendiconti-sociali-2025/rendiconto-sociale-2025.html",
+      "capitoli": [
+        2
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "inps-relazione-rendiconto-generale-2025",
+      "ente": "INPS, Consiglio di indirizzo e vigilanza",
+      "titolo": "Relazione sul Rendiconto generale 2025",
+      "data_pubblicazione": "2026-06-30",
+      "url": "https://www.inps.it/content/dam/inps-site/pdf/allegatinews/Relazione_rendiconto_generale_2025.pdf",
+      "url_nota": "la ricerca restituisce anche https://www.inps.it/content/dam/inps-site/pdf/allegati/2026/Relazione_rendiconto_generale_2025.pdf: verificare quale dei due è attivo",
+      "capitoli": [
+        2
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "rgs-tendenze-2026",
+      "ente": "MEF, Ragioneria generale dello Stato",
+      "titolo": "Le tendenze di medio-lungo periodo del sistema pensionistico e socio-sanitario, Rapporto n. 27, aggiornamento 2026",
+      "data_pubblicazione": "2026 [DA VERIFICARE: giorno e mese]",
+      "url": "https://www.rgs.mef.gov.it/VERSIONE-I/attivita_istituzionali/monitoraggio/spesa_pensionistica/",
+      "url_nota": "pagina indice del rapporto; URL del PDF integrale da individuare",
+      "capitoli": [
+        2,
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "istat-asi-2025-c05",
+      "ente": "Istat",
+      "titolo": "Annuario statistico italiano 2025, capitolo 5 - Protezione sociale",
+      "data_pubblicazione": "2025-12",
+      "url": "https://www.istat.it/storage/ASI/2025/capitoli/C05.pdf",
+      "capitoli": [
+        2
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "bankit-cs-2026-02-16",
+      "ente": "Banca d'Italia",
+      "titolo": "Comunicato stampa 'Finanza pubblica: fabbisogno e debito', dati al 31 dicembre 2025",
+      "data_pubblicazione": "2026-02-16",
+      "url": "https://www.bancaditalia.it/media/comunicati/documenti/2026-01/cs-16.02.2026-fabbisogno-debito-PA.pdf",
+      "url_pagina": "https://www.bancaditalia.it/media/notizia/finanza-pubblica-fabbisogno-e-debito-febbraio-2026/",
+      "capitoli": [
+        3
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "bankit-fpi-2026-08-14",
+      "ente": "Banca d'Italia",
+      "titolo": "Statistiche 'Finanza pubblica: fabbisogno e debito', dati a giugno 2026",
+      "data_pubblicazione": "2026-08-14",
+      "url": "https://www.bancaditalia.it/pubblicazioni/finanza-pubblica/2026-finanza-pubblica/statistiche_FPI_20260814.pdf",
+      "capitoli": [
+        3
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "mef-dt-linee-guida-2026",
+      "ente": "MEF, Dipartimento del Tesoro",
+      "titolo": "Linee guida della gestione del debito pubblico, anno 2026",
+      "data_pubblicazione": "2025-12-19",
+      "url": "https://www.dt.mef.gov.it/export/sites/sitodt/modules/documenti_it/debito_pubblico/presentazioni_studi_relazioni/Linee-Guida-della-Gestione-del-Debito-Pubblico-Anno-2026.pdf",
+      "url_nota": "la ricerca restituisce anche la variante senza /export/sites/sitodt: https://www.dt.mef.gov.it/modules/documenti_it/debito_pubblico/presentazioni_studi_relazioni/Linee-Guida-della-Gestione-del-Debito-Pubblico-Anno-2026.pdf",
+      "capitoli": [
+        3
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "mef-dt-composizione-titoli",
+      "ente": "MEF, Dipartimento del Tesoro",
+      "titolo": "Composizione dei titoli di Stato in circolazione al 31 luglio 2026",
+      "data_pubblicazione": "2026-08",
+      "url": "https://www.dt.mef.gov.it/it/debito_pubblico/dati_statistici/composizione_titoli_stato/index_new.html",
+      "capitoli": [
+        3
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "eurostat-ei-2026-04-22-ap",
+      "ente": "Eurostat",
+      "titolo": "Euro indicators 2-22042026-AP, 'Euro area government deficit at 2.9% and EU at 3.1% of GDP' (notifica EDP aprile 2026)",
+      "data_pubblicazione": "2026-04-22",
+      "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-22042026-ap",
+      "capitoli": [
+        3,
+        9
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "eurostat-ei-2026-04-22-bp",
+      "ente": "Eurostat",
+      "titolo": "Euro indicators 2-22042026-BP, 'Government debt at 87.8% of GDP in euro area'",
+      "data_pubblicazione": "2026-04-22",
+      "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-22042026-bp",
+      "capitoli": [
+        3,
+        9
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "upb-rapporto-2026",
+      "ente": "Ufficio parlamentare di bilancio",
+      "titolo": "Rapporto sulla politica di bilancio 2026",
+      "data_pubblicazione": "2026-06-10",
+      "url": "https://www.upbilancio.it/wp-content/uploads/2026/06/UPB-Rapporto-sulla-politica-di-bilancio-2026.pdf",
+      "capitoli": [
+        3,
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "mef-rsf-2025",
+      "ente": "MEF, Commissione per la redazione del rapporto annuale sulle spese fiscali",
+      "titolo": "Rapporto annuale sulle spese fiscali 2025 (allegato al bilancio 2026)",
+      "data_pubblicazione": "2025-10 [DA VERIFICARE: giorno]",
+      "url": "https://www.mef.gov.it/export/sites/MEF/documenti-allegati/2025/RSF-2025-bis.pdf",
+      "capitoli": [
+        4,
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "cdc-rendiconto-2025",
+      "ente": "Corte dei conti, Sezioni riunite in sede di controllo",
+      "titolo": "Relazione sul rendiconto generale dello Stato 2025 (giudizio di parificazione)",
+      "data_pubblicazione": "2026-06-24",
+      "url": "https://www.corteconti.it/Home/Organizzazione/UfficiCentraliRegionali/UffSezRiuniteSedeControllo/RelRendiconto",
+      "url_nota": "pagina del giudizio; i volumi sono ai link Download?id=... da individuare (candidato: https://www.corteconti.it/Download?id=a885be6b-a35a-442a-bce2-4faaa5e8411d)",
+      "capitoli": [
+        4,
+        5,
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "cdc-pg-memoria-2025",
+      "ente": "Corte dei conti, Procura generale",
+      "titolo": "Memoria per il giudizio di parificazione del rendiconto 2025 (tabella sui bonus edilizi)",
+      "data_pubblicazione": "2026-06-24",
+      "url": "https://www.corteconti.it/Home/Organizzazione/UfficiCentraliRegionali/UffSezRiuniteSedeControllo/RelRendiconto",
+      "url_nota": "URL del PDF della memoria da individuare",
+      "capitoli": [
+        4
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "enea-superbonus-2026-07",
+      "ente": "ENEA",
+      "titolo": "Dati di utilizzo del Superbonus 110%, aggiornamento al 31 luglio 2026",
+      "data_pubblicazione": "2026-09",
+      "url": "https://www.efficienzaenergetica.enea.it/detrazioni-fiscali/superbonus/risultati-superbonus.html",
+      "capitoli": [
+        4
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "eca-sr-2026-20",
+      "ente": "Corte dei conti europea",
+      "titolo": "Relazione speciale 20/2026, Improving the energy efficiency of private homes with the RRF",
+      "data_pubblicazione": "2026-07 [DA VERIFICARE: giorno]",
+      "url": "https://www.eca.europa.eu/ECAPublications/SR-2026-20/SR-2026-20_EN.pdf",
+      "url_pagina": "https://www.eca.europa.eu/en/publications/SR-2026-20",
+      "capitoli": [
+        4,
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "camera-dossier-superbonus",
+      "ente": "Camera dei deputati, Servizio bilancio dello Stato",
+      "titolo": "Effetti del Superbonus e del Bonus facciate sul quadro di finanza pubblica",
+      "data_pubblicazione": "[DA VERIFICARE]",
+      "url": "https://documenti.camera.it/leg19/dossier/testi/Dossier_OFP_04_Superbonus.htm",
+      "capitoli": [
+        4
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "istat-sha-audizione-2026-07",
+      "ente": "Istat",
+      "titolo": "Sistema dei conti della sanità, dati 2025: audizione alla Commissione Affari sociali della Camera (indagine conoscitiva sui LEA)",
+      "data_pubblicazione": "2026-07-07",
+      "url": "https://www.istat.it/audizioni/indagine-conoscitiva-sullattuazione-dei-livelli-essenziali-di-assistenza-e-sullerogazione-delle-prestazioni-sanitarie-nelle-regioni/",
+      "url_nota": "verificare che i dati 2025 (190,1 mld) siano nella memoria del 7/7/2026 e non in un comunicato Istat successivo",
+      "capitoli": [
+        5
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "rgs-monitoraggio-sanita-12",
+      "ente": "MEF, Ragioneria generale dello Stato",
+      "titolo": "Il monitoraggio della spesa sanitaria, rapporto n. 12",
+      "data_pubblicazione": "2025 [DA VERIFICARE: mese]",
+      "url": "https://www.rgs.mef.gov.it/_Documenti/VERSIONE-I/Attivit--i/Spesa-soci/Attivit-monitoraggio-RGS/2025/IMDSS-RS2025.pdf",
+      "url_pagina": "https://www.rgs.mef.gov.it/VERSIONE-I/attivita_istituzionali/monitoraggio/spesa_sanitaria/",
+      "capitoli": [
+        5
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "dfp-2026",
+      "ente": "MEF",
+      "titolo": "Documento di finanza pubblica 2026 (spesa sanitaria 2025-2029)",
+      "data_pubblicazione": "2026-04-22",
+      "url": "[DA VERIFICARE: URL del DFP 2026 su dt.mef.gov.it]",
+      "capitoli": [
+        5,
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "cipess-fsn-2025",
+      "ente": "CIPESS",
+      "titolo": "Riparto del Fondo sanitario nazionale 2025 (seduta del 29 gennaio 2026)",
+      "data_pubblicazione": "2026-01-29",
+      "url": "https://www.quotidianosanita.it/governo-e-parlamento/fondo-sanitario-2025-dal-cipess-ok-al-riparto-da-1365-miliardi/",
+      "url_nota": "fonte secondaria: sostituire con la delibera CIPESS su programmazioneeconomica.gov.it quando pubblicata in Gazzetta",
+      "capitoli": [
+        5
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "legge-199-2025",
+      "ente": "Parlamento",
+      "titolo": "Legge 30 dicembre 2025, n. 199 (bilancio 2026): livello del finanziamento del SSN 2026",
+      "data_pubblicazione": "2025-12-30",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199",
+      "url_nota": "URL costruito con lo schema normattiva: verificare che risolva",
+      "capitoli": [
+        5
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "aifa-consuntivo-2025",
+      "ente": "AIFA",
+      "titolo": "Monitoraggio della spesa farmaceutica nazionale e regionale, consuntivo gennaio-dicembre 2025",
+      "data_pubblicazione": "2026-07-29",
+      "url": "https://www.aifa.gov.it/-/spesa-farmaceutica-gennaio-dicembre-2025-monitoraggio-aifa-consuntivo",
+      "capitoli": [
+        5
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "cdc-coordinamento-fp-2025",
+      "ente": "Corte dei conti, Sezioni riunite",
+      "titolo": "Rapporto sul coordinamento della finanza pubblica 2025 (analisi sulla spesa per dispositivi medici)",
+      "data_pubblicazione": "2025 [DA VERIFICARE]",
+      "url": "https://www.corteconti.it/Home/Documenti/RapportoCoordinamentoFP",
+      "url_nota": "verificare che l'analisi sui dispositivi (5,6 % → 6,3 % del FSR, 10,5 mld) sia in questo rapporto e non in una deliberazione a parte",
+      "capitoli": [
+        5,
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "rgs-conto-annuale-2024",
+      "ente": "MEF, Ragioneria generale dello Stato",
+      "titolo": "Conto annuale 2024, personale del Servizio sanitario nazionale",
+      "data_pubblicazione": "2026-08 [DA VERIFICARE]",
+      "url": "https://www.rgs.mef.gov.it/VERSIONE-I/e_government/amministrazioni_pubbliche/personale_delle_pa/conto_annuale/",
+      "capitoli": [
+        5
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "istat-rapporto-annuale-2025",
+      "ente": "Istat",
+      "titolo": "Rapporto annuale 2025. La situazione del Paese",
+      "data_pubblicazione": "2025-05-21",
+      "url": "https://www.istat.it/produzione-editoriale/rapporto-annuale-2025-la-situazione-del-paese-il-volume/",
+      "capitoli": [
+        5
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "gimbe-2026-09-02",
+      "ente": "Fondazione GIMBE",
+      "titolo": "Comunicato stampa su OECD Health Statistics 2026: spesa sanitaria pubblica 2025",
+      "data_pubblicazione": "2026-09-02",
+      "url": "https://press.gimbe.org/press.it-IT.html",
+      "url_nota": "URL del singolo comunicato (comunicato.it-IT.html?id=...) da individuare",
+      "capitoli": [
+        5
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "gimbe-2026-04-28",
+      "ente": "Fondazione GIMBE",
+      "titolo": "Comunicato stampa sul Documento di finanza pubblica 2026",
+      "data_pubblicazione": "2026-04-28",
+      "url": "https://press.gimbe.org/press/comunicati/comunicato.it-IT.html?id=493",
+      "capitoli": [
+        5
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "mimit-relazione-266-2025",
+      "ente": "MIMIT, Direzione generale per gli incentivi alle imprese",
+      "titolo": "Relazione sugli interventi di sostegno alle attività economiche e produttive, edizione 2025 (dati 2024)",
+      "data_pubblicazione": "2025-09 (PDF); diffusione 2026-02-02 [DA VERIFICARE]",
+      "url": "https://www.mimit.gov.it/images/stories/documenti/RELAZIONE_266_2025.pdf",
+      "url_pagina": "https://www.mimit.gov.it/it/per-i-media/pubblicazioni/relazione-sugli-interventi-di-sostegno-alle-attivita-economiche-e-produttive-edizione-2025",
+      "capitoli": [
+        6
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "ec-state-aid-scoreboard-2025",
+      "ente": "Commissione europea, DG Concorrenza",
+      "titolo": "State aid Scoreboard 2025 (spesa 2024)",
+      "data_pubblicazione": "2026-01-15",
+      "url": "https://competition-policy.ec.europa.eu/document/download/cc9cdf4e-97e9-4f8e-ac7d-5f094a9fd12d_en?filename=state_aid_scoreboard_note_2025.pdf",
+      "url_pagina": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_67",
+      "capitoli": [
+        6,
+        9
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "mase-catalogo-sad-2026",
+      "ente": "Ministero dell'ambiente e della sicurezza energetica",
+      "titolo": "Catalogo dei sussidi ambientalmente dannosi e dei sussidi ambientalmente favorevoli, edizione 2026 (dati 2025)",
+      "data_pubblicazione": "2026-07-16",
+      "url": "https://www.mase.gov.it/portale/catalogo-dei-sussidi-ambientalmente-dannosi-e-dei-sussidi-ambientalmente-favorevoli",
+      "url_nota": "URL del PDF dell'edizione 2026 da individuare (quello indicizzato, catalogo_sussidi_ambientali_-_def-pdf, potrebbe essere un'edizione precedente)",
+      "capitoli": [
+        6,
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "cdc-fondo-garanzia-pmi",
+      "ente": "Corte dei conti, Sezione centrale di controllo sulla gestione delle amministrazioni dello Stato",
+      "titolo": "La gestione del Fondo di garanzia per le PMI, deliberazione n. 66/2025/G",
+      "data_pubblicazione": "2025 [DA VERIFICARE: data]",
+      "url": "https://www.corteconti.it/Download?id=d56fbe85-6c83-4123-af78-5ed45f82b367",
+      "capitoli": [
+        6
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "anac-relazione-2026",
+      "ente": "ANAC",
+      "titolo": "Relazione annuale 2026 sull'attività 2025, presentazione del Presidente al Parlamento",
+      "data_pubblicazione": "2026-04-21",
+      "url": "https://www.anticorruzione.it/documents/91439/393633199/Anac+-+Relazione+annuale+2026+su+attivit%C3%A0+2025.pdf/165c4f77-a913-1fde-ff23-887cbcee3095?t=1776845818213",
+      "url_pagina": "https://www.anticorruzione.it/-/cs.21.04.2026.relazione.anac",
+      "capitoli": [
+        7
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "anac-relazione-2025-sintesi",
+      "ente": "ANAC",
+      "titolo": "Relazione annuale 2025 sull'attività 2024, sintesi sul mercato degli appalti",
+      "data_pubblicazione": "2025-05-20",
+      "url": "https://www.anticorruzione.it/documents/91439/307867242/Anac+-+Relazione+2025+su+attivit%C3%A0+2024+-+Sintesi+sul+mercato+appalti.pdf/4698998b-aa51-1d27-bf7c-2cfae9a47fb5?t=1747731265310",
+      "capitoli": [
+        7
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "istat-partecipate-2023",
+      "ente": "Istat",
+      "titolo": "Le partecipate pubbliche in Italia, anno 2023",
+      "data_pubblicazione": "2026-02 [DA VERIFICARE: giorno]",
+      "url": "https://www.istat.it/wp-content/uploads/2026/02/REPORT_PARTECIPATE_PUBBLICHE_2023.pdf",
+      "url_pagina": "https://www.istat.it/comunicato-stampa/le-partecipate-pubbliche-in-italia-anno-2023/",
+      "capitoli": [
+        7
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "mef-rapporto-partecipazioni-2023",
+      "ente": "MEF, Dipartimento dell'economia",
+      "titolo": "Rapporto sulle partecipazioni delle amministrazioni pubbliche, dati 2023",
+      "data_pubblicazione": "2026-03-10 (elaborato febbraio 2026, aggiornato 2026-04-20)",
+      "url": "https://www.de.mef.gov.it/export/sites/sitode/modules/documenti_it/programmi_cartolarizzazione/patrimonio_pa/Rapporto_Partecipazioni_Dati_2023.pdf",
+      "url_pagina": "https://www.de.mef.gov.it/it/attivita_istituzionali/partecipazioni_pubbliche/censimento_partecipazioni_pubbliche/rapporti_annuali_partecipazioni/",
+      "capitoli": [
+        7
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    }
+  ]
+}

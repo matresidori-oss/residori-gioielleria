@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dove vanno 1.158 miliardi</title>
+<meta name="description" content="Dossier civico in dieci capitoli sulla spesa pubblica italiana: quanto entra, quanto esce, dove va e quali opzioni sono sul tavolo. Ogni numero ha fonte, anno e link al documento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#ffffff; --ink:#1b2432; --ink-2:#5b6472; --rule:#d9dde3; --wash:#f1f3f6;
+  --blu:#1f4e9c; --rosso:#b8262f; --verde:#1d7f5a; --oro:#b7791f;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --paper:#12161d; --ink:#eef1f5; --ink-2:#a3acb9; --rule:#2c333e; --wash:#1b2029;
+  --blu:#6a9be6; --rosso:#e5646c; --verde:#4fbf8f; --oro:#e0a94a; } }
+:root[data-theme="dark"]{ --paper:#12161d; --ink:#eef1f5; --ink-2:#a3acb9; --rule:#2c333e; --wash:#1b2029;
+  --blu:#6a9be6; --rosso:#e5646c; --verde:#4fbf8f; --oro:#e0a94a; }
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;height:auto}
+a{color:var(--blu);text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--oro);outline-offset:3px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;letter-spacing:-.01em;margin:0}
+h1{font-size:clamp(2.4rem,7vw,3.9rem)}
+h2{font-size:clamp(1.55rem,4.5vw,2.1rem);margin-top:3.2rem;margin-bottom:.9rem}
+p{margin:0 0 1rem;max-width:62ch}
+.lede{font-family:var(--serif);font-size:clamp(1.2rem,3.4vw,1.45rem);line-height:1.4;max-width:34ch;margin:1rem 0 0}
+.serie{font-size:.9rem;color:var(--ink-2);margin:0 0 .5rem}
+.serie b{color:var(--ink);font-weight:600}
+header.hero{padding:2.2rem 0 1rem;border-bottom:1px solid var(--rule)}
+
+/* --- La banconota da 100 € --- */
+.cento{margin:2rem 0 .5rem}
+.cento-bar{display:flex;height:64px;border-radius:6px;overflow:hidden;border:1px solid var(--rule)}
+.cento-bar span{display:block;height:100%}
+.cento-legenda{list-style:none;padding:0;margin:.9rem 0 0;display:grid;grid-template-columns:1fr auto;gap:.3rem 1rem;font-size:.95rem}
+.cento-legenda li{display:contents}
+.cento-legenda .n{display:flex;align-items:center;gap:.55rem}
+.cento-legenda .n i{width:12px;height:12px;border-radius:3px;flex:none}
+.cento-legenda .v{font-variant-numeric:tabular-nums;font-weight:600;text-align:right}
+.cento-legenda .v small{font-weight:400;color:var(--ink-2)}
+.cento-nota{font-size:.85rem;color:var(--ink-2);margin-top:.8rem;max-width:62ch}
+
+/* --- Il conto --- */
+.conto{margin:1.2rem 0 0;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.conto div{display:grid;grid-template-columns:1fr auto auto;gap:0 1rem;align-items:baseline;padding:.7rem 0;border-bottom:1px solid var(--rule)}
+.conto div:last-child{border-bottom:0}
+.conto .k{font-size:1rem}
+.conto .k small{display:block;color:var(--ink-2);font-size:.82rem}
+.conto .mld{font-family:var(--serif);font-size:1.7rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+.conto .pil{font-size:.85rem;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:nowrap;min-width:6.5ch;text-align:right}
+.conto .neg .mld{color:var(--rosso)}
+.conto .pos .mld{color:var(--verde)}
+.conto .tot{background:var(--wash);margin:0 -.6rem;padding-left:.6rem;padding-right:.6rem}
+
+/* --- Tre frasi --- */
+.frasi{padding-left:0;list-style:none;margin:0}
+.frasi li{padding:.9rem 0;border-bottom:1px solid var(--rule);max-width:62ch}
+.frasi li:first-child{border-top:1px solid var(--rule)}
+.frasi b{font-weight:600}
+
+/* --- Fonti --- */
+.fonti{list-style:none;padding:0;margin:0;font-size:.9rem;color:var(--ink-2)}
+.fonti li{padding:.55rem 0;border-bottom:1px solid var(--rule)}
+.fonti b{color:var(--ink);font-weight:600}
+.metodo{background:var(--wash);border-radius:6px;padding:1rem 1.1rem;font-size:.92rem;margin-top:1.4rem}
+.metodo p{margin:0 0 .5rem}
+
+/* --- Piede --- */
+footer{margin:3rem 0 2.5rem;padding-top:1.2rem;border-top:2px solid var(--ink);font-size:.92rem}
+.nav{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.nav a{font-family:var(--serif);font-size:1.15rem}
+.condividi{margin-top:1.4rem;color:var(--ink-2)}
+.condividi button{font:inherit;font-weight:600;color:var(--ink);background:var(--wash);border:1px solid var(--rule);border-radius:6px;padding:.45rem .8rem;cursor:pointer}
+
+/* --- Aggiunte per il dossier in un solo file: indice, capitoli, barre --- */
+.indice{list-style:none;padding:0;margin:1.6rem 0 0;counter-reset:cap}
+.indice li{display:grid;grid-template-columns:2.4rem 1fr;gap:.6rem;align-items:baseline;padding:.65rem 0;border-bottom:1px solid var(--rule)}
+.indice li::before{counter-increment:cap;content:counter(cap);font-family:var(--serif);font-size:1.35rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.indice a{font-family:var(--serif);font-size:1.2rem;text-decoration:none}
+.indice a:hover{text-decoration:underline}
+.indice small{display:block;color:var(--ink-2);font-size:.88rem;font-family:var(--sans)}
+.indice .presto a{color:var(--ink-2);pointer-events:none}
+.cap{margin-top:4.5rem}
+.cap>header{padding:2.2rem 0 1rem;border-bottom:1px solid var(--rule)}
+.cap .titolo{font-size:clamp(2.4rem,7vw,3.9rem);margin:0}
+.cap h3{font-size:clamp(1.55rem,4.5vw,2.1rem);margin-top:3.2rem;margin-bottom:.9rem}
+.torna{font-size:.9rem;margin-top:2.2rem}
+.grafico{margin:2rem 0 .5rem}
+.barre{display:grid;gap:.7rem;margin:1.2rem 0 0}
+.barre .r{display:grid;gap:.25rem}
+.barre .l{display:flex;justify-content:space-between;gap:1rem;font-size:.95rem;align-items:baseline}
+.barre .l b{font-weight:600}
+.barre .l .v{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600}
+.barre .l .v small{font-weight:400;color:var(--ink-2)}
+.barre .t{height:30px;background:var(--wash);border-radius:4px;overflow:hidden;display:flex;border:1px solid var(--rule)}
+.barre .t span{display:block;height:100%}
+.grafico-fonte{font-size:.85rem;color:var(--ink-2);margin-top:.9rem;max-width:62ch}
+.legenda{list-style:none;padding:0;margin:.8rem 0 0;display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;font-size:.88rem;color:var(--ink-2)}
+.legenda i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:.4rem}
+.dv{background:var(--oro);color:#fff;font-size:.72em;padding:.05em .4em;border-radius:3px;font-weight:600;white-space:nowrap}
+
+@media print{
+  :root{--paper:#fff;--ink:#000;--ink-2:#333;--rule:#bbb;--wash:#f2f2f2}
+  body{font-size:11.5pt}
+  .condividi,.nav,.torna{display:none}
+  a{color:#000;text-decoration:none}
+  .fonti a::after{content:" (" attr(href) ")";font-size:.8em;color:#555}
+  .cap{break-before:page;margin-top:0}
+  .grafico,.conto,.metodo{break-inside:avoid}
+  .cento-bar span,.barre .t span{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+@media (prefers-reduced-motion: no-preference){
+  .cento-bar span{transition:flex-basis .9s cubic-bezier(.2,.8,.2,1)}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="serie"><b>Dossier civico</b> — dieci capitoli, ogni numero con la sua fonte</p>
+    <h1>Dove vanno 1.158 miliardi</h1>
+    <p class="lede">Quanto incassa e quanto spende lo Stato italiano, dove finiscono i soldi e quali scelte sono sul tavolo. Scritto per chi non ha mai aperto un bilancio.</p>
+    <ol class="indice" aria-label="Indice dei capitoli">
+      <li><a href="#cap-1">La mappa: cosa entra, cosa esce, cosa manca</a><small>Entrate, uscite, interessi e debito nel 2025. Ogni 100 € spesi.</small></li>
+      <li><a href="#cap-2">Pensioni e assistenza: chi paga i 468 miliardi</a><small>Contributi contro tasse. Quanto cresce e quando arriva il picco.</small></li>
+      <li><a href="#cap-3">Interessi e debito: a chi dobbiamo 3.096 miliardi</a><small>Chi possiede il debito, quanto costa, quanto ne rinnoviamo ogni anno.</small></li>
+      <li><a href="#cap-4">Agevolazioni fiscali: i 122 miliardi che non si vedono</a><small>Detrazioni, bonus e Superbonus: la spesa che il bilancio registra come tasse mai incassate.</small></li>
+      <li><a href="#cap-5">Sanità: 146 miliardi, e altri 42 dalle tasche delle famiglie</a><small>Chi paga la salute, dove crescono i costi, chi rinuncia a curarsi.</small></li>
+      <li><a href="#cap-6">Sussidi alle imprese: 2.374 porte per 16 miliardi</a><small>Cosa c'è nei 112 miliardi di affari economici, chi distribuisce gli incentivi, quali sussidi si contraddicono.</small></li>
+      <li><a href="#cap-7">Appalti e partecipate: 310 miliardi di gare e 963 mila dipendenti</a><small>Cosa compra lo Stato, quante società possiede, quante sono in perdita.</small></li>
+      <li class="presto"><a href="#cap-8">Evasione</a><small>In lavorazione.</small></li>
+      <li class="presto"><a href="#cap-9">Italia contro Europa</a><small>In lavorazione.</small></li>
+      <li class="presto"><a href="#cap-10">Le opzioni sul tavolo</a><small>In lavorazione.</small></li>
+    </ol>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ============================================================ CAPITOLO 1 -->
+<article class="cap" id="cap-1" aria-labelledby="t1">
+  <header>
+    <p class="serie"><b>Dove vanno 1.158 miliardi</b> — capitolo 1 di 10</p>
+    <h2 class="titolo" id="t1">La mappa: cosa entra, cosa esce, cosa manca</h2>
+    <p class="lede">Nel 2025 lo Stato italiano ha incassato 1.088 miliardi e ne ha spesi 1.158. La differenza l'ha presa in prestito.</p>
+  </header>
+
+  <section class="cento" aria-labelledby="cento-t">
+    <h3 id="cento-t" style="margin-top:2.2rem">Ogni 100 € spesi dallo Stato</h3>
+    <p>Prendi cento euro di spesa pubblica. Ecco come si dividono, senza contare niente due volte.</p>
+    <div class="cento-bar" role="img" aria-label="Barra che divide 100 euro di spesa pubblica: 42,2 protezione sociale, 13,2 sanità, 10,1 economia e imprese, 8,0 istruzione, 7,9 interessi sul debito, 7,5 macchina dello Stato, 3,5 sicurezza, 2,6 difesa, 5,0 ambiente casa e cultura">
+      <span style="flex:0 0 42.2%;background:#1f4e9c" title="Protezione sociale 42,2 €"></span>
+      <span style="flex:0 0 13.2%;background:#2f7fd6" title="Sanità 13,2 €"></span>
+      <span style="flex:0 0 10.1%;background:#7fb2ea" title="Economia e imprese 10,1 €"></span>
+      <span style="flex:0 0 8%;background:#b7791f" title="Istruzione 8,0 €"></span>
+      <span style="flex:0 0 7.9%;background:#b8262f" title="Interessi sul debito 7,9 €"></span>
+      <span style="flex:0 0 7.5%;background:#8a94a3" title="Macchina dello Stato 7,5 €"></span>
+      <span style="flex:0 0 3.5%;background:#4b5563" title="Ordine pubblico e sicurezza 3,5 €"></span>
+      <span style="flex:0 0 2.6%;background:#2b3442" title="Difesa 2,6 €"></span>
+      <span style="flex:0 0 5%;background:#c9d1dc" title="Ambiente, casa, cultura 5,0 €"></span>
+    </div>
+    <ul class="cento-legenda">
+      <li><span class="n"><i style="background:#1f4e9c"></i>Pensioni e protezione sociale</span><span class="v">42,2 € <small>468 mld</small></span></li>
+      <li><span class="n"><i style="background:#2f7fd6"></i>Sanità</span><span class="v">13,2 € <small>146 mld</small></span></li>
+      <li><span class="n"><i style="background:#7fb2ea"></i>Economia, imprese, trasporti, energia</span><span class="v">10,1 € <small>112 mld</small></span></li>
+      <li><span class="n"><i style="background:#b7791f"></i>Istruzione</span><span class="v">8,0 € <small>89 mld</small></span></li>
+      <li><span class="n"><i style="background:#b8262f"></i>Interessi sul debito</span><span class="v">7,9 € <small>88 mld</small></span></li>
+      <li><span class="n"><i style="background:#8a94a3"></i>Macchina dello Stato (Parlamento, ministeri, fisco, esteri, ricerca di base)</span><span class="v">7,5 € <small>83 mld</small></span></li>
+      <li><span class="n"><i style="background:#4b5563"></i>Ordine pubblico e sicurezza</span><span class="v">3,5 € <small>39 mld</small></span></li>
+      <li><span class="n"><i style="background:#2b3442"></i>Difesa</span><span class="v">2,6 € <small>28 mld</small></span></li>
+      <li><span class="n"><i style="background:#c9d1dc"></i>Ambiente, casa e territorio, cultura e sport</span><span class="v">5,0 € <small>56 mld</small></span></li>
+    </ul>
+    <p class="cento-nota">Ripartizione Eurostat per funzione (COFOG), anno 2024, l'ultimo pubblicato per settore: 1.109 miliardi in tutto. Nel 2025 il totale è salito a 1.158 ma le proporzioni cambiano di decimali.</p>
+  </section>
+
+  <section aria-labelledby="conto-t">
+    <h3 id="conto-t">Il conto del 2025</h3>
+    <p>Tutta la pubblica amministrazione: Stato, Regioni, Comuni, INPS, sanità. Miliardi di euro e quota sul PIL, che vale circa 2.265 miliardi.</p>
+    <div class="conto">
+      <div><span class="k">Entrate<small>tasse, contributi, altri incassi</small></span><span class="mld">1.088</span><span class="pil">48,0 % PIL</span></div>
+      <div><span class="k">Uscite<small>tutta la spesa, interessi compresi</small></span><span class="mld">1.158</span><span class="pil">51,1 % PIL</span></div>
+      <div class="pos"><span class="k">Saldo primario<small>entrate meno spesa, senza gli interessi</small></span><span class="mld">+18</span><span class="pil">+0,8 % PIL</span></div>
+      <div class="neg"><span class="k">Interessi sul debito<small>quello che paghiamo per i prestiti passati</small></span><span class="mld">−87</span><span class="pil">3,9 % PIL</span></div>
+      <div class="neg tot"><span class="k">Disavanzo<small>quanto abbiamo preso in prestito nell'anno</small></span><span class="mld">−69,7</span><span class="pil">3,1 % PIL</span></div>
+      <div><span class="k">Debito accumulato a fine 2025<small>la somma di tutti i disavanzi passati</small></span><span class="mld">3.096</span><span class="pil">137,1 % PIL</span></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="frasi-t">
+    <h3 id="frasi-t">Cosa vuol dire, in tre frasi</h3>
+    <ul class="frasi">
+      <li><b>Sulla gestione ordinaria lo Stato è in attivo.</b> Tolti gli interessi, nel 2025 ha incassato 18 miliardi più di quanto ha speso. Il buco lo fanno gli 87 miliardi di interessi sui prestiti degli anni passati.</li>
+      <li><b>Sei euro su dieci vanno a persone, non a uffici.</b> Pensioni, sanità e istruzione insieme fanno 63 euro ogni 100. La "burocrazia" in senso stretto, cioè organi dello Stato e amministrazione generale, ne vale 7 e mezzo.</li>
+      <li><b>Il debito è la spesa che non compra nulla.</b> 87 miliardi l'anno sono più della sanità di Lombardia, Veneto ed Emilia-Romagna messe insieme, e vanno solo a chi ci ha prestato i soldi.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="fonti-t">
+    <h3 id="fonti-t">Fonti</h3>
+    <ul class="fonti">
+      <li><b>Istat</b>, Conto economico trimestrale delle Amministrazioni pubbliche, 22 settembre 2026: revisione dei conti 2025 (entrate, uscite, interessi, saldo primario, indebitamento netto). <a href="https://www.istat.it/en/press-release/quarterly-non-financial-sector-accounts/">pagina del comunicato Istat</a> (link al PDF del 22/9/2026 da confermare)</li>
+      <li><b>Istat</b>, Notifica dell'indebitamento netto e del debito delle Amministrazioni pubbliche, 22 aprile 2026: debito 2025 al 137,1 % del PIL, pressione fiscale 42,9 %. <a href="https://www.istat.it/wp-content/uploads/2026/04/Notifica_22_04_2026.pdf">Notifica_22_04_2026.pdf</a></li>
+      <li><b>Eurostat</b>, dataset gov_10a_exp, spesa delle Amministrazioni pubbliche per funzione COFOG, Italia 2024, pubblicato il 21 luglio 2026. <a href="https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table?lang=en">databrowser Eurostat</a></li>
+      <li><b>DoveVannoINostriSoldi</b>, elaborazione dei dati Eurostat COFOG con sottofunzioni per l'Italia, controllata il 14 settembre 2026. <a href="https://www.dovevannoinostrisoldi.com/?anno=2024">dovevannoinostrisoldi.com</a></li>
+    </ul>
+    <div class="metodo">
+      <p><b>Come leggere questi numeri.</b> Sono dati di competenza economica (SEC 2010) di tutta la pubblica amministrazione, non solo del bilancio dello Stato, e non sono pagamenti di cassa. Le quote per funzione si riferiscono al 2024 perché Eurostat le pubblica con un anno di ritardo; gli interessi qui sono la voce COFOG "operazioni sul debito" (87,8 mld nel 2024), leggermente diversa dagli interessi contabili (85,5 nel 2024, 87,1 nel 2025).</p>
+      <p>Ogni numero è verificabile alla fonte. Se trovi un errore, scrivici e correggiamo con nota visibile.</p>
+    </div>
+  </section>
+  <p class="torna"><a href="#cap-2">Capitolo 2: pensioni e assistenza →</a> · <a href="#top">Indice</a></p>
+</article>
+
+<!-- ============================================================ CAPITOLO 2 -->
+<article class="cap" id="cap-2" aria-labelledby="t2">
+  <header>
+    <p class="serie"><b>Dove vanno 1.158 miliardi</b> — capitolo 2 di 10</p>
+    <h2 class="titolo" id="t2">Pensioni e assistenza: chi paga i 468 miliardi</h2>
+    <p class="lede">Quattro euro su dieci della spesa pubblica vanno a pensioni e assistenza. I contributi coprono quasi tutte le pensioni. L'assistenza la pagano le tasse.</p>
+  </header>
+
+  <section class="grafico" aria-labelledby="c2-g">
+    <h3 id="c2-g" style="margin-top:2.2rem">Le due casse del welfare, 2024</h3>
+    <p>Il sistema ha due tasche. Nella prima entrano i contributi di chi lavora ed escono le pensioni. Nella seconda entrano le tasse ed escono le prestazioni di assistenza: invalidità civile, pensioni sociali, integrazioni al minimo, assegno unico per i figli, assegno di inclusione.</p>
+    <div class="barre" role="img" aria-label="Tre barre in miliardi di euro, anno 2024: contributi versati 260,6; pensioni pagate 286,1, di cui 25,5 non coperti dai contributi; assistenza pagata dalle tasse 180,0">
+      <div class="r">
+        <div class="l"><span><b>Contributi versati</b> da lavoratori e imprese</span><span class="v">260,6 <small>mld</small></span></div>
+        <div class="t"><span style="width:91.1%;background:var(--blu)"></span></div>
+      </div>
+      <div class="r">
+        <div class="l"><span><b>Pensioni pagate</b>, di cui 25,5 non coperti dai contributi</span><span class="v">286,1 <small>mld</small></span></div>
+        <div class="t"><span style="width:91.1%;background:var(--blu)"></span><span style="width:8.9%;background:var(--rosso)"></span></div>
+      </div>
+      <div class="r">
+        <div class="l"><span><b>Assistenza</b>, pagata dalla fiscalità generale</span><span class="v">180,0 <small>mld</small></span></div>
+        <div class="t"><span style="width:62.9%;background:var(--oro)"></span></div>
+      </div>
+    </div>
+    <ul class="legenda" aria-hidden="true">
+      <li><i style="background:var(--blu)"></i>coperto dai contributi</li>
+      <li><i style="background:var(--rosso)"></i>coperto dallo Stato</li>
+      <li><i style="background:var(--oro)"></i>tutto dalle tasse</li>
+    </ul>
+    <p class="grafico-fonte">Miliardi di euro, anno 2024, tutte le gestioni pensionistiche obbligatorie. Fonte: Itinerari Previdenziali, XIII Rapporto "Il bilancio del sistema previdenziale italiano", presentato il 14 gennaio 2026, riclassificazione delle prestazioni tra previdenza e assistenza (vedi nota di metodo).</p>
+  </section>
+
+  <section aria-labelledby="c2-c">
+    <h3 id="c2-c">Il conto</h3>
+    <p>Numeri di enti diversi e di anni diversi: i conti INPS 2025 sono usciti a giugno 2026, la riclassificazione di Itinerari Previdenziali si ferma al 2024. Miliardi di euro dove non indicato altrimenti.</p>
+    <div class="conto">
+      <div class="tot"><span class="k">Protezione sociale, tutta la pubblica amministrazione<small>Eurostat COFOG, 2024: la fetta del capitolo 1</small></span><span class="mld">468</span><span class="pil">42,2 % spesa</span></div>
+      <div><span class="k">Pensioni pagate dall'INPS<small>2025, comprese le pensioni assistenziali</small></span><span class="mld">325,1</span><span class="pil">+1,4 % su 2024</span></div>
+      <div><span class="k">Tutte le prestazioni INPS<small>2025: pensioni, disoccupazione, famiglie, inclusione</small></span><span class="mld">425</span><span class="pil">+2,0 %</span></div>
+      <div class="pos"><span class="k">Contributi incassati dall'INPS<small>2025</small></span><span class="mld">294</span><span class="pil">+3,6 %</span></div>
+      <div><span class="k">Trasferimenti dallo Stato all'INPS<small>2025: quello che mettono le tasse</small></span><span class="mld">165</span><span class="pil">−8,4 %</span></div>
+      <div><span class="k">Sostegno alle famiglie<small>2025: assegno unico e assegni familiari</small></span><span class="mld">20,2</span><span class="pil"></span></div>
+      <div><span class="k">Sostegno al reddito<small>2025: disoccupazione e cassa integrazione</small></span><span class="mld">19,7</span><span class="pil"></span></div>
+      <div><span class="k">Spesa pensionistica sul PIL<small>2025, Ragioneria dello Stato</small></span><span class="mld">15,2 %</span><span class="pil">17,1 % nel 2040</span></div>
+      <div><span class="k">Pensionati INPS<small>2025, persone, non pensioni</small></span><span class="mld">15,44 mln</span><span class="pil"></span></div>
+      <div><span class="k">Pensione media annua lorda<small>2023, Istat, tutti gli enti</small></span><span class="mld">15.141 €</span><span class="pil"></span></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="c2-f">
+    <h3 id="c2-f">Cosa vuol dire, in tre frasi</h3>
+    <ul class="frasi">
+      <li><b>I contributi coprono quasi tutte le pensioni.</b> Nel 2024 sono entrati 261 miliardi di contributi e sono usciti 286 miliardi di pensioni. Mancano 25 miliardi, che mette lo Stato.</li>
+      <li><b>L'assistenza è la parte che cresce.</b> 180 miliardi nel 2024, tutti dalla fiscalità generale. Nel bilancio INPS le prestazioni diverse dalle pensioni sono passate dall'11 % del totale nel 2015 al 16 % nel 2025.</li>
+      <li><b>Il picco deve ancora arrivare.</b> La spesa per pensioni vale il 15,2 % del PIL nel 2025. Secondo la Ragioneria salirà al 17,1 % intorno al 2040, quando saranno in pensione i nati negli anni Sessanta. Poi scende.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="c2-s">
+    <h3 id="c2-s">Fonti</h3>
+    <ul class="fonti">
+      <li><b>Itinerari Previdenziali</b>, XIII Rapporto "Il bilancio del sistema previdenziale italiano. Andamenti finanziari e demografici delle pensioni e dell'assistenza per l'anno 2024", presentato il 14 gennaio 2026: spesa pensionistica 286,14 mld, contributi 260,59 mld, saldo −25,55 mld, assistenza 180 mld, 16.305.880 pensionati. <a href="https://www.itinerariprevidenziali.it/wp-content/uploads/2026/01/XIII-Rapporto-Il-Bilancio-del-Sistema-Previdenziale.pdf">XIII-Rapporto (PDF)</a></li>
+      <li><b>INPS, Consiglio di indirizzo e vigilanza</b>, Rendiconto sociale 2025, presentato il 30 giugno 2026: spesa per pensioni 325,06 mld (+1,4 %), 15.435.694 pensionati, 1.540.943 nuove pensioni, sostegno al reddito 19,7 mld, famiglie 20,2 mld, quota delle prestazioni non pensionistiche dall'11,2 % al 16,4 % tra 2015 e 2025. <a href="https://www.inps.it/content/dam/inps-site/pdf/allegatinews/Rendiconto_sociale_2025.pdf">Rendiconto_sociale_2025.pdf</a></li>
+      <li><b>INPS, Consiglio di indirizzo e vigilanza</b>, Relazione sul Rendiconto generale 2025, 30 giugno 2026: entrate 571 mld, contributi 294 mld (+3,6 %), trasferimenti dalla fiscalità generale 165 mld (−8,4 %), uscite 554 mld, prestazioni istituzionali 425 mld (+2 %). <a href="https://www.inps.it/content/dam/inps-site/pdf/allegatinews/Relazione_rendiconto_generale_2025.pdf">Relazione_rendiconto_generale_2025.pdf</a></li>
+      <li><b>MEF, Ragioneria generale dello Stato</b>, "Le tendenze di medio-lungo periodo del sistema pensionistico e socio-sanitario", Rapporto n. 27, 2026: spesa pensionistica al 15,2 % del PIL nel 2025, 17,1 % intorno al 2040, 14,0 % nel 2070. <a href="https://www.rgs.mef.gov.it/VERSIONE-I/attivita_istituzionali/monitoraggio/spesa_pensionistica/">pagina del rapporto</a></li>
+      <li><b>Istat</b>, Annuario statistico italiano 2025, capitolo 5 "Protezione sociale", dicembre 2025: 22,9 milioni di trattamenti pensionistici nel 2023, spesa 347.031 milioni, importo medio annuo 15.141 €. <a href="https://www.istat.it/storage/ASI/2025/capitoli/C05.pdf">C05.pdf</a></li>
+      <li><b>Eurostat</b>, dataset gov_10a_exp, funzione GF10 protezione sociale, Italia 2024, pubblicato il 21 luglio 2026. <a href="https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table?lang=en">databrowser Eurostat</a></li>
+    </ul>
+    <div class="metodo">
+      <p><b>Come leggere questi numeri.</b> I 468 miliardi del capitolo 1 sono tutta la protezione sociale della pubblica amministrazione: INPS, ma anche INAIL, casse dei professionisti, Comuni, pensioni di guerra. L'INPS da solo paga 425 miliardi di prestazioni. I 325 miliardi di "pensioni INPS" comprendono anche le pensioni di natura assistenziale, come invalidità civile e pensioni sociali.</p>
+      <p>La divisione tra previdenza e assistenza del grafico è una riclassificazione degli autori del rapporto Itinerari Previdenziali, non una statistica ufficiale: separa le prestazioni coperte da contributi da quelle pagate con le tasse, e sposta nell'assistenza le integrazioni al minimo e le maggiorazioni. Altri, tra cui lo stesso Consiglio di indirizzo dell'INPS, usano confini diversi. I due perimetri, previdenza e assistenza, non coincidono con la voce COFOG e non vanno sommati ai 468.</p>
+      <p>I 165 miliardi trasferiti dallo Stato all'INPS nel 2025 sono in calo perché lo sgravio contributivo dei lavoratori è diventato uno sconto fiscale: la spesa si è spostata di cassetto, non è sparita.</p>
+    </div>
+  </section>
+  <p class="torna"><a href="#cap-1">← Capitolo 1</a> · <a href="#cap-3">Capitolo 3: interessi e debito →</a> · <a href="#top">Indice</a></p>
+</article>
+
+<!-- ============================================================ CAPITOLO 3 -->
+<article class="cap" id="cap-3" aria-labelledby="t3">
+  <header>
+    <p class="serie"><b>Dove vanno 1.158 miliardi</b> — capitolo 3 di 10</p>
+    <h2 class="titolo" id="t3">Interessi e debito: a chi dobbiamo 3.096 miliardi</h2>
+    <p class="lede">Nel 2025 lo Stato ha pagato 87 miliardi di interessi. Un terzo del debito è in mani estere, quasi un quinto in quelle della Banca d'Italia.</p>
+  </header>
+
+  <section class="grafico" aria-labelledby="c3-g">
+    <h3 id="c3-g" style="margin-top:2.2rem">Chi ci ha prestato i soldi, fine 2025</h3>
+    <p>Il debito pubblico è la somma dei prestiti che lo Stato non ha ancora restituito. Qualcuno li ha in tasca: sono i creditori. Ecco come si divide il debito per chi lo possiede.</p>
+    <div class="cento-bar" role="img" aria-label="Barra che divide il debito pubblico a fine 2025 per creditore: 34,3 per cento non residenti, 32,7 per cento banche e altri intermediari italiani, 18,5 per cento Banca d'Italia, 14,5 per cento famiglie e imprese italiane">
+      <span style="flex:0 0 34.3%;background:#4b5563" title="Non residenti 34,3 %"></span>
+      <span style="flex:0 0 32.7%;background:#7fb2ea" title="Banche, assicurazioni e fondi italiani 32,7 %"></span>
+      <span style="flex:0 0 18.5%;background:#1f4e9c" title="Banca d'Italia 18,5 %"></span>
+      <span style="flex:0 0 14.5%;background:#b7791f" title="Famiglie e imprese italiane 14,5 %"></span>
+    </div>
+    <ul class="cento-legenda">
+      <li><span class="n"><i style="background:#4b5563"></i>Investitori esteri (banche centrali, fondi, banche)</span><span class="v">34,3 % <small>da 30,9</small></span></li>
+      <li><span class="n"><i style="background:#7fb2ea"></i>Banche, assicurazioni e fondi italiani</span><span class="v">32,7 % <small>per differenza</small></span></li>
+      <li><span class="n"><i style="background:#1f4e9c"></i>Banca d'Italia</span><span class="v">18,5 % <small>da 21,6</small></span></li>
+      <li><span class="n"><i style="background:#b7791f"></i>Famiglie e imprese italiane</span><span class="v">14,5 % <small>in crescita</small></span></li>
+    </ul>
+    <p class="grafico-fonte">Quote sul debito delle Amministrazioni pubbliche al 31 dicembre 2025, 3.095,5 miliardi. "Da" indica la quota a fine 2024. La voce banche, assicurazioni e fondi italiani è calcolata per differenza dalle altre tre. Fonte: Banca d'Italia, comunicato "Finanza pubblica: fabbisogno e debito", 16 febbraio 2026.</p>
+  </section>
+
+  <section aria-labelledby="c3-c">
+    <h3 id="c3-c">Il conto</h3>
+    <p>Quanto è grande il debito, quanto costa, quanto ne rinnoviamo ogni anno. Miliardi di euro dove non indicato altrimenti.</p>
+    <div class="conto">
+      <div class="tot"><span class="k">Debito a fine 2025<small>Banca d'Italia; Istat lo arrotonda a 3.096</small></span><span class="mld">3.095,5</span><span class="pil">137,1 % PIL</span></div>
+      <div class="neg"><span class="k">Aumento nel 2025<small>era 2.966,9 a fine 2024</small></span><span class="mld">+128,6</span><span class="pil"></span></div>
+      <div class="neg"><span class="k">Interessi pagati nel 2025<small>7,6 % di tutta la spesa pubblica</small></span><span class="mld">87</span><span class="pil">3,9 % PIL</span></div>
+      <div><span class="k">Titoli emessi nel 2025<small>380 a medio-lungo termine, poco meno di 170 di BOT</small></span><span class="mld">≈ 550</span><span class="pil">18 % del debito</span></div>
+      <div><span class="k">Costo medio dei titoli emessi nel 2025<small>tasso annuo all'emissione; 3,40 % nel 2024, 3,76 % nel 2023</small></span><span class="mld">2,75 %</span><span class="pil">in calo</span></div>
+      <div><span class="k">Vita media residua del debito<small>quanto manca in media alla scadenza</small></span><span class="mld">7,9 anni</span><span class="pil">come a fine 2024</span></div>
+      <div><span class="k">Quota di BTP a tasso fisso<small>al 31 luglio 2026, BTP Green compresi</small></span><span class="mld">72,8 %</span><span class="pil">BOT 5,1 %</span></div>
+      <div class="neg"><span class="k">Interessi previsti nel 2029<small>Ufficio parlamentare di bilancio</small></span><span class="mld">4,5 % PIL</span><span class="pil">da 3,9 %</span></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="c3-f">
+    <h3 id="c3-f">Cosa vuol dire, in tre frasi</h3>
+    <ul class="frasi">
+      <li><b>Il debito non si ripaga, si rinnova.</b> Nel 2025 lo Stato ha emesso circa 550 miliardi di titoli nuovi, quasi un quinto del debito, soprattutto per restituire quelli in scadenza. Chi compra oggi sostituisce chi aveva comprato ieri.</li>
+      <li><b>Il creditore è cambiato.</b> La Banca d'Italia, che aveva comprato titoli per anni con l'Eurosistema, ne detiene sempre meno: dal 21,6 % al 18,5 % in un anno. Il posto lo hanno preso gli investitori esteri, saliti al 34,3 %, e le famiglie.</li>
+      <li><b>I tassi scendono, ma il conto sale.</b> I titoli nuovi costano meno di due anni fa, 2,75 % contro 3,76 %. Ma sostituiscono titoli emessi a tassi ancora più bassi, e il debito cresce: per questo l'Ufficio parlamentare di bilancio prevede interessi al 4,5 % del PIL nel 2029.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="c3-s">
+    <h3 id="c3-s">Fonti</h3>
+    <ul class="fonti">
+      <li><b>Banca d'Italia</b>, comunicato stampa "Finanza pubblica: fabbisogno e debito", 16 febbraio 2026, dati al 31 dicembre 2025: debito 3.095,5 mld, +128,6 sul 2024, fabbisogno 109,2 mld, quota Banca d'Italia 18,5 % (21,6 % a fine 2024), non residenti 34,3 % (30,9 %), famiglie e imprese 14,5 %, vita media residua 7,9 anni. <a href="https://www.bancaditalia.it/media/comunicati/documenti/2026-01/cs-16.02.2026-fabbisogno-debito-PA.pdf">cs-16.02.2026-fabbisogno-debito-PA.pdf</a></li>
+      <li><b>Banca d'Italia</b>, statistiche "Finanza pubblica: fabbisogno e debito", 14 agosto 2026, dati a giugno 2026: debito 3.207,2 mld. <a href="https://www.bancaditalia.it/pubblicazioni/finanza-pubblica/2026-finanza-pubblica/statistiche_FPI_20260814.pdf">statistiche_FPI_20260814.pdf</a></li>
+      <li><b>Istat</b>, Notifica dell'indebitamento netto e del debito, 22 aprile 2026: interessi al 3,9 % del PIL nel 2025 e nel 2024, 3,8 % nel 2023; debito al 137,1 % del PIL. <a href="https://www.istat.it/wp-content/uploads/2026/04/Notifica_22_04_2026.pdf">Notifica_22_04_2026.pdf</a></li>
+      <li><b>MEF, Dipartimento del Tesoro</b>, Linee guida della gestione del debito pubblico 2026, dicembre 2025: costo medio all'emissione 2,75 % nel 2025, 3,40 % nel 2024; emissioni 2025 di 380 mld a medio-lungo termine e poco meno di 170 mld di BOT; riacquisti per 32 mld. <a href="https://www.dt.mef.gov.it/export/sites/sitodt/modules/documenti_it/debito_pubblico/presentazioni_studi_relazioni/Linee-Guida-della-Gestione-del-Debito-Pubblico-Anno-2026.pdf">Linee-Guida-2026.pdf</a></li>
+      <li><b>MEF, Dipartimento del Tesoro</b>, Composizione dei titoli di Stato al 31 luglio 2026: BTP 70,43 %, BTP Green 2,39 %, BTP indicizzati 8,54 %, BOT 5,13 %, CCTeu 4,66 %, BTP Valore 4,13 %, BTP Italia 1,74 %, altri 2,98 %. <a href="https://www.dt.mef.gov.it/it/debito_pubblico/dati_statistici/composizione_titoli_stato/index_new.html">composizione_titoli_stato</a></li>
+      <li><b>Eurostat</b>, euro indicators 22 aprile 2026, "Euro area government deficit at 2.9% and EU at 3.1% of GDP": interessi pari al 7,6 % della spesa pubblica italiana nel 2025. <a href="https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-22042026-ap">2-22042026-ap</a></li>
+      <li><b>Ufficio parlamentare di bilancio</b>, Rapporto sulla politica di bilancio 2026, 10 giugno 2026: spesa per interessi dal 3,9 % del PIL nel 2025 al 4,5 % nel 2029. <a href="https://www.upbilancio.it/wp-content/uploads/2026/06/UPB-Rapporto-sulla-politica-di-bilancio-2026.pdf">UPB-Rapporto-2026.pdf</a></li>
+    </ul>
+    <div class="metodo">
+      <p><b>Come leggere questi numeri.</b> Il debito di Banca d'Italia e Istat è il debito "di Maastricht": tutte le Amministrazioni pubbliche, al valore nominale, senza contare i crediti che lo Stato ha verso altri. Le quote dei creditori si riferiscono a tutto il debito, non solo ai titoli di Stato; la quota di banche e altri intermediari italiani non è pubblicata nel comunicato ed è ottenuta per differenza.</p>
+      <p>Gli 87 miliardi di interessi sono la voce contabile del capitolo 1 (87,1 mld). Il costo medio all'emissione è il tasso dei soli titoli collocati nell'anno: il costo medio di tutto il debito in essere è più basso, perché comprende titoli emessi negli anni a tassi vicini a zero. La vita media residua di Banca d'Italia riguarda tutto il debito; quella dei soli titoli di Stato calcolata dal Tesoro è più corta.</p>
+    </div>
+  </section>
+  <p class="torna"><a href="#cap-2">← Capitolo 2</a> · <a href="#cap-4">Capitolo 4: agevolazioni fiscali →</a> · <a href="#top">Indice</a></p>
+</article>
+
+<!-- ============================================================ CAPITOLO 4 -->
+<article class="cap" id="cap-4" aria-labelledby="t4">
+  <header>
+    <p class="serie"><b>Dove vanno 1.158 miliardi</b> — capitolo 4 di 10</p>
+    <h2 class="titolo" id="t4">Agevolazioni fiscali: i 122 miliardi che non si vedono</h2>
+    <p class="lede">Detrazioni, deduzioni, esenzioni e bonus: nel 2026 lo Stato rinuncia a incassare 122,6 miliardi. Questa spesa non compare tra le uscite.</p>
+  </header>
+
+  <section class="grafico" aria-labelledby="c4-g">
+    <h3 id="c4-g" style="margin-top:2.2rem">A cosa servono le agevolazioni, 2026</h3>
+    <p>Ogni agevolazione ha uno scopo: sostenere la casa, il lavoro, la famiglia, la salute. Il Ministero dell'economia le raggruppa per missione, come le voci di spesa del bilancio. Miliardi di minor gettito stimati per il 2026.</p>
+    <div class="barre" role="img" aria-label="Barre in miliardi di euro, minor gettito 2026 per missione: casa e assetto urbanistico 71,7; politiche per il lavoro 17,3; diritti sociali e famiglia 7,6; tutela della salute 6,5; finanza pubblica 3,2; tutte le altre missioni 16,3; totale 122,6">
+      <div class="r"><div class="l"><span><b>Casa e assetto urbanistico</b>, soprattutto bonus edilizi</span><span class="v">71,7 <small>mld</small></span></div><div class="t"><span style="width:100%;background:var(--oro)"></span></div></div>
+      <div class="r"><div class="l"><span><b>Politiche per il lavoro</b></span><span class="v">17,3 <small>mld</small></span></div><div class="t"><span style="width:24.1%;background:var(--blu)"></span></div></div>
+      <div class="r"><div class="l"><span><b>Altre missioni</b>, per differenza</span><span class="v">16,3 <small>mld</small></span></div><div class="t"><span style="width:22.7%;background:#8a94a3"></span></div></div>
+      <div class="r"><div class="l"><span><b>Diritti sociali e famiglia</b></span><span class="v">7,6 <small>mld</small></span></div><div class="t"><span style="width:10.6%;background:var(--blu)"></span></div></div>
+      <div class="r"><div class="l"><span><b>Tutela della salute</b></span><span class="v">6,5 <small>mld</small></span></div><div class="t"><span style="width:9.1%;background:var(--blu)"></span></div></div>
+      <div class="r"><div class="l"><span><b>Finanza pubblica</b>, regimi e adempimenti</span><span class="v">3,2 <small>mld</small></span></div><div class="t"><span style="width:4.5%;background:var(--blu)"></span></div></div>
+    </div>
+    <p class="grafico-fonte">Effetti finanziari stimati per il 2026 delle 406 misure quantificate, totale 122,6 miliardi. Le "altre missioni" sono la differenza tra il totale e le cinque missioni pubblicate nella sintesi. Fonte: MEF, Rapporto annuale sulle spese fiscali 2025, allegato al disegno di legge di bilancio 2026, ottobre 2025.</p>
+  </section>
+
+  <section aria-labelledby="c4-c">
+    <h3 id="c4-c">Il conto</h3>
+    <p>Quante sono, quanto costano, e il caso a parte del Superbonus. Miliardi di euro dove non indicato altrimenti.</p>
+    <div class="conto">
+      <div><span class="k">Agevolazioni censite<small>Rapporto spese fiscali 2025: 550 ancora in vigore, 406 con un costo stimato</small></span><span class="mld">573</span><span class="pil">196 sull'IRPEF</span></div>
+      <div class="tot neg"><span class="k">Minor gettito nel 2026<small>somma delle 406 misure quantificate</small></span><span class="mld">−122,6</span><span class="pil">≈ 5 % PIL</span></div>
+      <div><span class="k">Minor gettito previsto<small>man mano che i bonus edilizi si esauriscono</small></span><span class="mld">100,6 → 82,3</span><span class="pil">2027 → 2028</span></div>
+      <div><span class="k">Stima della Corte dei conti per il 2025<small>relazione sul rendiconto, 24 giugno 2026</small></span><span class="mld">119</span><span class="pil">5,3 % PIL</span></div>
+      <div><span class="k">Superbonus: detrazioni maturate<small>ENEA, lavori al 31 luglio 2026, 502.388 edifici</small></span><span class="mld">131,6</span><span class="pil">98,2 % conclusi</span></div>
+      <div><span class="k">Superbonus: costo finale stimato<small>Corte dei conti, procura generale, giugno 2026</small></span><span class="mld">165,5</span><span class="pil">tutti i bonus edilizi 174</span></div>
+      <div><span class="k">Bonus edilizi usati in compensazione nel 2025<small>crediti scalati dalle tasse con il modello F24</small></span><span class="mld">38,3</span><span class="pil"></span></div>
+      <div><span class="k">Crediti edilizi a rischio di illecito nel 2025<small>controlli citati dalla Corte dei conti</small></span><span class="mld">4,1</span><span class="pil"></span></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="c4-f">
+    <h3 id="c4-f">Cosa vuol dire, in tre frasi</h3>
+    <ul class="frasi">
+      <li><b>È una spesa senza cassa.</b> 122,6 miliardi di minor gettito valgono più degli interessi sul debito e non passano da nessun capitolo di spesa: il bilancio li registra come tasse mai incassate.</li>
+      <li><b>Il pezzo più grosso è la casa.</b> 71,7 miliardi su 122,6 sono agevolazioni sull'edilizia, quasi tutte bonus per lavori già fatti. Per questo il conto cala da solo: 100,6 nel 2027, 82,3 nel 2028, quando le rate dei bonus finiscono.</li>
+      <li><b>Il Superbonus è il caso a parte.</b> 131,6 miliardi di detrazioni maturate per mezzo milione di edifici, il 68,7 % in condomini. La Corte dei conti stima un costo finale di 165,5 miliardi. La Corte dei conti europea calcola che in Italia risparmiare un chilowattora è costato 9,72 euro, contro 1,39 in Lituania.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="c4-s">
+    <h3 id="c4-s">Fonti</h3>
+    <ul class="fonti">
+      <li><b>MEF, Commissione per le spese fiscali</b>, Rapporto annuale sulle spese fiscali 2025, allegato allo stato di previsione dell'entrata del bilancio 2026, ottobre 2025: 573 misure censite, 550 vigenti, 406 quantificate per 122,6 mld nel 2026, 100,6 nel 2027, 82,3 nel 2028; ripartizione per missione. <a href="https://www.mef.gov.it/export/sites/MEF/documenti-allegati/2025/RSF-2025-bis.pdf">RSF-2025-bis.pdf</a></li>
+      <li><b>Corte dei conti, Sezioni riunite</b>, Relazione sul rendiconto generale dello Stato 2025, 24 giugno 2026: spese fiscali per circa 119 mld (5,3 % del PIL), IRPEF pagata per l'82 % da dipendenti e pensionati, compensazioni F24 per bonus edilizi 38,3 mld nel 2025, crediti a rischio 4,1 mld. <a href="https://www.corteconti.it/Home/Organizzazione/UfficiCentraliRegionali/UffSezRiuniteSedeControllo/RelRendiconto">pagina del giudizio di parificazione 2025</a></li>
+      <li><b>Corte dei conti, Procura generale</b>, memoria per il giudizio di parificazione del rendiconto 2025, giugno 2026: Superbonus 165,5 mld, bonus edilizi 174 mld a costo finale stimato. <a href="https://www.corteconti.it/Home/Organizzazione/UfficiCentraliRegionali/UffSezRiuniteSedeControllo/RelRendiconto">pagina del giudizio di parificazione 2025</a></li>
+      <li><b>ENEA</b>, dati di utilizzo del Superbonus 110 %, aggiornamento al 31 luglio 2026: 502.388 edifici, investimenti 126,65 mld, ammessi a detrazione 124,86 mld, detrazioni maturate 131,55 mld, lavori conclusi 98,2 %, condomini 68,7 %. <a href="https://www.efficienzaenergetica.enea.it/detrazioni-fiscali/superbonus/risultati-superbonus.html">risultati-superbonus</a></li>
+      <li><b>Corte dei conti europea</b>, Relazione speciale 20/2026 "Improving the energy efficiency of private homes with the RRF", luglio 2026: circa 14 mld del PNRR italiano sul Superbonus; 9,72 € per chilowattora risparmiato in Italia contro 1,39 in Lituania. <a href="https://www.eca.europa.eu/ECAPublications/SR-2026-20/SR-2026-20_EN.pdf">SR-2026-20_EN.pdf</a></li>
+      <li><b>Camera dei deputati, Servizio bilancio</b>, dossier "Effetti del Superbonus e del Bonus facciate sul quadro di finanza pubblica": crediti 2020–2023 contati come spesa (picco di circa 81 mld nel 2023), dal 2024 come minori entrate spalmate su dieci anni. <a href="https://documenti.camera.it/leg19/dossier/testi/Dossier_OFP_04_Superbonus.htm">Dossier_OFP_04_Superbonus</a></li>
+    </ul>
+    <div class="metodo">
+      <p><b>Come leggere questi numeri.</b> Le spese fiscali sono minori entrate, non uscite: non si sommano ai 1.158 miliardi del capitolo 1. Ogni misura è stimata da sola, come se le altre restassero: la somma è un ordine di grandezza, non l'incasso che si otterrebbe abolendole tutte. Il rapporto MEF non conta le agevolazioni che fanno parte della struttura del tributo, ad esempio le aliquote IRPEF per scaglioni.</p>
+      <p>Il Superbonus è l'eccezione contabile. I crediti maturati fino al 2023 erano "pagabili" e Istat li ha contati come spesa nell'anno dei lavori: è la ragione dei disavanzi del 2021–2023. Dal 2024 i nuovi crediti sono "non pagabili" e riducono le entrate anno per anno, per dieci anni. Le compensazioni F24 del 2025, 38,3 miliardi, sono cassa che esce oggi per lavori contabilizzati ieri.</p>
+    </div>
+  </section>
+  <p class="torna"><a href="#cap-3">← Capitolo 3</a> · <a href="#cap-5">Capitolo 5: sanità →</a> · <a href="#top">Indice</a></p>
+</article>
+
+<!-- ============================================================ CAPITOLO 5 -->
+<article class="cap" id="cap-5" aria-labelledby="t5">
+  <header>
+    <p class="serie"><b>Dove vanno 1.158 miliardi</b> — capitolo 5 di 10</p>
+    <h2 class="titolo" id="t5">Sanità: 146 miliardi, e altri 42 dalle tasche delle famiglie</h2>
+    <p class="lede">Tredici euro ogni cento di spesa pubblica vanno alla salute. Per ogni tre euro che mette lo Stato, le famiglie ne mettono uno di tasca propria.</p>
+  </header>
+
+  <section class="grafico" aria-labelledby="c5-g">
+    <h3 id="c5-g" style="margin-top:2.2rem">Chi paga la sanità, 2025</h3>
+    <p>La spesa sanitaria totale in Italia nel 2025 vale 190,1 miliardi, l'8,4 % del PIL. Ecco chi la paga: il Servizio sanitario nazionale con le tasse, le famiglie direttamente, i fondi e le assicurazioni.</p>
+    <div class="cento-bar" role="img" aria-label="Barra che divide la spesa sanitaria 2025: 74,1 per cento pubblica, 22,3 per cento pagata direttamente dalle famiglie, 3,7 per cento da fondi sanitari e assicurazioni">
+      <span style="flex:0 0 74.1%;background:#2f7fd6" title="Pubblica 74,1 %"></span>
+      <span style="flex:0 0 22.3%;background:#b7791f" title="Famiglie 22,3 %"></span>
+      <span style="flex:0 0 3.6%;background:#8a94a3" title="Fondi e assicurazioni 3,7 %"></span>
+    </div>
+    <ul class="cento-legenda">
+      <li><span class="n"><i style="background:#2f7fd6"></i>Pubblica: Stato e Regioni, con le tasse</span><span class="v">74,1 % <small>140,8 mld</small></span></li>
+      <li><span class="n"><i style="background:#b7791f"></i>Famiglie, di tasca propria: visite, esami, farmaci, dentista</span><span class="v">22,3 % <small>42,4 mld</small></span></li>
+      <li><span class="n"><i style="background:#8a94a3"></i>Fondi sanitari e assicurazioni</span><span class="v">3,7 % <small>7,0 mld</small></span></li>
+    </ul>
+    <p class="grafico-fonte">Spesa sanitaria corrente 2025, 190,1 miliardi, 3.225 euro per abitante: 2.388 dalla pubblica amministrazione, 719 dalle famiglie, 118 da fondi e assicurazioni. Fonte: Istat, Sistema dei conti della sanità, dati presentati alla Commissione Affari sociali della Camera il 7 luglio 2026.</p>
+  </section>
+
+  <section aria-labelledby="c5-c">
+    <h3 id="c5-c">Il conto</h3>
+    <p>Quanto spende lo Stato, quanto ne mette nel fondo che finanzia le Regioni, dove crescono i costi. Miliardi di euro dove non indicato altrimenti.</p>
+    <div class="conto">
+      <div class="tot"><span class="k">Sanità, tutta la pubblica amministrazione<small>Eurostat COFOG, 2024: la fetta del capitolo 1</small></span><span class="mld">146</span><span class="pil">13,2 % spesa</span></div>
+      <div><span class="k">Spesa sanitaria pubblica 2025<small>Istat, conto delle amministrazioni pubbliche, +2,5 % sul 2024</small></span><span class="mld">141,5</span><span class="pil">6,3 % PIL</span></div>
+      <div><span class="k">Fondo sanitario nazionale 2025<small>i soldi ripartiti tra le Regioni; 142,9 nel 2026</small></span><span class="mld">136,5</span><span class="pil"></span></div>
+      <div><span class="k">Farmaci a carico del Servizio sanitario, 2025<small>17,3 comprati da ospedali e ASL (+6,3 %), 8,5 in farmacia</small></span><span class="mld">25,0</span><span class="pil">18,4 % del fondo</span></div>
+      <div class="neg"><span class="k">Dispositivi medici, 2024<small>siringhe, protesi, apparecchi: quota del fondo regionale</small></span><span class="mld">6,3 %</span><span class="pil">tetto 4,4 %</span></div>
+      <div class="neg"><span class="k">Dispositivi: spesa oltre il tetto, 2019–2024<small>in parte chiesta indietro alle imprese con il payback</small></span><span class="mld">10,5</span><span class="pil"></span></div>
+      <div><span class="k">Dipendenti del Servizio sanitario, 2024<small>116.672 medici, 297.983 infermieri</small></span><span class="mld">713.976</span><span class="pil">+1,6 % su 2023</span></div>
+      <div><span class="k">Chi ha rinunciato a visite o esami, 2024<small>circa 5,8 milioni di persone; era il 6,3 % nel 2019</small></span><span class="mld">9,9 %</span><span class="pil"></span></div>
+      <div><span class="k">Spesa pubblica prevista nel 2029<small>Documento di finanza pubblica 2026</small></span><span class="mld">159,4</span><span class="pil">6,4 % PIL</span></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="c5-f">
+    <h3 id="c5-f">Cosa vuol dire, in tre frasi</h3>
+    <ul class="frasi">
+      <li><b>Un euro su quattro lo mettono le famiglie.</b> 42,4 miliardi nel 2025, 719 euro a persona, per visite, esami, dentista e farmaci non coperti. E una persona su dieci ha rinunciato a curarsi, per le liste d'attesa o per il costo.</li>
+      <li><b>Farmaci e dispositivi corrono più del fondo.</b> I farmaci valgono 25 miliardi, il 18,4 % del fondo sanitario, e gli acquisti degli ospedali crescono del 6,3 % in un anno. I dispositivi medici superano il tetto di legge ogni anno dal 2019: 10,5 miliardi in sei anni.</li>
+      <li><b>Spendiamo meno dei vicini.</b> Il 6,2 % del PIL contro il 7,1 % della media europea: 36 miliardi di differenza, secondo la Fondazione GIMBE su dati OCSE. Il piano del governo tiene la quota al 6,4 % fino al 2029.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="c5-s">
+    <h3 id="c5-s">Fonti</h3>
+    <ul class="fonti">
+      <li><b>Istat</b>, Sistema dei conti della sanità, dati 2025 presentati nell'audizione alla Commissione Affari sociali della Camera, 7 luglio 2026: spesa totale 190,1 mld (8,4 % del PIL), pubblica 140,8 (74,1 %), famiglie 42,4 (22,3 %), fondi e assicurazioni 7,0; 3.225 € per abitante. <a href="https://www.istat.it/audizioni/indagine-conoscitiva-sullattuazione-dei-livelli-essenziali-di-assistenza-e-sullerogazione-delle-prestazioni-sanitarie-nelle-regioni/">pagina dell'audizione Istat</a></li>
+      <li><b>MEF, Ragioneria generale dello Stato</b>, "Il monitoraggio della spesa sanitaria", rapporto n. 12, 2025, e Documento di finanza pubblica 2026, 22 aprile 2026: spesa sanitaria pubblica 141,5 mld nel 2025 (6,3 % del PIL, +2,5 %), 148,5 nel 2026, 159,4 nel 2029 (6,4 %). <a href="https://www.rgs.mef.gov.it/_Documenti/VERSIONE-I/Attivit--i/Spesa-soci/Attivit-monitoraggio-RGS/2025/IMDSS-RS2025.pdf">IMDSS-RS2025.pdf</a></li>
+      <li><b>CIPESS</b>, riparto del Fondo sanitario nazionale 2025, seduta del 29 gennaio 2026: 136,5 mld, di cui 130,7 per i livelli essenziali di assistenza. <a href="https://www.quotidianosanita.it/governo-e-parlamento/fondo-sanitario-2025-dal-cipess-ok-al-riparto-da-1365-miliardi/">resoconto della delibera (Quotidiano Sanità)</a>; per il 2026, 142,9 mld: legge 30 dicembre 2025, n. 199. <a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199">normattiva.it</a></li>
+      <li><b>AIFA</b>, Monitoraggio della spesa farmaceutica nazionale e regionale, consuntivo gennaio–dicembre 2025, 29 luglio 2026: spesa pubblica 24.965 mln (18,44 % del fondo), acquisti diretti 17.277 mln (+6,3 %), convenzionata netta 8.515 mln, payback a carico delle imprese 2.385 mln. <a href="https://www.aifa.gov.it/-/spesa-farmaceutica-gennaio-dicembre-2025-monitoraggio-aifa-consuntivo">aifa.gov.it, consuntivo 2025</a></li>
+      <li><b>Corte dei conti</b>, Rapporto sul coordinamento della finanza pubblica 2025, analisi sui dispositivi medici: spesa dal 5,6 % del fondo regionale nel 2019 al 6,3 % nel 2024 contro un tetto del 4,4 %, sforamento cumulato 10,5 mld, quota a carico delle imprese circa 5,2 mld. <a href="https://www.corteconti.it/Home/Documenti/RapportoCoordinamentoFP">pagina del Rapporto</a></li>
+      <li><b>MEF, Ragioneria generale dello Stato</b>, Conto annuale 2024, comparto sanità, estate 2026: 713.976 dipendenti (+1,6 %), 116.672 medici, 297.983 infermieri, 58.311 assunzioni e 47.238 cessazioni. <a href="https://www.rgs.mef.gov.it/VERSIONE-I/e_government/amministrazioni_pubbliche/personale_delle_pa/conto_annuale/">pagina del Conto annuale</a></li>
+      <li><b>Istat</b>, Rapporto annuale 2025, 21 maggio 2025: nel 2024 il 9,9 % della popolazione ha rinunciato a visite o esami (6,8 % per liste d'attesa, 5,3 % per motivi economici), 7,5 % nel 2023, 6,3 % nel 2019. <a href="https://www.istat.it/produzione-editoriale/rapporto-annuale-2025-la-situazione-del-paese-il-volume/">Rapporto annuale 2025</a></li>
+      <li><b>Fondazione GIMBE</b>, comunicato del 2 settembre 2026 su OECD Health Statistics 2026 (aggiornamento 17 luglio 2026): spesa pubblica al 6,2 % del PIL nel 2025 contro il 7,1 % della media OCSE ed europea, divario di circa 36,1 mld; comunicato del 28 aprile 2026 sul Documento di finanza pubblica. <a href="https://press.gimbe.org/press/comunicati/comunicato.it-IT.html?id=493">comunicato del 28 aprile 2026</a>; <a href="https://press.gimbe.org/press.it-IT.html">area stampa GIMBE</a></li>
+    </ul>
+    <div class="metodo">
+      <p><b>Come leggere questi numeri.</b> Tre misure diverse della stessa cosa: i 146 miliardi del capitolo 1 sono la funzione COFOG "sanità" del 2024, che comprende anche investimenti e amministrazione; i 141,5 del 2025 sono la spesa sanitaria corrente del conto delle amministrazioni pubbliche; i 140,8 del grafico sono la spesa pubblica secondo i conti della sanità, costruiti con lo schema internazionale SHA. Le differenze sono di perimetro, non errori.</p>
+      <p>Il Fondo sanitario nazionale è il finanziamento che lo Stato assegna alle Regioni: è più basso della spesa, e la differenza la coprono le Regioni con entrate proprie o con disavanzi. Il payback è la quota della spesa oltre il tetto che le imprese fornitrici devono restituire: per i farmaci funziona ogni anno, per i dispositivi medici è in contenzioso davanti ai tribunali.</p>
+    </div>
+  </section>
+  <p class="torna"><a href="#cap-4">← Capitolo 4</a> · <a href="#cap-6">Capitolo 6: sussidi alle imprese →</a> · <a href="#top">Indice</a></p>
+</article>
+
+<!-- ============================================================ CAPITOLO 6 -->
+<article class="cap" id="cap-6" aria-labelledby="t6">
+  <header>
+    <p class="serie"><b>Dove vanno 1.158 miliardi</b> — capitolo 6 di 10</p>
+    <h2 class="titolo" id="t6">Sussidi alle imprese: 2.374 porte per 16 miliardi</h2>
+    <p class="lede">Dieci euro ogni cento vanno ad "affari economici": strade, treni, energia, agricoltura. Gli aiuti diretti alle imprese sono una parte, e passano da oltre duemila misure diverse.</p>
+  </header>
+
+  <section class="grafico" aria-labelledby="c6-g">
+    <h3 id="c6-g" style="margin-top:2.2rem">Chi distribuisce gli incentivi, 2024</h3>
+    <p>Nel 2024 erano attive 2.374 misure di sostegno alle imprese. Poche sono dello Stato e muovono quasi tutti i soldi. Molte sono delle Regioni e muovono il resto.</p>
+    <div class="barre" role="img" aria-label="Quattro barre: le amministrazioni centrali hanno 300 misure, il 12,6 per cento del totale, e concedono l'81 per cento degli incentivi; le Regioni hanno 2.074 misure, l'87,4 per cento, e concedono il 19 per cento">
+      <div class="r"><div class="l"><span><b>Stato</b>: quante misure</span><span class="v">300 <small>su 2.374</small></span></div><div class="t"><span style="width:12.6%;background:var(--blu)"></span></div></div>
+      <div class="r"><div class="l"><span><b>Stato</b>: quanti soldi concessi</span><span class="v">81 % <small>del totale</small></span></div><div class="t"><span style="width:81%;background:var(--blu)"></span></div></div>
+      <div class="r"><div class="l"><span><b>Regioni</b>: quante misure</span><span class="v">2.074 <small>su 2.374</small></span></div><div class="t"><span style="width:87.4%;background:var(--oro)"></span></div></div>
+      <div class="r"><div class="l"><span><b>Regioni</b>: quanti soldi concessi</span><span class="v">19 % <small>del totale</small></span></div><div class="t"><span style="width:19%;background:var(--oro)"></span></div></div>
+    </div>
+    <p class="grafico-fonte">Interventi agevolativi attivi nel 2024 e quota delle agevolazioni concesse per livello di governo. Fonte: MIMIT, Relazione sugli interventi di sostegno alle attività economiche e produttive, edizione 2025, su dati del Registro nazionale degli aiuti di Stato.</p>
+  </section>
+
+  <section aria-labelledby="c6-c">
+    <h3 id="c6-c">Il conto</h3>
+    <p>Dalla fetta COFOG agli aiuti veri e propri, fino ai sussidi che il Ministero dell'ambiente classifica come dannosi. Miliardi di euro dove non indicato altrimenti.</p>
+    <div class="conto">
+      <div class="tot"><span class="k">Affari economici, tutta la pubblica amministrazione<small>Eurostat COFOG, 2024: trasporti, energia, agricoltura, industria, lavoro</small></span><span class="mld">112</span><span class="pil">10,1 % spesa</span></div>
+      <div><span class="k">Incentivi concessi alle imprese, 2024<small>9,0 al Centro-Nord, 7,3 al Mezzogiorno</small></span><span class="mld">16,3</span><span class="pil"></span></div>
+      <div><span class="k">Incentivi erogati, 2024<small>il valore più alto della serie</small></span><span class="mld">11,3</span><span class="pil"></span></div>
+      <div><span class="k">Investimenti delle imprese agevolati, 2024<small>era 69,5 nel 2023</small></span><span class="mld">60,9</span><span class="pil"></span></div>
+      <div><span class="k">Crediti d'imposta scalati dalle tasse nel 2024<small>di cui 41,9 per Superbonus ed Ecobonus</small></span><span class="mld">≈ 60</span><span class="pil"></span></div>
+      <div><span class="k">Aiuti di Stato notificati alla UE, 2024<small>terzo paese dopo Germania e Francia</small></span><span class="mld">18,3</span><span class="pil">11 % del totale UE</span></div>
+      <div class="neg"><span class="k">Sussidi ambientalmente dannosi, 2025<small>energia 11,6, IVA agevolata 9,6, trasporti 1,1</small></span><span class="mld">22,4</span><span class="pil">23,8 nel 2024</span></div>
+      <div class="pos"><span class="k">Sussidi ambientalmente favorevoli, 2025<small>catalogo del Ministero dell'ambiente</small></span><span class="mld">82,5</span><span class="pil">70,5 nel 2024</span></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="c6-f">
+    <h3 id="c6-f">Cosa vuol dire, in tre frasi</h3>
+    <ul class="frasi">
+      <li><b>I 112 miliardi non sono tutti sussidi.</b> La funzione "affari economici" comprende strade, ferrovie, energia, agricoltura e i servizi per il lavoro. Gli incentivi veri e propri alle imprese sono 16 miliardi concessi e 11 erogati nel 2024.</li>
+      <li><b>Molte porte, pochi soldi per porta.</b> 300 misure statali distribuiscono l'81 % degli incentivi; 2.074 misure regionali il 19 %. In media, una misura regionale muove meno di due milioni l'anno.</li>
+      <li><b>Alcuni sussidi si contraddicono.</b> Il Ministero dell'ambiente classifica 22,4 miliardi di sussidi come dannosi per l'ambiente, quasi tutti su energia e IVA agevolata, e 82,5 come favorevoli. Sono elenchi dello stesso governo.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="c6-s">
+    <h3 id="c6-s">Fonti</h3>
+    <ul class="fonti">
+      <li><b>MIMIT, Direzione generale per gli incentivi alle imprese</b>, Relazione sugli interventi di sostegno alle attività economiche e produttive, edizione 2025 (dati 2024), settembre 2025, diffusa il 2 febbraio 2026: 2.374 interventi attivi, 300 centrali e 2.074 regionali; amministrazioni centrali all'81 % delle concessioni e al 78,5 % delle erogazioni; concessioni 9,0 mld al Centro-Nord e 7,3 al Mezzogiorno; erogazioni 11,3 mld; investimenti agevolati 60,9 mld; compensazioni di crediti d'imposta vicine a 60 mld, di cui 41,9 per Superbonus ed Ecobonus. <a href="https://www.mimit.gov.it/images/stories/documenti/RELAZIONE_266_2025.pdf">RELAZIONE_266_2025.pdf</a></li>
+      <li><b>Eurostat</b>, dataset gov_10a_exp, funzione GF04 affari economici, Italia 2024, pubblicato il 21 luglio 2026. <a href="https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table?lang=en">databrowser Eurostat</a></li>
+      <li><b>Commissione europea, DG Concorrenza</b>, State aid Scoreboard 2025 (spesa 2024), 15 gennaio 2026: Italia 18,34 mld, 11 % del totale UE27 di 168,23 mld (0,94 % del PIL UE). <a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_26_67">comunicato IP/26/67</a>; <a href="https://competition-policy.ec.europa.eu/document/download/cc9cdf4e-97e9-4f8e-ac7d-5f094a9fd12d_en?filename=state_aid_scoreboard_note_2025.pdf">state_aid_scoreboard_note_2025.pdf</a></li>
+      <li><b>Ministero dell'ambiente e della sicurezza energetica</b>, Catalogo dei sussidi ambientalmente dannosi e favorevoli, edizione 2026, 16 luglio 2026: nel 2025 sussidi dannosi 22.382 mln (energia 11.607, IVA agevolata 9.556, trasporti 1.087), favorevoli 82.499 mln, incerti 22.088 mln. <a href="https://www.mase.gov.it/portale/catalogo-dei-sussidi-ambientalmente-dannosi-e-dei-sussidi-ambientalmente-favorevoli">pagina del Catalogo</a></li>
+      <li><b>Corte dei conti, Sezione centrale di controllo sulla gestione</b>, "La gestione del Fondo di garanzia per le PMI", deliberazione n. 66/2025/G: tra 2012 e 2018 il Fondo ha mosso credito per circa dieci volte le risorse pubbliche accantonate. <a href="https://www.corteconti.it/Download?id=d56fbe85-6c83-4123-af78-5ed45f82b367">relazione (PDF)</a></li>
+    </ul>
+    <div class="metodo">
+      <p><b>Come leggere questi numeri.</b> I 112 miliardi sono la funzione COFOG "affari economici" e comprendono investimenti pubblici, stipendi e trasferimenti di tutti i settori economici: non sono la somma degli aiuti alle imprese. Gli incentivi della Relazione MIMIT sono quelli registrati nel Registro nazionale degli aiuti di Stato: contributi, crediti d'imposta e garanzie. "Concesso" è l'impegno preso, "erogato" quello che è uscito davvero nell'anno. Le garanzie, come il Fondo per le PMI, non sono spesa finché l'impresa non fallisce.</p>
+      <p>I crediti d'imposta automatici, come Transizione 4.0, sono contati come spesa nei conti pubblici e come minori entrate nel rapporto sulle spese fiscali: parte del capitolo 4 e di questo capitolo si sovrappone. Gli aiuti di Stato dello Scoreboard sono solo quelli soggetti alle regole europee sulla concorrenza. I sussidi del catalogo MASE vanno anche alle famiglie, per esempio l'IVA ridotta, non solo alle imprese.</p>
+    </div>
+  </section>
+  <p class="torna"><a href="#cap-5">← Capitolo 5</a> · <a href="#cap-7">Capitolo 7: appalti e partecipate →</a> · <a href="#top">Indice</a></p>
+</article>
+
+<!-- ============================================================ CAPITOLO 7 -->
+<article class="cap" id="cap-7" aria-labelledby="t7">
+  <header>
+    <p class="serie"><b>Dove vanno 1.158 miliardi</b> — capitolo 7 di 10</p>
+    <h2 class="titolo" id="t7">Appalti e partecipate: 310 miliardi di gare e 963 mila dipendenti</h2>
+    <p class="lede">Nel 2025 lo Stato ha messo a gara contratti per 309,7 miliardi, il valore più alto di sempre. E possiede, in tutto o in parte, oltre ottomila società.</p>
+  </header>
+
+  <section class="grafico" aria-labelledby="c7-g">
+    <h3 id="c7-g" style="margin-top:2.2rem">Cosa compra lo Stato, 2025</h3>
+    <p>Ogni gara è un contratto: comprare beni, pagare un servizio, costruire un'opera. Ecco il valore delle procedure avviate nel 2025, divise per tipo. Cresce quello che si compra, cala quello che si costruisce.</p>
+    <div class="barre" role="img" aria-label="Tre barre in miliardi di euro, valore delle gare 2025: forniture oltre 145, più 25,2 per cento; servizi oltre 110, più 15,9 per cento; lavori circa 55, meno 10,6 per cento">
+      <div class="r"><div class="l"><span><b>Forniture</b>: farmaci, dispositivi, energia, mezzi</span><span class="v">145 <small>mld, +25,2 %</small></span></div><div class="t"><span style="width:100%;background:var(--blu)"></span></div></div>
+      <div class="r"><div class="l"><span><b>Servizi</b>: pulizie, mense, software, consulenze</span><span class="v">110 <small>mld, +15,9 %</small></span></div><div class="t"><span style="width:75.9%;background:#7fb2ea"></span></div></div>
+      <div class="r"><div class="l"><span><b>Lavori</b>: strade, scuole, ospedali, ferrovie</span><span class="v">≈ 55 <small>mld, −10,6 %</small></span></div><div class="t"><span style="width:37.9%;background:var(--oro)"></span></div></div>
+    </div>
+    <p class="grafico-fonte">Procedure di importo pari o superiore a 40.000 euro avviate nel 2025, totale 309,7 miliardi, di cui 20,8 finanziati dal PNRR. Forniture e servizi sono i valori pubblicati da ANAC ("oltre 145" e "oltre 110"); i lavori sono ottenuti per differenza. Fonte: ANAC, Relazione annuale 2026 sull'attività 2025, presentata al Parlamento il 21 aprile 2026.</p>
+  </section>
+
+  <section aria-labelledby="c7-c">
+    <h3 id="c7-c">Il conto</h3>
+    <p>Le gare non sono spesa dell'anno: sono contratti, spesso pluriennali, al valore di base d'asta. Le partecipate sono le società di cui Stato, Regioni e Comuni possiedono quote. Miliardi di euro dove non indicato altrimenti.</p>
+    <div class="conto">
+      <div class="tot"><span class="k">Valore delle gare avviate nel 2025<small>287.421 procedure, +7,6 % in numero</small></span><span class="mld">309,7</span><span class="pil">+13,9 % su 2024</span></div>
+      <div><span class="k">Gli anni prima<small>2023 → 2024</small></span><span class="mld">283,4 → 271,8</span><span class="pil"></span></div>
+      <div><span class="k">Di cui finanziate dal PNRR<small>2025</small></span><span class="mld">20,8</span><span class="pil">6,7 % del totale</span></div>
+      <div><span class="k">Stazioni appaltanti<small>enti che possono bandire gare, dopo la qualificazione</small></span><span class="mld">≈ 4.000</span><span class="pil">da oltre 20.000</span></div>
+      <div><span class="k">Partecipate pubbliche, 2023<small>unità economiche con almeno un socio pubblico, Istat</small></span><span class="mld">8.323</span><span class="pil">+0,9 % su 2022</span></div>
+      <div><span class="k">Addetti delle partecipate, 2023<small>il 53,2 % di quelli a controllo pubblico lavora in società del MEF</small></span><span class="mld">962.748</span><span class="pil"></span></div>
+      <div><span class="k">Società soggette al Testo unico, 2023<small>40.722 partecipazioni dichiarate, due terzi dirette</small></span><span class="mld">4.867</span><span class="pil"></span></div>
+      <div class="neg"><span class="k">Società con bilancio in perdita, 2023<small>196 su 2.833 con risultato disponibile</small></span><span class="mld">6,9 %</span><span class="pil"></span></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="c7-f">
+    <h3 id="c7-f">Cosa vuol dire, in tre frasi</h3>
+    <ul class="frasi">
+      <li><b>310 miliardi di gare non sono 310 miliardi spesi.</b> Sono contratti al valore di partenza, che si pagano in più anni e spesso con ribassi. La spesa vera per acquisti e opere sta nei consumi intermedi e negli investimenti del capitolo 1.</li>
+      <li><b>Si compra di più, si costruisce di meno.</b> Forniture +25 %, servizi +16 %, lavori −11 % in un anno. Tra le forniture, le voci che crescono di più sono farmaci e apparecchiature mediche: il capitolo 5 spiega perché. ANAC segnala che nei servizi e nelle forniture il 95 % delle procedure passa da affidamenti diretti, senza gara.</li>
+      <li><b>Lo Stato è anche un datore di lavoro.</b> 8.323 partecipate con 963 mila addetti: più del Servizio sanitario. Una su quindici chiude in perdita. Più della metà degli addetti a controllo pubblico lavora nelle società del Ministero dell'economia, da Ferrovie a Poste.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="c7-s">
+    <h3 id="c7-s">Fonti</h3>
+    <ul class="fonti">
+      <li><b>ANAC</b>, Relazione annuale 2026 sull'attività 2025, presentata alla Camera dei deputati il 21 aprile 2026: 287.421 procedure per 309,7 mld (+7,6 % e +13,9 %), PNRR 20,8 mld, forniture oltre 145 mld (+25,2 %), servizi oltre 110 mld (+15,9 %), lavori −10,6 %, stazioni appaltanti da oltre 20.000 a circa 4.000, 95 % di affidamenti diretti nei servizi e forniture. <a href="https://www.anticorruzione.it/documents/91439/393633199/Anac+-+Relazione+annuale+2026+su+attivit%C3%A0+2025.pdf/165c4f77-a913-1fde-ff23-887cbcee3095?t=1776845818213">Relazione annuale 2026 (PDF)</a>; <a href="https://www.anticorruzione.it/-/cs.21.04.2026.relazione.anac">comunicato del 21 aprile 2026</a></li>
+      <li><b>ANAC</b>, Relazione annuale 2025 sull'attività 2024, sintesi sul mercato degli appalti, 20 maggio 2025: 271,8 mld nel 2024 (−4,1 % sul 2023, −7,3 % sul 2022), 283,4 mld nel 2023. <a href="https://www.anticorruzione.it/documents/91439/307867242/Anac+-+Relazione+2025+su+attivit%C3%A0+2024+-+Sintesi+sul+mercato+appalti.pdf/4698998b-aa51-1d27-bf7c-2cfae9a47fb5?t=1747731265310">Sintesi sul mercato appalti (PDF)</a></li>
+      <li><b>Istat</b>, "Le partecipate pubbliche in Italia, anno 2023", febbraio 2026: 8.323 unità economiche, 962.748 addetti (+0,9 %), quelle di Regioni ed enti locali −1,4 %, società controllate dal MEF −5,7 % ma con il 53,2 % degli addetti a controllo pubblico. <a href="https://www.istat.it/wp-content/uploads/2026/02/REPORT_PARTECIPATE_PUBBLICHE_2023.pdf">REPORT_PARTECIPATE_PUBBLICHE_2023.pdf</a></li>
+      <li><b>MEF, Dipartimento dell'economia</b>, Rapporto sulle partecipazioni delle amministrazioni pubbliche, dati al 31 dicembre 2023, febbraio 2026 (pubblicato il 10 marzo, aggiornato il 20 aprile 2026): 40.722 partecipazioni, 67 % dirette, in 4.867 società; 196 società con risultato negativo su 2.833, il 6,92 %. <a href="https://www.de.mef.gov.it/export/sites/sitode/modules/documenti_it/programmi_cartolarizzazione/patrimonio_pa/Rapporto_Partecipazioni_Dati_2023.pdf">Rapporto_Partecipazioni_Dati_2023.pdf</a></li>
+    </ul>
+    <div class="metodo">
+      <p><b>Come leggere questi numeri.</b> ANAC conta le procedure di importo pari o superiore a 40.000 euro avviate nell'anno, al valore stimato a base d'asta: un contratto quinquennale conta tutto nell'anno in cui parte, e i ribassi non sono ancora applicati. Per questo i 309,7 miliardi non si sommano ai 1.158 del capitolo 1 e non vanno confrontati con la spesa annua. Le percentuali sugli affidamenti diretti sono sul numero di procedure, non sul valore.</p>
+      <p>Istat e MEF contano le partecipate con criteri diversi: Istat le unità economiche con almeno un socio pubblico, MEF le società soggette al Testo unico del 2016 dichiarate dalle amministrazioni. Solo una parte delle partecipate è dentro i conti pubblici del capitolo 1: le società che vendono sul mercato, come Ferrovie o Poste, restano fuori, e i loro utili arrivano allo Stato come dividendi.</p>
+    </div>
+  </section>
+  <p class="torna"><a href="#cap-6">← Capitolo 6</a> · <a href="#top">Indice</a></p>
+</article>
+
+</main>
+
+<footer class="wrap">
+  <nav class="nav" aria-label="Capitoli">
+    <a href="#top">Torna all'indice</a>
+    <span></span>
+  </nav>
+  <div class="condividi">
+    Condividi questa pagina, non un riassunto: i numeri senza fonte non servono a nessuno.
+    <br><button type="button" id="copia">Copia il link</button> <span id="copiato" aria-live="polite"></span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('copia').addEventListener('click',async()=>{
+  const out=document.getElementById('copiato');
+  try{await navigator.clipboard.writeText(location.href);out.textContent='Link copiato.';}
+  catch(e){out.textContent='Copia l\'indirizzo dalla barra del browser.';}
+});
+</script>
+</body>
+</html>
