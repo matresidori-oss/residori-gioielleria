@@ -56,3 +56,18 @@ Stato al 26 settembre 2026. La rete dell'ambiente di lavoro blocca tutti i domin
 | Picco Superbonus nei conti 2023: ≈ 81 mld; crediti 2024–25 "non pagabili" spalmati su 10 anni | Camera, dossier OFP 04 | Data del dossier da inserire. |
 | Cottarelli e Pench: effetto sul disavanzo 2025 ≈ 5 mld più 2–3 di interessi | Osservatorio CPI (aprile 2026) | Non usato nel testo. |
 | Detrazioni 74,4 mld (58 misure), deduzioni 10,9 (44), crediti 4,8 (51), regimi sostitutivi 12,3 (48); IRPEF 66,5 mld | RSF 2025 o 2024? | Non usati: i frammenti non chiariscono l'edizione. Verificare prima di usarli nel capitolo 10. |
+
+## Capitolo 5 — Sanità
+| Numero | Dove controllare | Nota |
+|---|---|---|
+| Spesa sanitaria totale 2025: 190,1 mld (8,4 % PIL); pubblica 140,8 (74,1 %); famiglie 42,4 (22,3 %); fondi e assicurazioni 7,0; pro capite 3.225 / 2.388 / 719 / 118 € | Istat, Sistema dei conti della sanità (memoria per l'audizione del 7/7/2026 o comunicato successivo) | Da trendsanita e senzeta. La somma 140,8 + 42,4 + 7,0 = 190,2: arrotondamenti. La barra usa 3,6 % per i fondi per chiudere a 100. Verificare documento e data. ⚠ |
+| 2024: totale 185,1; pubblica 137,5; privata 47,7 di cui famiglie 41,3 e fondi 6,4 | Istat SHA 2024 (GIMBE 8° rapporto) | Non usati nel testo. |
+| Spesa sanitaria pubblica 2025: 141,5 mld, 6,3 % PIL, +2,5 %; 148,5 nel 2026; 159,4 nel 2029 al 6,4 % | DFP 2026, sezione II, tavola sulla spesa sanitaria; RGS rapporto n. 12 | Da Quotidiano Sanità, Il Sole 24 Ore, GIMBE 28/4/2026. URL del DFP 2026 da inserire. ⚠ |
+| FSN 2025: 136,5 mld (135,576 quota indistinta + vincolate; 130,741 per i LEA); FSN 2026: 142,9 mld | Delibera CIPESS 29/1/2026; legge 199/2025, art. 1 | La legge di bilancio 2026 non è stata aperta: verificare il livello 2026 e l'URL normattiva. |
+| Farmaci 2025: 24.965,3 mln (18,44 % FSN); acquisti diretti 17.276,8 (+6,3 %); convenzionata netta 8.515,3 (+4,8 %); payback 2.385,4 mln | AIFA, consuntivo 2025, 29/7/2026 | Da aifa.gov.it e stampa specializzata. |
+| Dispositivi: 5,6 % FSR nel 2019 → 6,3 % nel 2024; tetto 4,4 %; sforamento 2019–2024 ≈ 10,5 mld; quota imprese ≈ 5,2 mld | Corte dei conti (Quotidiano Sanità cita "analisi della Corte dei conti"; il documento è probabilmente il Rapporto sul coordinamento della finanza pubblica 2025) | Documento e data da confermare. Confindustria DM dà 13 mld di oneri 2019–2025, di cui 6,5 alle imprese. ⚠ |
+| Tetto dispositivi al 4,6 % dal 2026 (+280 mln) | Legge 199/2025 | Non usato nel testo. |
+| Personale SSN 2024: 713.976 dipendenti (+1,6 %); 116.672 medici; 297.983 infermieri; 58.311 assunzioni; 47.238 cessazioni | RGS, Conto annuale 2024, comparto sanità | Da Quotidiano Sanità e Nurse Times. Un articolo riporta 727.829 "addetti": perimetro diverso (comprende i non a tempo indeterminato). ⚠ |
+| Rinuncia a visite o esami: 9,9 % nel 2024 (≈ 5,8 mln), 7,5 % nel 2023, 6,3 % nel 2019; 6,8 % liste d'attesa, 5,3 % motivi economici | Istat, Rapporto annuale 2025, capitolo sulla salute | Il 2024 è l'ultimo anno disponibile; il Rapporto annuale 2026 (maggio 2026) potrebbe avere il 2025: controllare. |
+| OCSE 2025: Italia 6,2 % PIL, media OCSE ed europea 7,1 %; divario 36,1 mld; 15ª su 27 in Europa, ultima nel G7 | GIMBE 2/9/2026 su OECD Health Statistics (17/7/2026) | Il 6,2 % OCSE e il 6,3 % Istat differiscono per definizione. |
+| Sanità COFOG 2024: 146 mld | Eurostat gov_10a_exp | Già nel capitolo 1. |

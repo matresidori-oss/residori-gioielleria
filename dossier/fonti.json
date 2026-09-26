@@ -291,6 +291,146 @@
       ],
       "data_accesso": "2026-09-26",
       "modalita_accesso": "snippet"
+    },
+    {
+      "id": "istat-sha-audizione-2026-07",
+      "ente": "Istat",
+      "titolo": "Sistema dei conti della sanità, dati 2025: audizione alla Commissione Affari sociali della Camera (indagine conoscitiva sui LEA)",
+      "data_pubblicazione": "2026-07-07",
+      "url": "https://www.istat.it/audizioni/indagine-conoscitiva-sullattuazione-dei-livelli-essenziali-di-assistenza-e-sullerogazione-delle-prestazioni-sanitarie-nelle-regioni/",
+      "url_nota": "verificare che i dati 2025 (190,1 mld) siano nella memoria del 7/7/2026 e non in un comunicato Istat successivo",
+      "capitoli": [
+        5
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "rgs-monitoraggio-sanita-12",
+      "ente": "MEF, Ragioneria generale dello Stato",
+      "titolo": "Il monitoraggio della spesa sanitaria, rapporto n. 12",
+      "data_pubblicazione": "2025 [DA VERIFICARE: mese]",
+      "url": "https://www.rgs.mef.gov.it/_Documenti/VERSIONE-I/Attivit--i/Spesa-soci/Attivit-monitoraggio-RGS/2025/IMDSS-RS2025.pdf",
+      "url_pagina": "https://www.rgs.mef.gov.it/VERSIONE-I/attivita_istituzionali/monitoraggio/spesa_sanitaria/",
+      "capitoli": [
+        5
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "dfp-2026",
+      "ente": "MEF",
+      "titolo": "Documento di finanza pubblica 2026 (spesa sanitaria 2025-2029)",
+      "data_pubblicazione": "2026-04-22",
+      "url": "[DA VERIFICARE: URL del DFP 2026 su dt.mef.gov.it]",
+      "capitoli": [
+        5,
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "cipess-fsn-2025",
+      "ente": "CIPESS",
+      "titolo": "Riparto del Fondo sanitario nazionale 2025 (seduta del 29 gennaio 2026)",
+      "data_pubblicazione": "2026-01-29",
+      "url": "https://www.quotidianosanita.it/governo-e-parlamento/fondo-sanitario-2025-dal-cipess-ok-al-riparto-da-1365-miliardi/",
+      "url_nota": "fonte secondaria: sostituire con la delibera CIPESS su programmazioneeconomica.gov.it quando pubblicata in Gazzetta",
+      "capitoli": [
+        5
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "legge-199-2025",
+      "ente": "Parlamento",
+      "titolo": "Legge 30 dicembre 2025, n. 199 (bilancio 2026): livello del finanziamento del SSN 2026",
+      "data_pubblicazione": "2025-12-30",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199",
+      "url_nota": "URL costruito con lo schema normattiva: verificare che risolva",
+      "capitoli": [
+        5
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "aifa-consuntivo-2025",
+      "ente": "AIFA",
+      "titolo": "Monitoraggio della spesa farmaceutica nazionale e regionale, consuntivo gennaio-dicembre 2025",
+      "data_pubblicazione": "2026-07-29",
+      "url": "https://www.aifa.gov.it/-/spesa-farmaceutica-gennaio-dicembre-2025-monitoraggio-aifa-consuntivo",
+      "capitoli": [
+        5
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "cdc-coordinamento-fp-2025",
+      "ente": "Corte dei conti, Sezioni riunite",
+      "titolo": "Rapporto sul coordinamento della finanza pubblica 2025 (analisi sulla spesa per dispositivi medici)",
+      "data_pubblicazione": "2025 [DA VERIFICARE]",
+      "url": "https://www.corteconti.it/Home/Documenti/RapportoCoordinamentoFP",
+      "url_nota": "verificare che l'analisi sui dispositivi (5,6 % → 6,3 % del FSR, 10,5 mld) sia in questo rapporto e non in una deliberazione a parte",
+      "capitoli": [
+        5,
+        10
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "rgs-conto-annuale-2024",
+      "ente": "MEF, Ragioneria generale dello Stato",
+      "titolo": "Conto annuale 2024, personale del Servizio sanitario nazionale",
+      "data_pubblicazione": "2026-08 [DA VERIFICARE]",
+      "url": "https://www.rgs.mef.gov.it/VERSIONE-I/e_government/amministrazioni_pubbliche/personale_delle_pa/conto_annuale/",
+      "capitoli": [
+        5
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "istat-rapporto-annuale-2025",
+      "ente": "Istat",
+      "titolo": "Rapporto annuale 2025. La situazione del Paese",
+      "data_pubblicazione": "2025-05-21",
+      "url": "https://www.istat.it/produzione-editoriale/rapporto-annuale-2025-la-situazione-del-paese-il-volume/",
+      "capitoli": [
+        5
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "gimbe-2026-09-02",
+      "ente": "Fondazione GIMBE",
+      "titolo": "Comunicato stampa su OECD Health Statistics 2026: spesa sanitaria pubblica 2025",
+      "data_pubblicazione": "2026-09-02",
+      "url": "https://press.gimbe.org/press.it-IT.html",
+      "url_nota": "URL del singolo comunicato (comunicato.it-IT.html?id=...) da individuare",
+      "capitoli": [
+        5
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
+    },
+    {
+      "id": "gimbe-2026-04-28",
+      "ente": "Fondazione GIMBE",
+      "titolo": "Comunicato stampa sul Documento di finanza pubblica 2026",
+      "data_pubblicazione": "2026-04-28",
+      "url": "https://press.gimbe.org/press/comunicati/comunicato.it-IT.html?id=493",
+      "capitoli": [
+        5
+      ],
+      "data_accesso": "2026-09-26",
+      "modalita_accesso": "snippet"
     }
   ]
 }
